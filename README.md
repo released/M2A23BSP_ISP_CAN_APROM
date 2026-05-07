@@ -31,8 +31,7 @@ Related settings:
   [memory_map.h](SampleCode/Template/memory_map.h)
 - AP checksum / output size:
   [checksum_config.cmd](SampleCode/Template/AP/Keil/checksum_config.cmd)
-- AP linker IROM size:
-  [Template.uvprojx](SampleCode/Template/AP/Keil/Template.uvprojx)
+
 
 ## Boot Code
 
@@ -46,7 +45,7 @@ Boot behavior:
   - stack pointer range
   - reset vector range / thumb bit
   - checksum field is not `0xFFFFFFFF` and not `0x00000000`
-  - software `CRC32` over `APP_START_ADDR` to `APP_SIZE_BYTES - 4`
+  - calculate `CRC32` over `APP_START_ADDR` to `APP_SIZE_BYTES - 4`
 - If APP is valid:
   jump to APP immediately
 - If APP is invalid:
@@ -313,8 +312,7 @@ If APP size or checksum location must be changed later, update these places toge
    update `APROM_SIZE_BYTES`, `APP_END_ADDR`, `APP_CHECKSUM_ADDR`
 2. [checksum_config.cmd](SampleCode/Template/AP/Keil/checksum_config.cmd)
    update `APROM_SIZE`, `APP_SIZE`, `CRC_ADDR`
-3. [Template.uvprojx](SampleCode/Template/AP/Keil/Template.uvprojx)
-   update AP `IROM(...)` size
+
 
 Do not update only one side. Boot validation range and post-build checksum range must stay consistent.
 
