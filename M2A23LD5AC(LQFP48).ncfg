@@ -1,0 +1,72 @@
+/****************************************************************************
+ * @file     M2A23LD5AC(LQFP48).ncfg
+ * @version  v1.36.1
+ * @Date     Tue May 05 2026 16:20:13 GMT+0800 (台北標準時間)
+ * @brief    NuMicro config file
+ *
+ * @note Please do not modify this file.
+ *       Otherwise, it may not be loaded successfully.
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * Copyright (C) 2013-2026 Nuvoton Technology Corp. All rights reserved.
+*****************************************************************************/
+MCU:M2A23LD5AC(LQFP48)
+Pin1:PWM0_CH0
+Pin2:PB.4
+Pin3:PWM0_CH2
+Pin4:PB.2
+Pin5:PWM0_CH4
+Pin6:PB.0
+Pin7:PA.11
+Pin8:PA.10
+Pin9:PA.9
+Pin10:PA.8
+Pin11:PF.5
+Pin12:PF.4
+Pin13:XT1_IN
+Pin14:XT1_OUT
+Pin15:PA.7
+Pin16:PA.6
+Pin17:PA.5
+Pin18:PA.4
+Pin19:PA.3
+Pin20:PA.2
+Pin21:PA.1
+Pin22:PA.0
+Pin23:PF.15
+Pin24:nRESET
+Pin25:ICE_DAT
+Pin26:ICE_CLK
+Pin27:CANFD0_TXD
+Pin28:CANFD0_RXD
+Pin29:PC.3
+Pin30:PC.2
+Pin31:PC.1
+Pin32:PC.0
+Pin33:PA.12
+Pin34:PA.13
+Pin35:PA.14
+Pin36:PA.15
+Pin37:VSS
+Pin38:LDO_CAP
+Pin39:VDD
+Pin40:PC.14
+Pin41:PB.15
+Pin42:PB.14
+Pin43:UART0_TXD
+Pin44:UART0_RXD
+Pin45:AVDD
+Pin46:AVSS
+Pin47:PB.7
+Pin48:PB.6
+SYS->GPA_MFPH = 0x00000000
+SYS->GPA_MFPL = 0x00000000
+SYS->GPB_MFPH = 0x00220000
+SYS->GPB_MFPL = 0x00B0B0B0
+SYS->GPC_MFPH = 0x00000000
+SYS->GPC_MFPL = 0x00990000
+SYS->GPF_MFPH = 0x00000000
+SYS->GPF_MFPL = 0x000033EE
+LockedPins=[]
+/*** (C) COPYRIGHT 2013-2026 Nuvoton Technology Corp. ***/

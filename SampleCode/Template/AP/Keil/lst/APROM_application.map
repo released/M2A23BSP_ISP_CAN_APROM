@@ -1,0 +1,1796 @@
+Component: Arm Compiler for Embedded 6.22 Tool: armlink [5ee90200]
+
+==============================================================================
+
+Small function inlining results
+
+Inlined function __aeabi_idiv0 from idiv0.o at offset 0x160 in aeabi_sdiv.o(.text).
+Inlined Instruction: BX       lr
+Inlined function __aeabi_idiv0 from idiv0.o at offset 0xc in aeabi_sdiv_div0.o(.text).
+Inlined Instruction: BX       lr
+Inlined function __aeabi_idiv0 from idiv0.o at offset 0x176 in aeabi_sdiv_div0.o(.text).
+Inlined Instruction: BX       lr
+Inlined function __aeabi_idiv0 from idiv0.o at offset 0x18 in uidiv_div0.o(.text).
+Inlined Instruction: BX       lr
+Inlined function __aeabi_idiv0 from idiv0.o at offset 0x42 in idiv_div0.o(.text).
+Inlined Instruction: BX       lr
+Inlined function TimerService_EnterCritical from lto-llvm-295afc.o at offset 0x14 in lto-llvm-295afc.o(.text.TimerService_DequeueEvent).
+Inlined Instruction: CPSID    i
+Inlined function TimerService_ExitCritical from lto-llvm-295afc.o at offset 0x54 in lto-llvm-295afc.o(.text.TimerService_DequeueEvent).
+Inlined Instruction: CPSIE    i
+Inlined function TimerService_EnterCritical from lto-llvm-295afc.o at offset 0xc in lto-llvm-295afc.o(.text.TimerService_TakePending).
+Inlined Instruction: CPSID    i
+Inlined function TimerService_ExitCritical from lto-llvm-295afc.o at offset 0x26 in lto-llvm-295afc.o(.text.TimerService_TakePending).
+Inlined Instruction: CPSIE    i
+Inlined total of 9 calls.
+
+==============================================================================
+
+Section Cross References
+
+    startup_m2a23.o(.text) refers to lto-llvm-295afc.o(.text.SystemInit) for SystemInit
+    startup_m2a23.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    startup_m2a23.o(.text) refers to lto-llvm-295afc.o(.text.ProcessHardFault) for ProcessHardFault
+    startup_m2a23.o(.text) refers to lto-llvm-295afc.o(.text.SH_Return) for SH_Return
+    startup_m2a23.o(RESET) refers to startup_m2a23.o(.bss.STACK) for __initial_sp
+    startup_m2a23.o(RESET) refers to startup_m2a23.o(.text) for Reset_Handler
+    startup_m2a23.o(RESET) refers to lto-llvm-295afc.o(.text.SysTick_Handler) for SysTick_Handler
+    startup_m2a23.o(RESET) refers to lto-llvm-295afc.o(.text.TMR1_IRQHandler) for TMR1_IRQHandler
+    startup_m2a23.o(RESET) refers to lto-llvm-295afc.o(.text.UART0_IRQHandler) for UART0_IRQHandler
+    startup_m2a23.o(RESET) refers to lto-llvm-295afc.o(.text.CANFD00_IRQHandler) for CANFD00_IRQHandler
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    fputs.o(i.fputs) refers to lto-llvm-295afc.o(.text.fputc) for fputc
+    fputs_e.o(.text) refers to lto-llvm-295afc.o(.text.fputc) for fputc
+    printfa.o(i.__0fprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0fprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0fprintf) refers to lto-llvm-295afc.o(.text.fputc) for fputc
+    printfa.o(i.__0printf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0printf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0printf) refers to lto-llvm-295afc.o(.text.fputc) for fputc
+    printfa.o(i.__0printf) refers to stdout.o(.data) for __stdout
+    printfa.o(i.__0snprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0snprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0snprintf) refers to printfa.o(i._snputc) for _snputc
+    printfa.o(i.__0sprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0sprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0sprintf) refers to printfa.o(i._sputc) for _sputc
+    printfa.o(i.__0vfprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vfprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vfprintf) refers to lto-llvm-295afc.o(.text.fputc) for fputc
+    printfa.o(i.__0vprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vprintf) refers to lto-llvm-295afc.o(.text.fputc) for fputc
+    printfa.o(i.__0vprintf) refers to stdout.o(.data) for __stdout
+    printfa.o(i.__0vsnprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vsnprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vsnprintf) refers to printfa.o(i._snputc) for _snputc
+    printfa.o(i.__0vsprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vsprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vsprintf) refers to printfa.o(i._sputc) for _sputc
+    printfa.o(i._fp_digits) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._fp_digits) refers to dmul.o(.text) for __aeabi_dmul
+    printfa.o(i._fp_digits) refers to ddiv.o(.text) for __aeabi_ddiv
+    printfa.o(i._fp_digits) refers to cdrcmple.o(.text) for __aeabi_cdrcmple
+    printfa.o(i._fp_digits) refers to dadd.o(.text) for __aeabi_dadd
+    printfa.o(i._fp_digits) refers to dfixul.o(.text) for __aeabi_d2ulz
+    printfa.o(i._fp_digits) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printfa.o(i._printf_core) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._printf_core) refers to printfa.o(i._printf_pre_padding) for _printf_pre_padding
+    printfa.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printfa.o(i._printf_core) refers to printfa.o(i._printf_post_padding) for _printf_post_padding
+    printfa.o(i._printf_core) refers to printfa.o(i._fp_digits) for _fp_digits
+    printfa.o(i._printf_core) refers to uidiv_div0.o(.text) for __aeabi_uidivmod
+    printfa.o(i._printf_post_padding) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._printf_pre_padding) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._snputc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._sputc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup_m2a23.o(.bss.STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup_m2a23.o(.bss.STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to lto-llvm-295afc.o(.text.main) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to lto-llvm-295afc.o(.text.main) for main
+    uldiv.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    uldiv.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    dadd.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dadd.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    dadd.o(.text) refers to llsshr.o(.text) for __aeabi_lasr
+    dadd.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    dmul.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dmul.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    ddiv.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    ddiv.o(.text) refers to depilogue.o(.text) for _double_round
+    dfixul.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dfixul.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    dfixul.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    cdrcmple.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+    idiv_div0.o(.text) refers to uidiv_div0.o(.text) for __aeabi_uidivmod
+    depilogue.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    depilogue.o(.text) refers to depilogue.o(i.__ARM_clz) for __ARM_clz
+    depilogue.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    depilogue.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    lto-llvm-295afc.o(.text.SystemCoreClockUpdate) refers to lto-llvm-295afc.o(.text.CLK_GetPLLClockFreq) for CLK_GetPLLClockFreq
+    lto-llvm-295afc.o(.text.SystemCoreClockUpdate) refers to lto-llvm-295afc.o(.data.PllClock) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.SystemCoreClockUpdate) refers to lto-llvm-295afc.o(.rodata.cst32) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.SystemCoreClockUpdate) refers to lto-llvm-295afc.o(.data.SystemCoreClock) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.SystemCoreClockUpdate) refers to lto-llvm-295afc.o(.text.SystemCoreClockUpdate) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.CLK_GetPLLClockFreq) refers to lto-llvm-295afc.o(.text.CLK_GetPLLClockFreq) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.SystemInit) refers to lto-llvm-295afc.o(.text.SystemInit) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.set_systick) refers to lto-llvm-295afc.o(.bss.counter_systick) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.set_systick) refers to lto-llvm-295afc.o(.text.set_systick) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.systick_counter) refers to lto-llvm-295afc.o(.bss.counter_systick) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.systick_counter) refers to lto-llvm-295afc.o(.text.systick_counter) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.SysTick_Handler) refers to lto-llvm-295afc.o(.text.systick_counter) for systick_counter
+    lto-llvm-295afc.o(.ARM.exidx.text.SysTick_Handler) refers to lto-llvm-295afc.o(.text.SysTick_Handler) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.SysTick_enable) refers to lto-llvm-295afc.o(.text.set_systick) for set_systick
+    lto-llvm-295afc.o(.text.SysTick_enable) refers to lto-llvm-295afc.o(.text.SysTick_Config) for SysTick_Config
+    lto-llvm-295afc.o(.text.SysTick_enable) refers to printfa.o(i.__0printf) for printf
+    lto-llvm-295afc.o(.text.SysTick_enable) refers to lto-llvm-295afc.o(.data.SystemCoreClock) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.SysTick_enable) refers to lto-llvm-295afc.o(.rodata.str1.1) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.SysTick_enable) refers to lto-llvm-295afc.o(.text.SysTick_enable) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.SysTick_Config) refers to lto-llvm-295afc.o(.text.__NVIC_SetPriority) for __NVIC_SetPriority
+    lto-llvm-295afc.o(.ARM.exidx.text.SysTick_Config) refers to lto-llvm-295afc.o(.text.SysTick_Config) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.__NVIC_SetPriority) refers to lto-llvm-295afc.o(.text.__NVIC_SetPriority) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.tick_counter) refers to lto-llvm-295afc.o(.bss.counter_tick) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.tick_counter) refers to lto-llvm-295afc.o(.text.tick_counter) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.Task_1000ms_Callback) refers to lto-llvm-295afc.o(.bss.num_cnt) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.Task_1000ms_Callback) refers to lto-llvm-295afc.o(.text.Task_1000ms_Callback) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.Task_100ms_Callback) refers to lto-llvm-295afc.o(.text.Task_100ms_Callback) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.Task_10ms_Callback) refers to lto-llvm-295afc.o(.text.Task_10ms_Callback) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.TimerService_CreateTask) refers to lto-llvm-295afc.o(.text.TimerService_CreateTimer) for TimerService_CreateTimer
+    lto-llvm-295afc.o(.text.TimerService_CreateTask) refers to lto-llvm-295afc.o(.text.TimerService_StartTimer) for TimerService_StartTimer
+    lto-llvm-295afc.o(.text.TimerService_CreateTask) refers to printfa.o(i.__0printf) for printf
+    lto-llvm-295afc.o(.text.TimerService_CreateTask) refers to lto-llvm-295afc.o(.text.Task_10ms_Callback) for Task_10ms_Callback
+    lto-llvm-295afc.o(.text.TimerService_CreateTask) refers to lto-llvm-295afc.o(.data.g_timer_id_task1) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.TimerService_CreateTask) refers to lto-llvm-295afc.o(.rodata.str1.1) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.TimerService_CreateTask) refers to lto-llvm-295afc.o(.text.Task_100ms_Callback) for Task_100ms_Callback
+    lto-llvm-295afc.o(.text.TimerService_CreateTask) refers to lto-llvm-295afc.o(.data.g_timer_id_task2) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.TimerService_CreateTask) refers to lto-llvm-295afc.o(.text.Task_1000ms_Callback) for Task_1000ms_Callback
+    lto-llvm-295afc.o(.text.TimerService_CreateTask) refers to lto-llvm-295afc.o(.data.g_timer_id_task3) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.TimerService_CreateTask) refers to lto-llvm-295afc.o(.text.TimerService_CreateTask) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.check_reset_source) refers to lto-llvm-295afc.o(.text.SYS_GetResetSrc) for SYS_GetResetSrc
+    lto-llvm-295afc.o(.text.check_reset_source) refers to printfa.o(i.__0printf) for printf
+    lto-llvm-295afc.o(.text.check_reset_source) refers to lto-llvm-295afc.o(.text.SYS_ClearResetSrc) for SYS_ClearResetSrc
+    lto-llvm-295afc.o(.text.check_reset_source) refers to lto-llvm-295afc.o(.rodata.str1.1) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.check_reset_source) refers to lto-llvm-295afc.o(.text.check_reset_source) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.TMR1_IRQHandler) refers to lto-llvm-295afc.o(.text.TIMER_GetIntFlag) for TIMER_GetIntFlag
+    lto-llvm-295afc.o(.text.TMR1_IRQHandler) refers to lto-llvm-295afc.o(.text.TIMER_ClearIntFlag) for TIMER_ClearIntFlag
+    lto-llvm-295afc.o(.text.TMR1_IRQHandler) refers to lto-llvm-295afc.o(.text.tick_counter) for tick_counter
+    lto-llvm-295afc.o(.text.TMR1_IRQHandler) refers to lto-llvm-295afc.o(.text.TimerService_Tick1ms) for TimerService_Tick1ms
+    lto-llvm-295afc.o(.ARM.exidx.text.TMR1_IRQHandler) refers to lto-llvm-295afc.o(.text.TMR1_IRQHandler) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.TIMER_GetIntFlag) refers to lto-llvm-295afc.o(.text.TIMER_GetIntFlag) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.TIMER_ClearIntFlag) refers to lto-llvm-295afc.o(.text.TIMER_ClearIntFlag) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.TIMER1_Init) refers to lto-llvm-295afc.o(.text.TIMER_Open) for TIMER_Open
+    lto-llvm-295afc.o(.text.TIMER1_Init) refers to lto-llvm-295afc.o(.text.TIMER_EnableInt) for TIMER_EnableInt
+    lto-llvm-295afc.o(.text.TIMER1_Init) refers to lto-llvm-295afc.o(.text.__NVIC_EnableIRQ) for __NVIC_EnableIRQ
+    lto-llvm-295afc.o(.text.TIMER1_Init) refers to lto-llvm-295afc.o(.text.TIMER_Start) for TIMER_Start
+    lto-llvm-295afc.o(.ARM.exidx.text.TIMER1_Init) refers to lto-llvm-295afc.o(.text.TIMER1_Init) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.TIMER_EnableInt) refers to lto-llvm-295afc.o(.text.TIMER_EnableInt) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.__NVIC_EnableIRQ) refers to lto-llvm-295afc.o(.text.__NVIC_EnableIRQ) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.TIMER_Start) refers to lto-llvm-295afc.o(.text.TIMER_Start) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.loop) refers to lto-llvm-295afc.o(.text.TimerService_Dispatch) for TimerService_Dispatch
+    lto-llvm-295afc.o(.text.loop) refers to lto-llvm-295afc.o(.text.CAN_Rx_process) for CAN_Rx_process
+    lto-llvm-295afc.o(.text.loop) refers to lto-llvm-295afc.o(.text.APP_InvalidateChecksumAndReset) for APP_InvalidateChecksumAndReset
+    lto-llvm-295afc.o(.text.loop) refers to lto-llvm-295afc.o(.text.APP_StandbyWaitCanWake) for APP_StandbyWaitCanWake
+    lto-llvm-295afc.o(.text.loop) refers to lto-llvm-295afc.o(.text.CAN_SendMessage) for CAN_SendMessage
+    lto-llvm-295afc.o(.text.loop) refers to lto-llvm-295afc.o(.bss.flag_PROJ_CTL) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.loop) refers to lto-llvm-295afc.o(.text.loop) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.APP_InvalidateChecksumAndReset) refers to printfa.o(i.__0printf) for printf
+    lto-llvm-295afc.o(.text.APP_InvalidateChecksumAndReset) refers to lto-llvm-295afc.o(.text.SYS_UnlockReg) for SYS_UnlockReg
+    lto-llvm-295afc.o(.text.APP_InvalidateChecksumAndReset) refers to lto-llvm-295afc.o(.text.FMC_Open) for FMC_Open
+    lto-llvm-295afc.o(.text.APP_InvalidateChecksumAndReset) refers to lto-llvm-295afc.o(.text.FMC_ISP_Program) for FMC_ISP_Program
+    lto-llvm-295afc.o(.text.APP_InvalidateChecksumAndReset) refers to lto-llvm-295afc.o(.text.FMC_Read) for FMC_Read
+    lto-llvm-295afc.o(.text.APP_InvalidateChecksumAndReset) refers to lto-llvm-295afc.o(.text.FMC_SetVectorPageAddr) for FMC_SetVectorPageAddr
+    lto-llvm-295afc.o(.text.APP_InvalidateChecksumAndReset) refers to lto-llvm-295afc.o(.text.SYS_ResetChip) for SYS_ResetChip
+    lto-llvm-295afc.o(.text.APP_InvalidateChecksumAndReset) refers to lto-llvm-295afc.o(.rodata.str1.1) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.APP_InvalidateChecksumAndReset) refers to lto-llvm-295afc.o(.data.SystemCoreClock) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.APP_InvalidateChecksumAndReset) refers to lto-llvm-295afc.o(.text.APP_InvalidateChecksumAndReset) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.APP_StandbyWaitCanWake) refers to printfa.o(i.__0printf) for printf
+    lto-llvm-295afc.o(.text.APP_StandbyWaitCanWake) refers to lto-llvm-295afc.o(.text.TIMER_DisableInt) for TIMER_DisableInt
+    lto-llvm-295afc.o(.text.APP_StandbyWaitCanWake) refers to lto-llvm-295afc.o(.text.TIMER_Stop) for TIMER_Stop
+    lto-llvm-295afc.o(.text.APP_StandbyWaitCanWake) refers to lto-llvm-295afc.o(.text.__NVIC_DisableIRQ) for __NVIC_DisableIRQ
+    lto-llvm-295afc.o(.text.APP_StandbyWaitCanWake) refers to lto-llvm-295afc.o(.text.UART_DisableInt) for UART_DisableInt
+    lto-llvm-295afc.o(.text.APP_StandbyWaitCanWake) refers to lto-llvm-295afc.o(.text.__NVIC_EnableIRQ) for __NVIC_EnableIRQ
+    lto-llvm-295afc.o(.text.APP_StandbyWaitCanWake) refers to lto-llvm-295afc.o(.text.TIMER_EnableInt) for TIMER_EnableInt
+    lto-llvm-295afc.o(.text.APP_StandbyWaitCanWake) refers to lto-llvm-295afc.o(.text.TIMER_Start) for TIMER_Start
+    lto-llvm-295afc.o(.text.APP_StandbyWaitCanWake) refers to lto-llvm-295afc.o(.rodata.str1.1) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.APP_StandbyWaitCanWake) refers to lto-llvm-295afc.o(.data.SystemCoreClock) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.APP_StandbyWaitCanWake) refers to lto-llvm-295afc.o(.bss.g_u32CanIrqStatus) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.APP_StandbyWaitCanWake) refers to lto-llvm-295afc.o(.text.APP_StandbyWaitCanWake) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.TIMER_DisableInt) refers to lto-llvm-295afc.o(.text.TIMER_DisableInt) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.TIMER_Stop) refers to lto-llvm-295afc.o(.text.TIMER_Stop) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.__NVIC_DisableIRQ) refers to lto-llvm-295afc.o(.text.__NVIC_DisableIRQ) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.SYS_UnlockReg) refers to lto-llvm-295afc.o(.text.SYS_UnlockReg) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.FMC_ISP_Program) refers to lto-llvm-295afc.o(.data.SystemCoreClock) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.FMC_ISP_Program) refers to lto-llvm-295afc.o(.text.FMC_ISP_Program) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.FMC_SetVectorPageAddr) refers to lto-llvm-295afc.o(.data.SystemCoreClock) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.FMC_SetVectorPageAddr) refers to lto-llvm-295afc.o(.text.FMC_SetVectorPageAddr) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.UARTx_Process) refers to printfa.o(i.__0printf) for printf
+    lto-llvm-295afc.o(.text.UARTx_Process) refers to lto-llvm-295afc.o(.text.PWM_SelectControl) for PWM_SelectControl
+    lto-llvm-295afc.o(.text.UARTx_Process) refers to lto-llvm-295afc.o(.text.PWM_AdjustSelected) for PWM_AdjustSelected
+    lto-llvm-295afc.o(.text.UARTx_Process) refers to lto-llvm-295afc.o(.text.SYS_UnlockReg) for SYS_UnlockReg
+    lto-llvm-295afc.o(.text.UARTx_Process) refers to lto-llvm-295afc.o(.text.SYS_ResetChip) for SYS_ResetChip
+    lto-llvm-295afc.o(.text.UARTx_Process) refers to lto-llvm-295afc.o(.rodata.str1.1) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.UARTx_Process) refers to lto-llvm-295afc.o(.bss.flag_PROJ_CTL) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.UARTx_Process) refers to lto-llvm-295afc.o(.text.UARTx_Process) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.PWM_SelectControl) refers to lto-llvm-295afc.o(.text.PWM_PrintStatus) for PWM_PrintStatus
+    lto-llvm-295afc.o(.text.PWM_SelectControl) refers to lto-llvm-295afc.o(.bss.g_u8PwmCtrlSel) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.PWM_SelectControl) refers to lto-llvm-295afc.o(.text.PWM_SelectControl) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.PWM_AdjustSelected) refers to lto-llvm-295afc.o(.text.PWM_ApplyChannel) for PWM_ApplyChannel
+    lto-llvm-295afc.o(.text.PWM_AdjustSelected) refers to lto-llvm-295afc.o(.text.PWM_PrintStatus) for PWM_PrintStatus
+    lto-llvm-295afc.o(.text.PWM_AdjustSelected) refers to lto-llvm-295afc.o(.bss.g_u8PwmCtrlSel) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.PWM_AdjustSelected) refers to lto-llvm-295afc.o(.data.g_au8PwmDuty) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.PWM_AdjustSelected) refers to lto-llvm-295afc.o(.data.g_au16PwmFreq) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.PWM_AdjustSelected) refers to lto-llvm-295afc.o(.text.PWM_AdjustSelected) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.PWM_ApplyChannel) refers to lto-llvm-295afc.o(.text.PWM_ConfigOutputChannel) for PWM_ConfigOutputChannel
+    lto-llvm-295afc.o(.text.PWM_ApplyChannel) refers to lto-llvm-295afc.o(.rodata.g_au8PwmChannel) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.PWM_ApplyChannel) refers to lto-llvm-295afc.o(.data.g_au16PwmFreq) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.PWM_ApplyChannel) refers to lto-llvm-295afc.o(.data.g_au8PwmDuty) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.PWM_ApplyChannel) refers to lto-llvm-295afc.o(.text.PWM_ApplyChannel) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.PWM_PrintStatus) refers to printfa.o(i.__0printf) for printf
+    lto-llvm-295afc.o(.text.PWM_PrintStatus) refers to lto-llvm-295afc.o(.bss.g_u8PwmCtrlSel) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.PWM_PrintStatus) refers to lto-llvm-295afc.o(.rodata.str1.1) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.PWM_PrintStatus) refers to lto-llvm-295afc.o(.rodata.g_au8PwmChannel) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.PWM_PrintStatus) refers to lto-llvm-295afc.o(.data.g_au16PwmFreq) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.PWM_PrintStatus) refers to lto-llvm-295afc.o(.data.g_au8PwmDuty) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.PWM_PrintStatus) refers to lto-llvm-295afc.o(.text.PWM_PrintStatus) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.UART0_IRQHandler) refers to lto-llvm-295afc.o(.text.UARTx_Process) for UARTx_Process
+    lto-llvm-295afc.o(.text.UART0_IRQHandler) refers to lto-llvm-295afc.o(.text.UART_ClearIntFlag) for UART_ClearIntFlag
+    lto-llvm-295afc.o(.ARM.exidx.text.UART0_IRQHandler) refers to lto-llvm-295afc.o(.text.UART0_IRQHandler) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.UART0_Init) refers to lto-llvm-295afc.o(.text.SYS_ResetModule) for SYS_ResetModule
+    lto-llvm-295afc.o(.text.UART0_Init) refers to lto-llvm-295afc.o(.text.UART_Open) for UART_Open
+    lto-llvm-295afc.o(.text.UART0_Init) refers to lto-llvm-295afc.o(.text.UART_EnableInt) for UART_EnableInt
+    lto-llvm-295afc.o(.text.UART0_Init) refers to lto-llvm-295afc.o(.text.__NVIC_EnableIRQ) for __NVIC_EnableIRQ
+    lto-llvm-295afc.o(.text.UART0_Init) refers to lto-llvm-295afc.o(.text.CLK_GetCPUFreq) for CLK_GetCPUFreq
+    lto-llvm-295afc.o(.text.UART0_Init) refers to printfa.o(i.__0printf) for printf
+    lto-llvm-295afc.o(.text.UART0_Init) refers to lto-llvm-295afc.o(.text.CLK_GetHCLKFreq) for CLK_GetHCLKFreq
+    lto-llvm-295afc.o(.text.UART0_Init) refers to lto-llvm-295afc.o(.text.CLK_GetHXTFreq) for CLK_GetHXTFreq
+    lto-llvm-295afc.o(.text.UART0_Init) refers to lto-llvm-295afc.o(.text.CLK_GetLXTFreq) for CLK_GetLXTFreq
+    lto-llvm-295afc.o(.text.UART0_Init) refers to lto-llvm-295afc.o(.text.CLK_GetPCLK0Freq) for CLK_GetPCLK0Freq
+    lto-llvm-295afc.o(.text.UART0_Init) refers to lto-llvm-295afc.o(.text.CLK_GetPCLK1Freq) for CLK_GetPCLK1Freq
+    lto-llvm-295afc.o(.text.UART0_Init) refers to lto-llvm-295afc.o(.rodata.str1.1) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.UART0_Init) refers to lto-llvm-295afc.o(.text.UART0_Init) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.GPIO_Init) refers to lto-llvm-295afc.o(.text.GPIO_SetMode) for GPIO_SetMode
+    lto-llvm-295afc.o(.ARM.exidx.text.GPIO_Init) refers to lto-llvm-295afc.o(.text.GPIO_Init) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.SYS_Init) refers to lto-llvm-295afc.o(.text.SYS_UnlockReg) for SYS_UnlockReg
+    lto-llvm-295afc.o(.text.SYS_Init) refers to lto-llvm-295afc.o(.text.CLK_EnableXtalRC) for CLK_EnableXtalRC
+    lto-llvm-295afc.o(.text.SYS_Init) refers to lto-llvm-295afc.o(.text.CLK_WaitClockReady) for CLK_WaitClockReady
+    lto-llvm-295afc.o(.text.SYS_Init) refers to lto-llvm-295afc.o(.text.CLK_SetCoreClock) for CLK_SetCoreClock
+    lto-llvm-295afc.o(.text.SYS_Init) refers to lto-llvm-295afc.o(.text.CLK_SetHCLK) for CLK_SetHCLK
+    lto-llvm-295afc.o(.text.SYS_Init) refers to lto-llvm-295afc.o(.text.CLK_EnableModuleClock) for CLK_EnableModuleClock
+    lto-llvm-295afc.o(.text.SYS_Init) refers to lto-llvm-295afc.o(.text.CLK_SetModuleClock) for CLK_SetModuleClock
+    lto-llvm-295afc.o(.text.SYS_Init) refers to lto-llvm-295afc.o(.text.SystemCoreClockUpdate) for SystemCoreClockUpdate
+    lto-llvm-295afc.o(.text.SYS_Init) refers to lto-llvm-295afc.o(.text.SYS_LockReg) for SYS_LockReg
+    lto-llvm-295afc.o(.ARM.exidx.text.SYS_Init) refers to lto-llvm-295afc.o(.text.SYS_Init) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.SYS_LockReg) refers to lto-llvm-295afc.o(.text.SYS_LockReg) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.main) refers to lto-llvm-295afc.o(.text.SYS_Init) for SYS_Init
+    lto-llvm-295afc.o(.text.main) refers to lto-llvm-295afc.o(.text.GPIO_Init) for GPIO_Init
+    lto-llvm-295afc.o(.text.main) refers to lto-llvm-295afc.o(.text.UART0_Init) for UART0_Init
+    lto-llvm-295afc.o(.text.main) refers to lto-llvm-295afc.o(.text.TIMER1_Init) for TIMER1_Init
+    lto-llvm-295afc.o(.text.main) refers to lto-llvm-295afc.o(.text.check_reset_source) for check_reset_source
+    lto-llvm-295afc.o(.text.main) refers to lto-llvm-295afc.o(.text.SysTick_enable) for SysTick_enable
+    lto-llvm-295afc.o(.text.main) refers to lto-llvm-295afc.o(.text.CAN_Init) for CAN_Init
+    lto-llvm-295afc.o(.text.main) refers to lto-llvm-295afc.o(.text.PWM_InitChannels) for PWM_InitChannels
+    lto-llvm-295afc.o(.text.main) refers to printfa.o(i.__0printf) for printf
+    lto-llvm-295afc.o(.text.main) refers to lto-llvm-295afc.o(.text.TimerService_Init) for TimerService_Init
+    lto-llvm-295afc.o(.text.main) refers to lto-llvm-295afc.o(.text.TimerService_CreateTask) for TimerService_CreateTask
+    lto-llvm-295afc.o(.text.main) refers to lto-llvm-295afc.o(.text.loop) for loop
+    lto-llvm-295afc.o(.text.main) refers to lto-llvm-295afc.o(.rodata.str1.1) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.main) refers to lto-llvm-295afc.o(.text.main) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.PWM_InitChannels) refers to lto-llvm-295afc.o(.text.PWM_ApplyChannel) for PWM_ApplyChannel
+    lto-llvm-295afc.o(.text.PWM_InitChannels) refers to lto-llvm-295afc.o(.text.PWM_EnableOutput) for PWM_EnableOutput
+    lto-llvm-295afc.o(.text.PWM_InitChannels) refers to lto-llvm-295afc.o(.text.PWM_Start) for PWM_Start
+    lto-llvm-295afc.o(.text.PWM_InitChannels) refers to lto-llvm-295afc.o(.text.PWM_PrintStatus) for PWM_PrintStatus
+    lto-llvm-295afc.o(.text.PWM_InitChannels) refers to lto-llvm-295afc.o(.rodata.g_au8PwmChannel) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.PWM_InitChannels) refers to lto-llvm-295afc.o(.text.PWM_InitChannels) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.TimerService_Tick1ms) refers to lto-llvm-295afc.o(.text.TimerService_EnqueueEventFromISR) for TimerService_EnqueueEventFromISR
+    lto-llvm-295afc.o(.text.TimerService_Tick1ms) refers to lto-llvm-295afc.o(.bss.g_TimerService_List) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.TimerService_Tick1ms) refers to lto-llvm-295afc.o(.text.TimerService_Tick1ms) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.TimerService_EnqueueEventFromISR) refers to lto-llvm-295afc.o(.bss.g_TimerEventQueue) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.TimerService_EnqueueEventFromISR) refers to lto-llvm-295afc.o(.text.TimerService_EnqueueEventFromISR) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.TimerService_DequeueEvent) refers to lto-llvm-295afc.o(.bss.g_TimerEventQueue) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.TimerService_DequeueEvent) refers to lto-llvm-295afc.o(.text.TimerService_DequeueEvent) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.TimerService_EnterCritical) refers to lto-llvm-295afc.o(.text.TimerService_EnterCritical) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.TimerService_ExitCritical) refers to lto-llvm-295afc.o(.text.TimerService_ExitCritical) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.TimerService_DispatchQueue) refers to lto-llvm-295afc.o(.text.TimerService_DequeueEvent) for TimerService_DequeueEvent
+    lto-llvm-295afc.o(.text.TimerService_DispatchQueue) refers to lto-llvm-295afc.o(.bss.g_TimerService_List) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.TimerService_DispatchQueue) refers to lto-llvm-295afc.o(.text.TimerService_DispatchQueue) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.TimerService_DispatchFlag) refers to lto-llvm-295afc.o(.text.TimerService_TakePending) for TimerService_TakePending
+    lto-llvm-295afc.o(.text.TimerService_DispatchFlag) refers to lto-llvm-295afc.o(.bss.g_TimerService_List) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.TimerService_DispatchFlag) refers to lto-llvm-295afc.o(.text.TimerService_DispatchFlag) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.TimerService_TakePending) refers to lto-llvm-295afc.o(.text.TimerService_TakePending) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.TimerService_Dispatch) refers to lto-llvm-295afc.o(.text.TimerService_DispatchQueue) for TimerService_DispatchQueue
+    lto-llvm-295afc.o(.text.TimerService_Dispatch) refers to lto-llvm-295afc.o(.text.TimerService_DispatchFlag) for TimerService_DispatchFlag
+    lto-llvm-295afc.o(.ARM.exidx.text.TimerService_Dispatch) refers to lto-llvm-295afc.o(.text.TimerService_Dispatch) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.TimerService_StartTimer) refers to lto-llvm-295afc.o(.bss.g_TimerService_List) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.TimerService_StartTimer) refers to lto-llvm-295afc.o(.text.TimerService_StartTimer) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.TimerService_CreateTimerQueue) refers to lto-llvm-295afc.o(.bss.g_TimerService_List) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.TimerService_CreateTimerQueue) refers to lto-llvm-295afc.o(.text.TimerService_CreateTimerQueue) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.TimerService_CreateTimer) refers to lto-llvm-295afc.o(.text.TimerService_CreateTimerQueue) for TimerService_CreateTimerQueue
+    lto-llvm-295afc.o(.ARM.exidx.text.TimerService_CreateTimer) refers to lto-llvm-295afc.o(.text.TimerService_CreateTimer) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.TimerService_Init) refers to lto-llvm-295afc.o(.bss.g_TimerEventQueue) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.TimerService_Init) refers to lto-llvm-295afc.o(.bss.g_TimerService_List) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.TimerService_Init) refers to lto-llvm-295afc.o(.text.TimerService_Init) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.CANFD00_IRQHandler) refers to lto-llvm-295afc.o(.text.CANFD_GetStatusFlag) for CANFD_GetStatusFlag
+    lto-llvm-295afc.o(.text.CANFD00_IRQHandler) refers to lto-llvm-295afc.o(.text.CANFD_ClearStatusFlag) for CANFD_ClearStatusFlag
+    lto-llvm-295afc.o(.text.CANFD00_IRQHandler) refers to lto-llvm-295afc.o(.bss.g_u32CanIrqStatus) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.CANFD00_IRQHandler) refers to lto-llvm-295afc.o(.text.CANFD00_IRQHandler) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.CAN_Rx_process) refers to lto-llvm-295afc.o(.text.CAN_RxFifo0FillLevel) for CAN_RxFifo0FillLevel
+    lto-llvm-295afc.o(.text.CAN_Rx_process) refers to lto-llvm-295afc.o(.text.CAN_RxFifo1FillLevel) for CAN_RxFifo1FillLevel
+    lto-llvm-295afc.o(.text.CAN_Rx_process) refers to printfa.o(i.__0printf) for printf
+    lto-llvm-295afc.o(.text.CAN_Rx_process) refers to lto-llvm-295afc.o(.text.CANFD_ReadRxFifoMsg) for CANFD_ReadRxFifoMsg
+    lto-llvm-295afc.o(.text.CAN_Rx_process) refers to lto-llvm-295afc.o(.text.CAN_PrintRxMessage) for CAN_PrintRxMessage
+    lto-llvm-295afc.o(.text.CAN_Rx_process) refers to memseta.o(.text) for __aeabi_memclr4
+    lto-llvm-295afc.o(.text.CAN_Rx_process) refers to lto-llvm-295afc.o(.bss.g_u32CanIrqStatus) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.CAN_Rx_process) refers to lto-llvm-295afc.o(.rodata.str1.1) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.CAN_Rx_process) refers to lto-llvm-295afc.o(.bss.g_sRxMsgFrame) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.CAN_Rx_process) refers to lto-llvm-295afc.o(.text.CAN_Rx_process) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.CAN_RxFifo0FillLevel) refers to lto-llvm-295afc.o(.text.CAN_RxFifo0FillLevel) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.CAN_RxFifo1FillLevel) refers to lto-llvm-295afc.o(.text.CAN_RxFifo1FillLevel) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.CAN_PrintRxMessage) refers to printfa.o(i.__0printf) for printf
+    lto-llvm-295afc.o(.text.CAN_PrintRxMessage) refers to lto-llvm-295afc.o(.bss.g_sRxMsgFrame) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.CAN_PrintRxMessage) refers to lto-llvm-295afc.o(.rodata.str1.1) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.CAN_PrintRxMessage) refers to lto-llvm-295afc.o(.text.CAN_PrintRxMessage) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.CAN_SendMessage) refers to printfa.o(i.__0printf) for printf
+    lto-llvm-295afc.o(.text.CAN_SendMessage) refers to lto-llvm-295afc.o(.text.CANFD_TransmitTxMsg) for CANFD_TransmitTxMsg
+    lto-llvm-295afc.o(.text.CAN_SendMessage) refers to lto-llvm-295afc.o(.text.CAN_DumpBusStatus) for CAN_DumpBusStatus
+    lto-llvm-295afc.o(.text.CAN_SendMessage) refers to lto-llvm-295afc.o(.bss.g_sTxMsgFrame) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.CAN_SendMessage) refers to lto-llvm-295afc.o(.bss.g_u8CanFdModeOpened) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.CAN_SendMessage) refers to lto-llvm-295afc.o(.rodata.str1.1) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.CAN_SendMessage) refers to lto-llvm-295afc.o(.bss.num_cnt) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.CAN_SendMessage) refers to lto-llvm-295afc.o(.text.CAN_SendMessage) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.CAN_DumpBusStatus) refers to lto-llvm-295afc.o(.text.CANFD_GetBusErrCount) for CANFD_GetBusErrCount
+    lto-llvm-295afc.o(.text.CAN_DumpBusStatus) refers to printfa.o(i.__0printf) for printf
+    lto-llvm-295afc.o(.text.CAN_DumpBusStatus) refers to lto-llvm-295afc.o(.rodata.str1.1) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.CAN_DumpBusStatus) refers to lto-llvm-295afc.o(.text.CAN_DumpBusStatus) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.Get_CANFD_NominalBitRate) refers to lto-llvm-295afc.o(.text.CAN_GetModuleClock) for CAN_GetModuleClock
+    lto-llvm-295afc.o(.ARM.exidx.text.Get_CANFD_NominalBitRate) refers to lto-llvm-295afc.o(.text.Get_CANFD_NominalBitRate) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.CAN_GetModuleClock) refers to lto-llvm-295afc.o(.text.CLK_GetModuleClockSource) for CLK_GetModuleClockSource
+    lto-llvm-295afc.o(.text.CAN_GetModuleClock) refers to lto-llvm-295afc.o(.text.CLK_GetHXTFreq) for CLK_GetHXTFreq
+    lto-llvm-295afc.o(.text.CAN_GetModuleClock) refers to lto-llvm-295afc.o(.text.CLK_GetPLLClockFreq.97) for CLK_GetPLLClockFreq.97
+    lto-llvm-295afc.o(.text.CAN_GetModuleClock) refers to lto-llvm-295afc.o(.text.CLK_GetHCLKFreq) for CLK_GetHCLKFreq
+    lto-llvm-295afc.o(.ARM.exidx.text.CAN_GetModuleClock) refers to lto-llvm-295afc.o(.text.CAN_GetModuleClock) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.CLK_GetPLLClockFreq.97) refers to lto-llvm-295afc.o(.text.CLK_GetPLLClockFreq.97) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.Get_CANFD_DataBitRate) refers to lto-llvm-295afc.o(.text.CAN_GetModuleClock) for CAN_GetModuleClock
+    lto-llvm-295afc.o(.ARM.exidx.text.Get_CANFD_DataBitRate) refers to lto-llvm-295afc.o(.text.Get_CANFD_DataBitRate) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.CAN_Init) refers to lto-llvm-295afc.o(.text.SYS_ResetModule) for SYS_ResetModule
+    lto-llvm-295afc.o(.text.CAN_Init) refers to lto-llvm-295afc.o(.text.CANFD_GetDefaultConfig) for CANFD_GetDefaultConfig
+    lto-llvm-295afc.o(.text.CAN_Init) refers to lto-llvm-295afc.o(.text.CANFD_Open) for CANFD_Open
+    lto-llvm-295afc.o(.text.CAN_Init) refers to lto-llvm-295afc.o(.text.Get_CANFD_NominalBitRate) for Get_CANFD_NominalBitRate
+    lto-llvm-295afc.o(.text.CAN_Init) refers to lto-llvm-295afc.o(.text.Get_CANFD_DataBitRate) for Get_CANFD_DataBitRate
+    lto-llvm-295afc.o(.text.CAN_Init) refers to printfa.o(i.__0printf) for printf
+    lto-llvm-295afc.o(.text.CAN_Init) refers to lto-llvm-295afc.o(.text.CANFD_ClearStatusFlag) for CANFD_ClearStatusFlag
+    lto-llvm-295afc.o(.text.CAN_Init) refers to lto-llvm-295afc.o(.text.CANFD_SetGFC) for CANFD_SetGFC
+    lto-llvm-295afc.o(.text.CAN_Init) refers to lto-llvm-295afc.o(.text.CANFD_EnableInt) for CANFD_EnableInt
+    lto-llvm-295afc.o(.text.CAN_Init) refers to lto-llvm-295afc.o(.text.__NVIC_EnableIRQ.112) for __NVIC_EnableIRQ.112
+    lto-llvm-295afc.o(.text.CAN_Init) refers to lto-llvm-295afc.o(.text.CANFD_RunToNormal) for CANFD_RunToNormal
+    lto-llvm-295afc.o(.text.CAN_Init) refers to lto-llvm-295afc.o(.bss.g_u8CanFdModeOpened) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.CAN_Init) refers to lto-llvm-295afc.o(.rodata.str1.1) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.CAN_Init) refers to lto-llvm-295afc.o(.text.CAN_Init) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.__NVIC_EnableIRQ.112) refers to lto-llvm-295afc.o(.text.__NVIC_EnableIRQ.112) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.CLK_GetHXTFreq) refers to lto-llvm-295afc.o(.text.CLK_GetHXTFreq) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.CLK_GetLXTFreq) refers to lto-llvm-295afc.o(.text.CLK_GetLXTFreq) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.CLK_GetHCLKFreq) refers to lto-llvm-295afc.o(.text.SystemCoreClockUpdate) for SystemCoreClockUpdate
+    lto-llvm-295afc.o(.text.CLK_GetHCLKFreq) refers to lto-llvm-295afc.o(.data.SystemCoreClock) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.CLK_GetHCLKFreq) refers to lto-llvm-295afc.o(.text.CLK_GetHCLKFreq) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.CLK_GetPCLK0Freq) refers to lto-llvm-295afc.o(.text.SystemCoreClockUpdate) for SystemCoreClockUpdate
+    lto-llvm-295afc.o(.text.CLK_GetPCLK0Freq) refers to lto-llvm-295afc.o(.data.SystemCoreClock) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.CLK_GetPCLK0Freq) refers to lto-llvm-295afc.o(.text.CLK_GetPCLK0Freq) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.CLK_GetPCLK1Freq) refers to lto-llvm-295afc.o(.text.SystemCoreClockUpdate) for SystemCoreClockUpdate
+    lto-llvm-295afc.o(.text.CLK_GetPCLK1Freq) refers to lto-llvm-295afc.o(.data.SystemCoreClock) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.CLK_GetPCLK1Freq) refers to lto-llvm-295afc.o(.text.CLK_GetPCLK1Freq) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.CLK_GetCPUFreq) refers to lto-llvm-295afc.o(.text.SystemCoreClockUpdate) for SystemCoreClockUpdate
+    lto-llvm-295afc.o(.text.CLK_GetCPUFreq) refers to lto-llvm-295afc.o(.data.SystemCoreClock) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.CLK_GetCPUFreq) refers to lto-llvm-295afc.o(.text.CLK_GetCPUFreq) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.CLK_SetCoreClock) refers to lto-llvm-295afc.o(.text.CLK_WaitClockReady) for CLK_WaitClockReady
+    lto-llvm-295afc.o(.text.CLK_SetCoreClock) refers to lto-llvm-295afc.o(.text.CLK_EnablePLL) for CLK_EnablePLL
+    lto-llvm-295afc.o(.text.CLK_SetCoreClock) refers to lto-llvm-295afc.o(.text.CLK_SetHCLK) for CLK_SetHCLK
+    lto-llvm-295afc.o(.ARM.exidx.text.CLK_SetCoreClock) refers to lto-llvm-295afc.o(.text.CLK_SetCoreClock) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.CLK_WaitClockReady) refers to lto-llvm-295afc.o(.data.SystemCoreClock) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.CLK_WaitClockReady) refers to lto-llvm-295afc.o(.text.CLK_WaitClockReady) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.CLK_EnablePLL) refers to lto-llvm-295afc.o(.text.CLK_WaitClockReady) for CLK_WaitClockReady
+    lto-llvm-295afc.o(.ARM.exidx.text.CLK_EnablePLL) refers to lto-llvm-295afc.o(.text.CLK_EnablePLL) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.CLK_SetHCLK) refers to lto-llvm-295afc.o(.text.CLK_WaitClockReady) for CLK_WaitClockReady
+    lto-llvm-295afc.o(.text.CLK_SetHCLK) refers to lto-llvm-295afc.o(.text.SystemCoreClockUpdate) for SystemCoreClockUpdate
+    lto-llvm-295afc.o(.text.CLK_SetHCLK) refers to lto-llvm-295afc.o(.data.SystemCoreClock) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.CLK_SetHCLK) refers to lto-llvm-295afc.o(.text.CLK_SetHCLK) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.CLK_SetModuleClock) refers to lto-llvm-295afc.o(.text.CLK_SetModuleClock) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.CLK_EnableXtalRC) refers to lto-llvm-295afc.o(.text.CLK_EnableXtalRC) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.CLK_EnableModuleClock) refers to lto-llvm-295afc.o(.text.CLK_EnableModuleClock) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.CLK_GetModuleClockSource) refers to lto-llvm-295afc.o(.text.CLK_GetModuleClockSource) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.SYS_ClearResetSrc) refers to lto-llvm-295afc.o(.text.SYS_ClearResetSrc) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.SYS_GetResetSrc) refers to lto-llvm-295afc.o(.text.SYS_GetResetSrc) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.SYS_IsRegLocked) refers to lto-llvm-295afc.o(.text.SYS_IsRegLocked) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.SYS_ResetChip) refers to lto-llvm-295afc.o(.text.SYS_ResetChip) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.SYS_ResetModule) refers to lto-llvm-295afc.o(.text.SYS_ResetModule) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.ProcessHardFault) refers to printfa.o(i.__0printf) for printf
+    lto-llvm-295afc.o(.text.ProcessHardFault) refers to lto-llvm-295afc.o(.rodata.str1.1) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.ProcessHardFault) refers to lto-llvm-295afc.o(.text.ProcessHardFault) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.SH_Return) refers to lto-llvm-295afc.o(.text.SH_Return) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.SendChar_ToUART) refers to lto-llvm-295afc.o(.text.SendChar_ToUART) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.SendChar) refers to lto-llvm-295afc.o(.text.SendChar_ToUART) for SendChar_ToUART
+    lto-llvm-295afc.o(.ARM.exidx.text.SendChar) refers to lto-llvm-295afc.o(.text.SendChar) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.GetChar) refers to lto-llvm-295afc.o(.text.GetChar) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.fputc) refers to lto-llvm-295afc.o(.text.SendChar) for SendChar
+    lto-llvm-295afc.o(.ARM.exidx.text.fputc) refers to lto-llvm-295afc.o(.text.fputc) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.fgetc) refers to lto-llvm-295afc.o(.text.GetChar) for GetChar
+    lto-llvm-295afc.o(.ARM.exidx.text.fgetc) refers to lto-llvm-295afc.o(.text.fgetc) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.ferror) refers to lto-llvm-295afc.o(.text.ferror) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.UART_ClearIntFlag) refers to lto-llvm-295afc.o(.text.UART_ClearIntFlag) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.UART_DisableInt) refers to lto-llvm-295afc.o(.text.UART_DisableInt) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.UART_EnableInt) refers to lto-llvm-295afc.o(.text.UART_EnableInt) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.UART_Open) refers to lto-llvm-295afc.o(.text.CLK_GetPLLClockFreq.159) for CLK_GetPLLClockFreq.159
+    lto-llvm-295afc.o(.ARM.exidx.text.UART_Open) refers to lto-llvm-295afc.o(.text.UART_Open) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.CLK_GetPLLClockFreq.159) refers to lto-llvm-295afc.o(.text.CLK_GetPLLClockFreq.159) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.GPIO_SetMode) refers to lto-llvm-295afc.o(.text.GPIO_SetMode) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.TIMER_Open) refers to lto-llvm-295afc.o(.text.TIMER_GetModuleClock) for TIMER_GetModuleClock
+    lto-llvm-295afc.o(.ARM.exidx.text.TIMER_Open) refers to lto-llvm-295afc.o(.text.TIMER_Open) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.TIMER_GetModuleClock) refers to lto-llvm-295afc.o(.text.CLK_GetPCLK0Freq) for CLK_GetPCLK0Freq
+    lto-llvm-295afc.o(.text.TIMER_GetModuleClock) refers to lto-llvm-295afc.o(.text.CLK_GetPCLK1Freq) for CLK_GetPCLK1Freq
+    lto-llvm-295afc.o(.text.TIMER_GetModuleClock) refers to lto-llvm-295afc.o(.rodata.cst32) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.TIMER_GetModuleClock) refers to lto-llvm-295afc.o(.text.TIMER_GetModuleClock) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.FMC_Open) refers to lto-llvm-295afc.o(.text.FMC_Open) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.FMC_Read) refers to lto-llvm-295afc.o(.data.SystemCoreClock) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.FMC_Read) refers to lto-llvm-295afc.o(.text.FMC_Read) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.CANFD_GetDefaultConfig) refers to memseta.o(.text) for __aeabi_memclr4
+    lto-llvm-295afc.o(.text.CANFD_GetDefaultConfig) refers to lto-llvm-295afc.o(.text.CANFD_CalculateRamAddress) for CANFD_CalculateRamAddress
+    lto-llvm-295afc.o(.ARM.exidx.text.CANFD_GetDefaultConfig) refers to lto-llvm-295afc.o(.text.CANFD_GetDefaultConfig) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.CANFD_CalculateRamAddress) refers to lto-llvm-295afc.o(.text.CANFD_CalculateRamAddress) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.CANFD_Open_TDC) refers to lto-llvm-295afc.o(.text.CANFD_Open_TDC) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.CANFD_Open) refers to lto-llvm-295afc.o(.text.SYS_IsRegLocked) for SYS_IsRegLocked
+    lto-llvm-295afc.o(.text.CANFD_Open) refers to lto-llvm-295afc.o(.text.CANFD_GetSourceClock) for CANFD_GetSourceClock
+    lto-llvm-295afc.o(.text.CANFD_Open) refers to lto-llvm-295afc.o(.text.SYS_UnlockReg.175) for SYS_UnlockReg.175
+    lto-llvm-295afc.o(.text.CANFD_Open) refers to lto-llvm-295afc.o(.text.CLK_EnableModuleClock) for CLK_EnableModuleClock
+    lto-llvm-295afc.o(.text.CANFD_Open) refers to lto-llvm-295afc.o(.text.SYS_ResetModule) for SYS_ResetModule
+    lto-llvm-295afc.o(.text.CANFD_Open) refers to lto-llvm-295afc.o(.text.SYS_LockReg.176) for SYS_LockReg.176
+    lto-llvm-295afc.o(.text.CANFD_Open) refers to lto-llvm-295afc.o(.text.CANFD_CalculateTimingValues) for CANFD_CalculateTimingValues
+    lto-llvm-295afc.o(.text.CANFD_Open) refers to lto-llvm-295afc.o(.text.CANFD_SetTimingConfig) for CANFD_SetTimingConfig
+    lto-llvm-295afc.o(.text.CANFD_Open) refers to lto-llvm-295afc.o(.text.CANFD_Open_TDC) for CANFD_Open_TDC
+    lto-llvm-295afc.o(.text.CANFD_Open) refers to lto-llvm-295afc.o(.text.CANFD_ConfigSIDFC) for CANFD_ConfigSIDFC
+    lto-llvm-295afc.o(.text.CANFD_Open) refers to lto-llvm-295afc.o(.text.CANFD_ConfigXIDFC) for CANFD_ConfigXIDFC
+    lto-llvm-295afc.o(.text.CANFD_Open) refers to lto-llvm-295afc.o(.text.CANFD_InitTxDBuf) for CANFD_InitTxDBuf
+    lto-llvm-295afc.o(.text.CANFD_Open) refers to lto-llvm-295afc.o(.text.CANFD_InitRxDBuf) for CANFD_InitRxDBuf
+    lto-llvm-295afc.o(.text.CANFD_Open) refers to lto-llvm-295afc.o(.text.CANFD_InitRxFifo) for CANFD_InitRxFifo
+    lto-llvm-295afc.o(.text.CANFD_Open) refers to lto-llvm-295afc.o(.text.CANFD_InitTxEvntFifo) for CANFD_InitTxEvntFifo
+    lto-llvm-295afc.o(.text.CANFD_Open) refers to lto-llvm-295afc.o(.text.CANFD_SetGFC) for CANFD_SetGFC
+    lto-llvm-295afc.o(.ARM.exidx.text.CANFD_Open) refers to lto-llvm-295afc.o(.text.CANFD_Open) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.CANFD_GetSourceClock) refers to lto-llvm-295afc.o(.text.CLK_GetModuleClockSource) for CLK_GetModuleClockSource
+    lto-llvm-295afc.o(.text.CANFD_GetSourceClock) refers to lto-llvm-295afc.o(.text.CLK_GetPLLClockFreq.179) for CLK_GetPLLClockFreq.179
+    lto-llvm-295afc.o(.text.CANFD_GetSourceClock) refers to lto-llvm-295afc.o(.text.CLK_GetHCLKFreq) for CLK_GetHCLKFreq
+    lto-llvm-295afc.o(.ARM.exidx.text.CANFD_GetSourceClock) refers to lto-llvm-295afc.o(.text.CANFD_GetSourceClock) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.SYS_UnlockReg.175) refers to lto-llvm-295afc.o(.text.SYS_UnlockReg.175) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.SYS_LockReg.176) refers to lto-llvm-295afc.o(.text.SYS_LockReg.176) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.CANFD_CalculateTimingValues) refers to lto-llvm-295afc.o(.text.CANFD_GetSegments) for CANFD_GetSegments
+    lto-llvm-295afc.o(.ARM.exidx.text.CANFD_CalculateTimingValues) refers to lto-llvm-295afc.o(.text.CANFD_CalculateTimingValues) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.CANFD_SetTimingConfig) refers to lto-llvm-295afc.o(.text.CANFD_SetTimingConfig) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.CANFD_ConfigSIDFC) refers to memseta.o(.text) for __aeabi_memclr4
+    lto-llvm-295afc.o(.ARM.exidx.text.CANFD_ConfigSIDFC) refers to lto-llvm-295afc.o(.text.CANFD_ConfigSIDFC) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.CANFD_ConfigXIDFC) refers to memseta.o(.text) for __aeabi_memclr4
+    lto-llvm-295afc.o(.ARM.exidx.text.CANFD_ConfigXIDFC) refers to lto-llvm-295afc.o(.text.CANFD_ConfigXIDFC) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.CANFD_InitTxDBuf) refers to memseta.o(.text) for __aeabi_memclr4
+    lto-llvm-295afc.o(.ARM.exidx.text.CANFD_InitTxDBuf) refers to lto-llvm-295afc.o(.text.CANFD_InitTxDBuf) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.CANFD_InitRxDBuf) refers to memseta.o(.text) for __aeabi_memclr4
+    lto-llvm-295afc.o(.ARM.exidx.text.CANFD_InitRxDBuf) refers to lto-llvm-295afc.o(.text.CANFD_InitRxDBuf) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.CANFD_InitRxFifo) refers to memseta.o(.text) for __aeabi_memclr4
+    lto-llvm-295afc.o(.ARM.exidx.text.CANFD_InitRxFifo) refers to lto-llvm-295afc.o(.text.CANFD_InitRxFifo) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.CANFD_InitTxEvntFifo) refers to lto-llvm-295afc.o(.text.CANFD_InitTxEvntFifo) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.CANFD_SetGFC) refers to lto-llvm-295afc.o(.text.CANFD_SetGFC) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.CANFD_GetSegments) refers to ffltui.o(.text) for __aeabi_ui2f
+    lto-llvm-295afc.o(.text.CANFD_GetSegments) refers to fmul.o(.text) for __aeabi_fmul
+    lto-llvm-295afc.o(.text.CANFD_GetSegments) refers to ffixi.o(.text) for __aeabi_f2iz
+    lto-llvm-295afc.o(.ARM.exidx.text.CANFD_GetSegments) refers to lto-llvm-295afc.o(.text.CANFD_GetSegments) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.CLK_GetPLLClockFreq.179) refers to lto-llvm-295afc.o(.text.CLK_GetPLLClockFreq.179) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.CANFD_EnableInt) refers to lto-llvm-295afc.o(.text.CANFD_EnableInt) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.CANFD_TransmitTxMsg) refers to lto-llvm-295afc.o(.text.CANFD_TransmitDMsg) for CANFD_TransmitDMsg
+    lto-llvm-295afc.o(.text.CANFD_TransmitTxMsg) refers to lto-llvm-295afc.o(.data.SystemCoreClock) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.CANFD_TransmitTxMsg) refers to lto-llvm-295afc.o(.text.CANFD_TransmitTxMsg) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.CANFD_TransmitDMsg) refers to lto-llvm-295afc.o(.text.CANFD_EncodeDLC) for CANFD_EncodeDLC
+    lto-llvm-295afc.o(.text.CANFD_TransmitDMsg) refers to lto-llvm-295afc.o(.data.SystemCoreClock) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.CANFD_TransmitDMsg) refers to lto-llvm-295afc.o(.text.CANFD_TransmitDMsg) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.CANFD_EncodeDLC) refers to lto-llvm-295afc.o(.text.CANFD_EncodeDLC) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.CANFD_CopyDBufToMsgBuf) refers to lto-llvm-295afc.o(.text.CANFD_DecodeDLC) for CANFD_DecodeDLC
+    lto-llvm-295afc.o(.ARM.exidx.text.CANFD_CopyDBufToMsgBuf) refers to lto-llvm-295afc.o(.text.CANFD_CopyDBufToMsgBuf) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.CANFD_DecodeDLC) refers to lto-llvm-295afc.o(.text.CANFD_DecodeDLC) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.CANFD_ReadRxFifoMsg) refers to lto-llvm-295afc.o(.text.CANFD_CopyRxFifoToMsgBuf) for CANFD_CopyRxFifoToMsgBuf
+    lto-llvm-295afc.o(.text.CANFD_ReadRxFifoMsg) refers to lto-llvm-295afc.o(.bss.g_sRxMsgFrame) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.CANFD_ReadRxFifoMsg) refers to lto-llvm-295afc.o(.text.CANFD_ReadRxFifoMsg) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.CANFD_CopyRxFifoToMsgBuf) refers to lto-llvm-295afc.o(.text.CANFD_CopyDBufToMsgBuf) for CANFD_CopyDBufToMsgBuf
+    lto-llvm-295afc.o(.ARM.exidx.text.CANFD_CopyRxFifoToMsgBuf) refers to lto-llvm-295afc.o(.text.CANFD_CopyRxFifoToMsgBuf) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.CANFD_GetStatusFlag) refers to lto-llvm-295afc.o(.text.CANFD_GetStatusFlag) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.CANFD_ClearStatusFlag) refers to lto-llvm-295afc.o(.text.CANFD_ClearStatusFlag) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.CANFD_GetBusErrCount) refers to lto-llvm-295afc.o(.text.CANFD_GetBusErrCount) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.CANFD_RunToNormal) refers to lto-llvm-295afc.o(.data.SystemCoreClock) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.CANFD_RunToNormal) refers to lto-llvm-295afc.o(.text.CANFD_RunToNormal) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.text.PWM_ConfigOutputChannel) refers to lto-llvm-295afc.o(.text.CLK_GetPLLClockFreq.197) for CLK_GetPLLClockFreq.197
+    lto-llvm-295afc.o(.text.PWM_ConfigOutputChannel) refers to lto-llvm-295afc.o(.text.SystemCoreClockUpdate) for SystemCoreClockUpdate
+    lto-llvm-295afc.o(.text.PWM_ConfigOutputChannel) refers to lto-llvm-295afc.o(.text.CLK_GetPCLK0Freq) for CLK_GetPCLK0Freq
+    lto-llvm-295afc.o(.ARM.exidx.text.PWM_ConfigOutputChannel) refers to lto-llvm-295afc.o(.text.PWM_ConfigOutputChannel) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.CLK_GetPLLClockFreq.197) refers to lto-llvm-295afc.o(.text.CLK_GetPLLClockFreq.197) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.PWM_Start) refers to lto-llvm-295afc.o(.text.PWM_Start) for [Anonymous Symbol]
+    lto-llvm-295afc.o(.ARM.exidx.text.PWM_EnableOutput) refers to lto-llvm-295afc.o(.text.PWM_EnableOutput) for [Anonymous Symbol]
+    fmul.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    ffltui.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    ffltui.o(.text) refers to fepilogue.o(.text) for _float_epilogue
+    ffixi.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    fepilogue.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    depilogue.o(i.__ARM_clz) refers (Special) to iusefp.o(.text) for __I$use$fp
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing startup_m2a23.o(.bss.HEAP), (256 bytes).
+    Removing lto-llvm-295afc.o(.text), (0 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.SystemCoreClockUpdate), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CLK_GetPLLClockFreq), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.SystemInit), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.set_systick), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.systick_counter), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.SysTick_Handler), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.SysTick_enable), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.SysTick_Config), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.__NVIC_SetPriority), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.tick_counter), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.Task_1000ms_Callback), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.Task_100ms_Callback), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.Task_10ms_Callback), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.TimerService_CreateTask), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.check_reset_source), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.TMR1_IRQHandler), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.TIMER_GetIntFlag), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.TIMER_ClearIntFlag), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.TIMER1_Init), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.TIMER_EnableInt), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.__NVIC_EnableIRQ), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.TIMER_Start), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.loop), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.APP_InvalidateChecksumAndReset), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.APP_StandbyWaitCanWake), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.TIMER_DisableInt), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.TIMER_Stop), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.__NVIC_DisableIRQ), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.SYS_UnlockReg), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.FMC_ISP_Program), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.FMC_SetVectorPageAddr), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.UARTx_Process), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.PWM_SelectControl), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.PWM_AdjustSelected), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.PWM_ApplyChannel), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.PWM_PrintStatus), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.UART0_IRQHandler), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.UART0_Init), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.GPIO_Init), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.SYS_Init), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.SYS_LockReg), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.main), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.PWM_InitChannels), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.TimerService_Tick1ms), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.TimerService_EnqueueEventFromISR), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.TimerService_DequeueEvent), (8 bytes).
+    Removing lto-llvm-295afc.o(.text.TimerService_EnterCritical), (4 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.TimerService_EnterCritical), (8 bytes).
+    Removing lto-llvm-295afc.o(.text.TimerService_ExitCritical), (4 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.TimerService_ExitCritical), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.TimerService_DispatchQueue), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.TimerService_DispatchFlag), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.TimerService_TakePending), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.TimerService_Dispatch), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.TimerService_StartTimer), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.TimerService_CreateTimerQueue), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.TimerService_CreateTimer), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.TimerService_Init), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CANFD00_IRQHandler), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CAN_Rx_process), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CAN_RxFifo0FillLevel), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CAN_RxFifo1FillLevel), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CAN_PrintRxMessage), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CAN_SendMessage), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CAN_DumpBusStatus), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.Get_CANFD_NominalBitRate), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CAN_GetModuleClock), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CLK_GetPLLClockFreq.97), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.Get_CANFD_DataBitRate), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CAN_Init), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.__NVIC_EnableIRQ.112), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CLK_GetHXTFreq), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CLK_GetLXTFreq), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CLK_GetHCLKFreq), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CLK_GetPCLK0Freq), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CLK_GetPCLK1Freq), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CLK_GetCPUFreq), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CLK_SetCoreClock), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CLK_WaitClockReady), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CLK_EnablePLL), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CLK_SetHCLK), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CLK_SetModuleClock), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CLK_EnableXtalRC), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CLK_EnableModuleClock), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CLK_GetModuleClockSource), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.SYS_ClearResetSrc), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.SYS_GetResetSrc), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.SYS_IsRegLocked), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.SYS_ResetChip), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.SYS_ResetModule), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.ProcessHardFault), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.SH_Return), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.SendChar_ToUART), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.SendChar), (8 bytes).
+    Removing lto-llvm-295afc.o(.text.GetChar), (32 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.GetChar), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.fputc), (8 bytes).
+    Removing lto-llvm-295afc.o(.text.fgetc), (14 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.fgetc), (8 bytes).
+    Removing lto-llvm-295afc.o(.text.ferror), (12 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.ferror), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.UART_ClearIntFlag), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.UART_DisableInt), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.UART_EnableInt), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.UART_Open), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CLK_GetPLLClockFreq.159), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.GPIO_SetMode), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.TIMER_Open), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.TIMER_GetModuleClock), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.FMC_Open), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.FMC_Read), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CANFD_GetDefaultConfig), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CANFD_CalculateRamAddress), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CANFD_Open_TDC), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CANFD_Open), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CANFD_GetSourceClock), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.SYS_UnlockReg.175), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.SYS_LockReg.176), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CANFD_CalculateTimingValues), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CANFD_SetTimingConfig), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CANFD_ConfigSIDFC), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CANFD_ConfigXIDFC), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CANFD_InitTxDBuf), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CANFD_InitRxDBuf), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CANFD_InitRxFifo), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CANFD_InitTxEvntFifo), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CANFD_SetGFC), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CANFD_GetSegments), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CLK_GetPLLClockFreq.179), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CANFD_EnableInt), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CANFD_TransmitTxMsg), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CANFD_TransmitDMsg), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CANFD_EncodeDLC), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CANFD_CopyDBufToMsgBuf), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CANFD_DecodeDLC), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CANFD_ReadRxFifoMsg), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CANFD_CopyRxFifoToMsgBuf), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CANFD_GetStatusFlag), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CANFD_ClearStatusFlag), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CANFD_GetBusErrCount), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CANFD_RunToNormal), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.PWM_ConfigOutputChannel), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.CLK_GetPLLClockFreq.197), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.PWM_Start), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.exidx.text.PWM_EnableOutput), (8 bytes).
+    Removing lto-llvm-295afc.o(.ARM.use_no_argv), (4 bytes).
+    Removing lto-llvm-295afc.o(.rodata.cst8), (8 bytes).
+    Removing lto-llvm-295afc.o(.rodata..L__const.CLK_EnableModuleClock.u32ClkTbl), (12 bytes).
+    Removing lto-llvm-295afc.o(.rodata.cst16), (32 bytes).
+    Removing lto-llvm-295afc.o(.rodata.cst4), (4 bytes).
+
+152 unused section(s) (total 1502 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    ../clib/division.s                       0x00000000   Number         0  aeabi_sdiv.o ABSOLUTE
+    ../clib/division.s                       0x00000000   Number         0  aeabi_sdiv_div0.o ABSOLUTE
+    ../clib/microlib/division.c              0x00000000   Number         0  uidiv.o ABSOLUTE
+    ../clib/microlib/division.c              0x00000000   Number         0  uldiv.o ABSOLUTE
+    ../clib/microlib/division.c              0x00000000   Number         0  uidiv_div0.o ABSOLUTE
+    ../clib/microlib/division.c              0x00000000   Number         0  idiv_div0.o ABSOLUTE
+    ../clib/microlib/division.c              0x00000000   Number         0  idiv0.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llshl.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llsshr.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfa.o ABSOLUTE
+    ../clib/microlib/stdio/fputs.c           0x00000000   Number         0  fputs.o ABSOLUTE
+    ../clib/microlib/stdio/fputs.c           0x00000000   Number         0  fputs_e.o ABSOLUTE
+    ../clib/microlib/stdio/streams.c         0x00000000   Number         0  stderr.o ABSOLUTE
+    ../clib/microlib/stdio/streams.c         0x00000000   Number         0  stdout.o ABSOLUTE
+    ../clib/microlib/string/memcmp.c         0x00000000   Number         0  memcmp.o ABSOLUTE
+    ../clib/microlib/string/memset.c         0x00000000   Number         0  memseta.o ABSOLUTE
+    ../clib/microlib/stubs.s                 0x00000000   Number         0  iusefp.o ABSOLUTE
+    ../fplib/microlib/fpadd.c                0x00000000   Number         0  dadd.o ABSOLUTE
+    ../fplib/microlib/fpdiv.c                0x00000000   Number         0  ddiv.o ABSOLUTE
+    ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  depilogue.o ABSOLUTE
+    ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  fepilogue.o ABSOLUTE
+    ../fplib/microlib/fpfix.c                0x00000000   Number         0  dfixul.o ABSOLUTE
+    ../fplib/microlib/fpfix.c                0x00000000   Number         0  ffixi.o ABSOLUTE
+    ../fplib/microlib/fpflt.c                0x00000000   Number         0  ffltui.o ABSOLUTE
+    ../fplib/microlib/fpmul.c                0x00000000   Number         0  dmul.o ABSOLUTE
+    ../fplib/microlib/fpmul.c                0x00000000   Number         0  fmul.o ABSOLUTE
+    cdrcmple.s                               0x00000000   Number         0  cdrcmple.o ABSOLUTE
+    handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
+    init.s                                   0x00000000   Number         0  init.o ABSOLUTE
+    ld-temp.o                                0x00000000   Number         0  lto-llvm-295afc.o ABSOLUTE
+    [Anonymous Symbol]                       0x00000000   Section        0  startup_m2a23.o(RESET)
+    Heap_Size                                0x00000100   Number         0  startup_m2a23.o ABSOLUTE
+    .ARM.Collect$$$$00000000                 0x00000128   Section        0  entry.o(.ARM.Collect$$$$00000000)
+    .ARM.Collect$$$$00000001                 0x00000128   Section        4  entry2.o(.ARM.Collect$$$$00000001)
+    .ARM.Collect$$$$00000004                 0x0000012c   Section        4  entry5.o(.ARM.Collect$$$$00000004)
+    .ARM.Collect$$$$00000008                 0x00000130   Section        0  entry7b.o(.ARM.Collect$$$$00000008)
+    .ARM.Collect$$$$0000000A                 0x00000130   Section        0  entry8b.o(.ARM.Collect$$$$0000000A)
+    .ARM.Collect$$$$0000000B                 0x00000130   Section        8  entry9a.o(.ARM.Collect$$$$0000000B)
+    __lit__00000000                          0x00000138   Data           4  entry2.o(.ARM.Collect$$$$00002712)
+    .ARM.Collect$$$$0000000D                 0x00000138   Section        0  entry10a.o(.ARM.Collect$$$$0000000D)
+    .ARM.Collect$$$$0000000F                 0x00000138   Section        0  entry11a.o(.ARM.Collect$$$$0000000F)
+    .ARM.Collect$$$$00002712                 0x00000138   Section        4  entry2.o(.ARM.Collect$$$$00002712)
+    [Anonymous Symbol]                       0x0000013c   Section        0  startup_m2a23.o(.text)
+    Default_Handler                          0x0000015c   Number         0  startup_m2a23.o(.text)
+    .text                                    0x00000180   Section        0  uldiv.o(.text)
+    .text                                    0x000001e0   Section        0  iusefp.o(.text)
+    .text                                    0x000001e0   Section        0  dadd.o(.text)
+    .text                                    0x00000344   Section        0  dmul.o(.text)
+    Stack_Size                               0x00000400   Number         0  startup_m2a23.o ABSOLUTE
+    .text                                    0x00000414   Section        0  ddiv.o(.text)
+    .text                                    0x00000504   Section        0  dfixul.o(.text)
+    .text                                    0x00000544   Section       40  cdrcmple.o(.text)
+    .text                                    0x0000056c   Section       48  init.o(.text)
+    .text                                    0x0000059c   Section        0  uidiv_div0.o(.text)
+    .text                                    0x000005da   Section        0  llshl.o(.text)
+    .text                                    0x000005fa   Section        0  llushr.o(.text)
+    .text                                    0x0000061c   Section        0  llsshr.o(.text)
+    .text                                    0x00000642   Section        0  depilogue.o(.text)
+    .text                                    0x00000700   Section        0  memseta.o(.text)
+    .text                                    0x00000724   Section        0  fmul.o(.text)
+    .text                                    0x0000079e   Section        0  ffltui.o(.text)
+    .text                                    0x000007ac   Section        0  ffixi.o(.text)
+    .text                                    0x000007de   Section        0  fepilogue.o(.text)
+    APP_InvalidateChecksumAndReset           0x00000861   Thumb Code   120  lto-llvm-295afc.o(.text.APP_InvalidateChecksumAndReset)
+    [Anonymous Symbol]                       0x00000860   Section        0  lto-llvm-295afc.o(.text.APP_InvalidateChecksumAndReset)
+    __arm_cp.23_0                            0x000008d8   Number         4  lto-llvm-295afc.o(.text.APP_InvalidateChecksumAndReset)
+    __arm_cp.23_1                            0x000008dc   Number         4  lto-llvm-295afc.o(.text.APP_InvalidateChecksumAndReset)
+    __arm_cp.23_2                            0x000008e0   Number         4  lto-llvm-295afc.o(.text.APP_InvalidateChecksumAndReset)
+    __arm_cp.23_3                            0x000008e4   Number         4  lto-llvm-295afc.o(.text.APP_InvalidateChecksumAndReset)
+    APP_StandbyWaitCanWake                   0x000008e9   Thumb Code   160  lto-llvm-295afc.o(.text.APP_StandbyWaitCanWake)
+    [Anonymous Symbol]                       0x000008e8   Section        0  lto-llvm-295afc.o(.text.APP_StandbyWaitCanWake)
+    __arm_cp.24_0                            0x00000988   Number         4  lto-llvm-295afc.o(.text.APP_StandbyWaitCanWake)
+    __arm_cp.24_1                            0x0000098c   Number         4  lto-llvm-295afc.o(.text.APP_StandbyWaitCanWake)
+    __arm_cp.24_2                            0x00000990   Number         4  lto-llvm-295afc.o(.text.APP_StandbyWaitCanWake)
+    __arm_cp.24_3                            0x00000994   Number         4  lto-llvm-295afc.o(.text.APP_StandbyWaitCanWake)
+    __arm_cp.24_4                            0x00000998   Number         4  lto-llvm-295afc.o(.text.APP_StandbyWaitCanWake)
+    __arm_cp.24_6                            0x0000099c   Number         4  lto-llvm-295afc.o(.text.APP_StandbyWaitCanWake)
+    [Anonymous Symbol]                       0x000009a0   Section        0  lto-llvm-295afc.o(.text.CANFD00_IRQHandler)
+    __arm_cp.56_0                            0x000009c8   Number         4  lto-llvm-295afc.o(.text.CANFD00_IRQHandler)
+    CANFD_CalculateRamAddress                0x000009cd   Thumb Code   218  lto-llvm-295afc.o(.text.CANFD_CalculateRamAddress)
+    [Anonymous Symbol]                       0x000009cc   Section        0  lto-llvm-295afc.o(.text.CANFD_CalculateRamAddress)
+    CANFD_CalculateTimingValues              0x00000aa9   Thumb Code   380  lto-llvm-295afc.o(.text.CANFD_CalculateTimingValues)
+    [Anonymous Symbol]                       0x00000aa8   Section        0  lto-llvm-295afc.o(.text.CANFD_CalculateTimingValues)
+    __arm_cp.113_0                           0x00000c24   Number         4  lto-llvm-295afc.o(.text.CANFD_CalculateTimingValues)
+    __arm_cp.113_1                           0x00000c28   Number         4  lto-llvm-295afc.o(.text.CANFD_CalculateTimingValues)
+    CANFD_ClearStatusFlag                    0x00000c2d   Thumb Code    24  lto-llvm-295afc.o(.text.CANFD_ClearStatusFlag)
+    [Anonymous Symbol]                       0x00000c2c   Section        0  lto-llvm-295afc.o(.text.CANFD_ClearStatusFlag)
+    CANFD_ConfigSIDFC                        0x00000c45   Thumb Code    68  lto-llvm-295afc.o(.text.CANFD_ConfigSIDFC)
+    [Anonymous Symbol]                       0x00000c44   Section        0  lto-llvm-295afc.o(.text.CANFD_ConfigSIDFC)
+    CANFD_ConfigXIDFC                        0x00000c89   Thumb Code    68  lto-llvm-295afc.o(.text.CANFD_ConfigXIDFC)
+    [Anonymous Symbol]                       0x00000c88   Section        0  lto-llvm-295afc.o(.text.CANFD_ConfigXIDFC)
+    __arm_cp.116_0                           0x00000ccc   Number         4  lto-llvm-295afc.o(.text.CANFD_ConfigXIDFC)
+    CANFD_CopyDBufToMsgBuf                   0x00000cd1   Thumb Code   252  lto-llvm-295afc.o(.text.CANFD_CopyDBufToMsgBuf)
+    [Anonymous Symbol]                       0x00000cd0   Section        0  lto-llvm-295afc.o(.text.CANFD_CopyDBufToMsgBuf)
+    CANFD_CopyRxFifoToMsgBuf                 0x00000dcd   Thumb Code    20  lto-llvm-295afc.o(.text.CANFD_CopyRxFifoToMsgBuf)
+    [Anonymous Symbol]                       0x00000dcc   Section        0  lto-llvm-295afc.o(.text.CANFD_CopyRxFifoToMsgBuf)
+    CANFD_DecodeDLC                          0x00000de1   Thumb Code   146  lto-llvm-295afc.o(.text.CANFD_DecodeDLC)
+    [Anonymous Symbol]                       0x00000de0   Section        0  lto-llvm-295afc.o(.text.CANFD_DecodeDLC)
+    CANFD_EnableInt                          0x00000e75   Thumb Code   104  lto-llvm-295afc.o(.text.CANFD_EnableInt)
+    [Anonymous Symbol]                       0x00000e74   Section        0  lto-llvm-295afc.o(.text.CANFD_EnableInt)
+    CANFD_EncodeDLC                          0x00000edd   Thumb Code   146  lto-llvm-295afc.o(.text.CANFD_EncodeDLC)
+    [Anonymous Symbol]                       0x00000edc   Section        0  lto-llvm-295afc.o(.text.CANFD_EncodeDLC)
+    CANFD_GetBusErrCount                     0x00000f71   Thumb Code    48  lto-llvm-295afc.o(.text.CANFD_GetBusErrCount)
+    [Anonymous Symbol]                       0x00000f70   Section        0  lto-llvm-295afc.o(.text.CANFD_GetBusErrCount)
+    __arm_cp.134_0                           0x00000fa0   Number         4  lto-llvm-295afc.o(.text.CANFD_GetBusErrCount)
+    CANFD_GetDefaultConfig                   0x00000fa5   Thumb Code   140  lto-llvm-295afc.o(.text.CANFD_GetDefaultConfig)
+    [Anonymous Symbol]                       0x00000fa4   Section        0  lto-llvm-295afc.o(.text.CANFD_GetDefaultConfig)
+    __arm_cp.106_0                           0x00001030   Number         4  lto-llvm-295afc.o(.text.CANFD_GetDefaultConfig)
+    CANFD_GetSegments                        0x00001035   Thumb Code   244  lto-llvm-295afc.o(.text.CANFD_GetSegments)
+    [Anonymous Symbol]                       0x00001034   Section        0  lto-llvm-295afc.o(.text.CANFD_GetSegments)
+    __arm_cp.122_0                           0x00001128   Number         4  lto-llvm-295afc.o(.text.CANFD_GetSegments)
+    __arm_cp.122_1                           0x0000112c   Number         4  lto-llvm-295afc.o(.text.CANFD_GetSegments)
+    __arm_cp.122_2                           0x00001130   Number         4  lto-llvm-295afc.o(.text.CANFD_GetSegments)
+    __arm_cp.122_3                           0x00001134   Number         4  lto-llvm-295afc.o(.text.CANFD_GetSegments)
+    CANFD_GetSourceClock                     0x00001139   Thumb Code   156  lto-llvm-295afc.o(.text.CANFD_GetSourceClock)
+    [Anonymous Symbol]                       0x00001138   Section        0  lto-llvm-295afc.o(.text.CANFD_GetSourceClock)
+    __arm_cp.110_0                           0x000011d4   Number         4  lto-llvm-295afc.o(.text.CANFD_GetSourceClock)
+    __arm_cp.110_2                           0x000011d8   Number         4  lto-llvm-295afc.o(.text.CANFD_GetSourceClock)
+    __arm_cp.110_3                           0x000011dc   Number         4  lto-llvm-295afc.o(.text.CANFD_GetSourceClock)
+    __arm_cp.110_4                           0x000011e0   Number         4  lto-llvm-295afc.o(.text.CANFD_GetSourceClock)
+    __arm_cp.110_5                           0x000011e4   Number         4  lto-llvm-295afc.o(.text.CANFD_GetSourceClock)
+    __arm_cp.110_6                           0x000011e8   Number         4  lto-llvm-295afc.o(.text.CANFD_GetSourceClock)
+    __arm_cp.110_7                           0x000011ec   Number         4  lto-llvm-295afc.o(.text.CANFD_GetSourceClock)
+    CANFD_GetStatusFlag                      0x000011f1   Thumb Code    24  lto-llvm-295afc.o(.text.CANFD_GetStatusFlag)
+    [Anonymous Symbol]                       0x000011f0   Section        0  lto-llvm-295afc.o(.text.CANFD_GetStatusFlag)
+    __arm_cp.132_0                           0x00001208   Number         4  lto-llvm-295afc.o(.text.CANFD_GetStatusFlag)
+    CANFD_InitRxDBuf                         0x0000120d   Thumb Code   120  lto-llvm-295afc.o(.text.CANFD_InitRxDBuf)
+    [Anonymous Symbol]                       0x0000120c   Section        0  lto-llvm-295afc.o(.text.CANFD_InitRxDBuf)
+    CANFD_InitRxFifo                         0x00001285   Thumb Code   340  lto-llvm-295afc.o(.text.CANFD_InitRxFifo)
+    [Anonymous Symbol]                       0x00001284   Section        0  lto-llvm-295afc.o(.text.CANFD_InitRxFifo)
+    CANFD_InitTxDBuf                         0x000013d9   Thumb Code   124  lto-llvm-295afc.o(.text.CANFD_InitTxDBuf)
+    [Anonymous Symbol]                       0x000013d8   Section        0  lto-llvm-295afc.o(.text.CANFD_InitTxDBuf)
+    CANFD_InitTxEvntFifo                     0x00001455   Thumb Code    44  lto-llvm-295afc.o(.text.CANFD_InitTxEvntFifo)
+    [Anonymous Symbol]                       0x00001454   Section        0  lto-llvm-295afc.o(.text.CANFD_InitTxEvntFifo)
+    __arm_cp.120_0                           0x00001480   Number         4  lto-llvm-295afc.o(.text.CANFD_InitTxEvntFifo)
+    CANFD_Open                               0x00001485   Thumb Code   504  lto-llvm-295afc.o(.text.CANFD_Open)
+    [Anonymous Symbol]                       0x00001484   Section        0  lto-llvm-295afc.o(.text.CANFD_Open)
+    __arm_cp.109_1                           0x0000167c   Number         4  lto-llvm-295afc.o(.text.CANFD_Open)
+    __arm_cp.109_2                           0x00001680   Number         4  lto-llvm-295afc.o(.text.CANFD_Open)
+    __arm_cp.109_3                           0x00001684   Number         4  lto-llvm-295afc.o(.text.CANFD_Open)
+    __arm_cp.109_4                           0x00001688   Number         4  lto-llvm-295afc.o(.text.CANFD_Open)
+    __arm_cp.109_5                           0x0000168c   Number         4  lto-llvm-295afc.o(.text.CANFD_Open)
+    CANFD_Open_TDC                           0x00001691   Thumb Code    92  lto-llvm-295afc.o(.text.CANFD_Open_TDC)
+    [Anonymous Symbol]                       0x00001690   Section        0  lto-llvm-295afc.o(.text.CANFD_Open_TDC)
+    __arm_cp.108_0                           0x000016ec   Number         4  lto-llvm-295afc.o(.text.CANFD_Open_TDC)
+    CANFD_ReadRxFifoMsg                      0x000016f1   Thumb Code   196  lto-llvm-295afc.o(.text.CANFD_ReadRxFifoMsg)
+    [Anonymous Symbol]                       0x000016f0   Section        0  lto-llvm-295afc.o(.text.CANFD_ReadRxFifoMsg)
+    __arm_cp.130_1                           0x000017b4   Number         4  lto-llvm-295afc.o(.text.CANFD_ReadRxFifoMsg)
+    CANFD_RunToNormal                        0x000017b9   Thumb Code   124  lto-llvm-295afc.o(.text.CANFD_RunToNormal)
+    [Anonymous Symbol]                       0x000017b8   Section        0  lto-llvm-295afc.o(.text.CANFD_RunToNormal)
+    __arm_cp.135_0                           0x00001834   Number         4  lto-llvm-295afc.o(.text.CANFD_RunToNormal)
+    CANFD_SetGFC                             0x00001839   Thumb Code    60  lto-llvm-295afc.o(.text.CANFD_SetGFC)
+    [Anonymous Symbol]                       0x00001838   Section        0  lto-llvm-295afc.o(.text.CANFD_SetGFC)
+    CANFD_SetTimingConfig                    0x00001875   Thumb Code   228  lto-llvm-295afc.o(.text.CANFD_SetTimingConfig)
+    [Anonymous Symbol]                       0x00001874   Section        0  lto-llvm-295afc.o(.text.CANFD_SetTimingConfig)
+    __arm_cp.114_0                           0x00001958   Number         4  lto-llvm-295afc.o(.text.CANFD_SetTimingConfig)
+    __arm_cp.114_4                           0x0000195c   Number         4  lto-llvm-295afc.o(.text.CANFD_SetTimingConfig)
+    __arm_cp.114_5                           0x00001960   Number         4  lto-llvm-295afc.o(.text.CANFD_SetTimingConfig)
+    CANFD_TransmitDMsg                       0x00001965   Thumb Code   328  lto-llvm-295afc.o(.text.CANFD_TransmitDMsg)
+    [Anonymous Symbol]                       0x00001964   Section        0  lto-llvm-295afc.o(.text.CANFD_TransmitDMsg)
+    CANFD_TransmitTxMsg                      0x00001aad   Thumb Code    88  lto-llvm-295afc.o(.text.CANFD_TransmitTxMsg)
+    [Anonymous Symbol]                       0x00001aac   Section        0  lto-llvm-295afc.o(.text.CANFD_TransmitTxMsg)
+    __arm_cp.125_0                           0x00001b04   Number         4  lto-llvm-295afc.o(.text.CANFD_TransmitTxMsg)
+    __arm_cp.125_1                           0x00001b08   Number         4  lto-llvm-295afc.o(.text.CANFD_TransmitTxMsg)
+    CAN_DumpBusStatus                        0x00001b0d   Thumb Code    72  lto-llvm-295afc.o(.text.CAN_DumpBusStatus)
+    [Anonymous Symbol]                       0x00001b0c   Section        0  lto-llvm-295afc.o(.text.CAN_DumpBusStatus)
+    __arm_cp.62_0                            0x00001b54   Number         4  lto-llvm-295afc.o(.text.CAN_DumpBusStatus)
+    __arm_cp.62_1                            0x00001b58   Number         4  lto-llvm-295afc.o(.text.CAN_DumpBusStatus)
+    __arm_cp.62_2                            0x00001b5c   Number         4  lto-llvm-295afc.o(.text.CAN_DumpBusStatus)
+    __arm_cp.62_3                            0x00001b60   Number         4  lto-llvm-295afc.o(.text.CAN_DumpBusStatus)
+    __arm_cp.62_4                            0x00001b64   Number         4  lto-llvm-295afc.o(.text.CAN_DumpBusStatus)
+    CAN_GetModuleClock                       0x00001b69   Thumb Code   204  lto-llvm-295afc.o(.text.CAN_GetModuleClock)
+    [Anonymous Symbol]                       0x00001b68   Section        0  lto-llvm-295afc.o(.text.CAN_GetModuleClock)
+    __arm_cp.64_0                            0x00001c34   Number         4  lto-llvm-295afc.o(.text.CAN_GetModuleClock)
+    __arm_cp.64_1                            0x00001c38   Number         4  lto-llvm-295afc.o(.text.CAN_GetModuleClock)
+    __arm_cp.64_2                            0x00001c3c   Number         4  lto-llvm-295afc.o(.text.CAN_GetModuleClock)
+    __arm_cp.64_3                            0x00001c40   Number         4  lto-llvm-295afc.o(.text.CAN_GetModuleClock)
+    __arm_cp.64_4                            0x00001c44   Number         4  lto-llvm-295afc.o(.text.CAN_GetModuleClock)
+    __arm_cp.64_5                            0x00001c48   Number         4  lto-llvm-295afc.o(.text.CAN_GetModuleClock)
+    __arm_cp.64_6                            0x00001c4c   Number         4  lto-llvm-295afc.o(.text.CAN_GetModuleClock)
+    __arm_cp.64_7                            0x00001c50   Number         4  lto-llvm-295afc.o(.text.CAN_GetModuleClock)
+    CAN_Init                                 0x00001c55   Thumb Code   252  lto-llvm-295afc.o(.text.CAN_Init)
+    [Anonymous Symbol]                       0x00001c54   Section        0  lto-llvm-295afc.o(.text.CAN_Init)
+    __arm_cp.67_0                            0x00001d50   Number         4  lto-llvm-295afc.o(.text.CAN_Init)
+    __arm_cp.67_1                            0x00001d54   Number         4  lto-llvm-295afc.o(.text.CAN_Init)
+    __arm_cp.67_2                            0x00001d58   Number         4  lto-llvm-295afc.o(.text.CAN_Init)
+    __arm_cp.67_3                            0x00001d5c   Number         4  lto-llvm-295afc.o(.text.CAN_Init)
+    __arm_cp.67_5                            0x00001d60   Number         4  lto-llvm-295afc.o(.text.CAN_Init)
+    __arm_cp.67_6                            0x00001d64   Number         4  lto-llvm-295afc.o(.text.CAN_Init)
+    __arm_cp.67_7                            0x00001d68   Number         4  lto-llvm-295afc.o(.text.CAN_Init)
+    __arm_cp.67_8                            0x00001d6c   Number         4  lto-llvm-295afc.o(.text.CAN_Init)
+    __arm_cp.67_9                            0x00001d70   Number         4  lto-llvm-295afc.o(.text.CAN_Init)
+    __arm_cp.67_10                           0x00001d74   Number         4  lto-llvm-295afc.o(.text.CAN_Init)
+    __arm_cp.67_11                           0x00001d78   Number         4  lto-llvm-295afc.o(.text.CAN_Init)
+    __arm_cp.67_12                           0x00001d7c   Number         4  lto-llvm-295afc.o(.text.CAN_Init)
+    __arm_cp.67_13                           0x00001d80   Number         4  lto-llvm-295afc.o(.text.CAN_Init)
+    __arm_cp.67_14                           0x00001d84   Number         4  lto-llvm-295afc.o(.text.CAN_Init)
+    __arm_cp.67_15                           0x00001d88   Number         4  lto-llvm-295afc.o(.text.CAN_Init)
+    __arm_cp.67_16                           0x00001d8c   Number         4  lto-llvm-295afc.o(.text.CAN_Init)
+    CAN_PrintRxMessage                       0x00001d91   Thumb Code   148  lto-llvm-295afc.o(.text.CAN_PrintRxMessage)
+    [Anonymous Symbol]                       0x00001d90   Section        0  lto-llvm-295afc.o(.text.CAN_PrintRxMessage)
+    __arm_cp.60_1                            0x00001e24   Number         4  lto-llvm-295afc.o(.text.CAN_PrintRxMessage)
+    __arm_cp.60_2                            0x00001e28   Number         4  lto-llvm-295afc.o(.text.CAN_PrintRxMessage)
+    __arm_cp.60_3                            0x00001e2c   Number         4  lto-llvm-295afc.o(.text.CAN_PrintRxMessage)
+    __arm_cp.60_4                            0x00001e30   Number         4  lto-llvm-295afc.o(.text.CAN_PrintRxMessage)
+    __arm_cp.60_5                            0x00001e34   Number         4  lto-llvm-295afc.o(.text.CAN_PrintRxMessage)
+    __arm_cp.60_6                            0x00001e38   Number         4  lto-llvm-295afc.o(.text.CAN_PrintRxMessage)
+    __arm_cp.60_7                            0x00001e3c   Number         4  lto-llvm-295afc.o(.text.CAN_PrintRxMessage)
+    CAN_RxFifo0FillLevel                     0x00001e41   Thumb Code    12  lto-llvm-295afc.o(.text.CAN_RxFifo0FillLevel)
+    [Anonymous Symbol]                       0x00001e40   Section        0  lto-llvm-295afc.o(.text.CAN_RxFifo0FillLevel)
+    CAN_RxFifo1FillLevel                     0x00001e4d   Thumb Code    12  lto-llvm-295afc.o(.text.CAN_RxFifo1FillLevel)
+    [Anonymous Symbol]                       0x00001e4c   Section        0  lto-llvm-295afc.o(.text.CAN_RxFifo1FillLevel)
+    CAN_Rx_process                           0x00001e59   Thumb Code   272  lto-llvm-295afc.o(.text.CAN_Rx_process)
+    [Anonymous Symbol]                       0x00001e58   Section        0  lto-llvm-295afc.o(.text.CAN_Rx_process)
+    __arm_cp.57_0                            0x00001f68   Number         4  lto-llvm-295afc.o(.text.CAN_Rx_process)
+    __arm_cp.57_1                            0x00001f6c   Number         4  lto-llvm-295afc.o(.text.CAN_Rx_process)
+    __arm_cp.57_2                            0x00001f70   Number         4  lto-llvm-295afc.o(.text.CAN_Rx_process)
+    __arm_cp.57_3                            0x00001f74   Number         4  lto-llvm-295afc.o(.text.CAN_Rx_process)
+    __arm_cp.57_4                            0x00001f78   Number         4  lto-llvm-295afc.o(.text.CAN_Rx_process)
+    __arm_cp.57_5                            0x00001f7c   Number         4  lto-llvm-295afc.o(.text.CAN_Rx_process)
+    CAN_SendMessage                          0x00001f81   Thumb Code   284  lto-llvm-295afc.o(.text.CAN_SendMessage)
+    [Anonymous Symbol]                       0x00001f80   Section        0  lto-llvm-295afc.o(.text.CAN_SendMessage)
+    __arm_cp.61_0                            0x0000209c   Number         4  lto-llvm-295afc.o(.text.CAN_SendMessage)
+    __arm_cp.61_1                            0x000020a0   Number         4  lto-llvm-295afc.o(.text.CAN_SendMessage)
+    __arm_cp.61_2                            0x000020a4   Number         4  lto-llvm-295afc.o(.text.CAN_SendMessage)
+    __arm_cp.61_3                            0x000020a8   Number         4  lto-llvm-295afc.o(.text.CAN_SendMessage)
+    __arm_cp.61_4                            0x000020ac   Number         4  lto-llvm-295afc.o(.text.CAN_SendMessage)
+    __arm_cp.61_5                            0x000020b0   Number         4  lto-llvm-295afc.o(.text.CAN_SendMessage)
+    __arm_cp.61_6                            0x000020b4   Number         4  lto-llvm-295afc.o(.text.CAN_SendMessage)
+    __arm_cp.61_7                            0x000020b8   Number         4  lto-llvm-295afc.o(.text.CAN_SendMessage)
+    __arm_cp.61_8                            0x000020bc   Number         4  lto-llvm-295afc.o(.text.CAN_SendMessage)
+    CLK_EnableModuleClock                    0x000020c1   Thumb Code    48  lto-llvm-295afc.o(.text.CLK_EnableModuleClock)
+    [Anonymous Symbol]                       0x000020c0   Section        0  lto-llvm-295afc.o(.text.CLK_EnableModuleClock)
+    __arm_cp.81_0                            0x000020f0   Number         4  lto-llvm-295afc.o(.text.CLK_EnableModuleClock)
+    CLK_EnablePLL                            0x000020f5   Thumb Code   476  lto-llvm-295afc.o(.text.CLK_EnablePLL)
+    [Anonymous Symbol]                       0x000020f4   Section        0  lto-llvm-295afc.o(.text.CLK_EnablePLL)
+    __arm_cp.77_0                            0x000022d0   Number         4  lto-llvm-295afc.o(.text.CLK_EnablePLL)
+    __arm_cp.77_1                            0x000022d4   Number         4  lto-llvm-295afc.o(.text.CLK_EnablePLL)
+    __arm_cp.77_2                            0x000022d8   Number         4  lto-llvm-295afc.o(.text.CLK_EnablePLL)
+    __arm_cp.77_3                            0x000022dc   Number         4  lto-llvm-295afc.o(.text.CLK_EnablePLL)
+    __arm_cp.77_8                            0x000022e0   Number         4  lto-llvm-295afc.o(.text.CLK_EnablePLL)
+    __arm_cp.77_9                            0x000022e4   Number         4  lto-llvm-295afc.o(.text.CLK_EnablePLL)
+    __arm_cp.77_10                           0x000022e8   Number         4  lto-llvm-295afc.o(.text.CLK_EnablePLL)
+    __arm_cp.77_11                           0x000022ec   Number         4  lto-llvm-295afc.o(.text.CLK_EnablePLL)
+    __arm_cp.77_12                           0x000022f0   Number         4  lto-llvm-295afc.o(.text.CLK_EnablePLL)
+    __arm_cp.77_13                           0x000022f4   Number         4  lto-llvm-295afc.o(.text.CLK_EnablePLL)
+    __arm_cp.77_14                           0x000022f8   Number         4  lto-llvm-295afc.o(.text.CLK_EnablePLL)
+    CLK_EnableXtalRC                         0x000022fd   Thumb Code    20  lto-llvm-295afc.o(.text.CLK_EnableXtalRC)
+    [Anonymous Symbol]                       0x000022fc   Section        0  lto-llvm-295afc.o(.text.CLK_EnableXtalRC)
+    CLK_GetCPUFreq                           0x00002311   Thumb Code    12  lto-llvm-295afc.o(.text.CLK_GetCPUFreq)
+    [Anonymous Symbol]                       0x00002310   Section        0  lto-llvm-295afc.o(.text.CLK_GetCPUFreq)
+    CLK_GetHCLKFreq                          0x0000231d   Thumb Code    12  lto-llvm-295afc.o(.text.CLK_GetHCLKFreq)
+    [Anonymous Symbol]                       0x0000231c   Section        0  lto-llvm-295afc.o(.text.CLK_GetHCLKFreq)
+    CLK_GetHXTFreq                           0x00002329   Thumb Code    32  lto-llvm-295afc.o(.text.CLK_GetHXTFreq)
+    [Anonymous Symbol]                       0x00002328   Section        0  lto-llvm-295afc.o(.text.CLK_GetHXTFreq)
+    CLK_GetLXTFreq                           0x00002349   Thumb Code    36  lto-llvm-295afc.o(.text.CLK_GetLXTFreq)
+    [Anonymous Symbol]                       0x00002348   Section        0  lto-llvm-295afc.o(.text.CLK_GetLXTFreq)
+    __arm_cp.70_0                            0x0000236c   Number         4  lto-llvm-295afc.o(.text.CLK_GetLXTFreq)
+    CLK_GetModuleClockSource                 0x00002371   Thumb Code    84  lto-llvm-295afc.o(.text.CLK_GetModuleClockSource)
+    [Anonymous Symbol]                       0x00002370   Section        0  lto-llvm-295afc.o(.text.CLK_GetModuleClockSource)
+    __arm_cp.82_0                            0x000023c4   Number         4  lto-llvm-295afc.o(.text.CLK_GetModuleClockSource)
+    CLK_GetPCLK0Freq                         0x000023c9   Thumb Code    48  lto-llvm-295afc.o(.text.CLK_GetPCLK0Freq)
+    [Anonymous Symbol]                       0x000023c8   Section        0  lto-llvm-295afc.o(.text.CLK_GetPCLK0Freq)
+    CLK_GetPCLK1Freq                         0x000023f9   Thumb Code    48  lto-llvm-295afc.o(.text.CLK_GetPCLK1Freq)
+    [Anonymous Symbol]                       0x000023f8   Section        0  lto-llvm-295afc.o(.text.CLK_GetPCLK1Freq)
+    __arm_cp.73_0                            0x00002428   Number         4  lto-llvm-295afc.o(.text.CLK_GetPCLK1Freq)
+    __arm_cp.73_1                            0x0000242c   Number         4  lto-llvm-295afc.o(.text.CLK_GetPCLK1Freq)
+    CLK_GetPLLClockFreq                      0x00002431   Thumb Code   148  lto-llvm-295afc.o(.text.CLK_GetPLLClockFreq)
+    [Anonymous Symbol]                       0x00002430   Section        0  lto-llvm-295afc.o(.text.CLK_GetPLLClockFreq)
+    __arm_cp.1_1                             0x000024c4   Number         4  lto-llvm-295afc.o(.text.CLK_GetPLLClockFreq)
+    __arm_cp.1_2                             0x000024c8   Number         4  lto-llvm-295afc.o(.text.CLK_GetPLLClockFreq)
+    __arm_cp.1_3                             0x000024cc   Number         4  lto-llvm-295afc.o(.text.CLK_GetPLLClockFreq)
+    CLK_GetPLLClockFreq.159                  0x000024d1   Thumb Code   148  lto-llvm-295afc.o(.text.CLK_GetPLLClockFreq.159)
+    [Anonymous Symbol]                       0x000024d0   Section        0  lto-llvm-295afc.o(.text.CLK_GetPLLClockFreq.159)
+    CLK_GetPLLClockFreq.179                  0x00002565   Thumb Code   148  lto-llvm-295afc.o(.text.CLK_GetPLLClockFreq.179)
+    [Anonymous Symbol]                       0x00002564   Section        0  lto-llvm-295afc.o(.text.CLK_GetPLLClockFreq.179)
+    __arm_cp.123_1                           0x000025f8   Number         4  lto-llvm-295afc.o(.text.CLK_GetPLLClockFreq.179)
+    CLK_GetPLLClockFreq.197                  0x000025fd   Thumb Code   148  lto-llvm-295afc.o(.text.CLK_GetPLLClockFreq.197)
+    [Anonymous Symbol]                       0x000025fc   Section        0  lto-llvm-295afc.o(.text.CLK_GetPLLClockFreq.197)
+    __arm_cp.137_2                           0x00002690   Number         4  lto-llvm-295afc.o(.text.CLK_GetPLLClockFreq.197)
+    CLK_GetPLLClockFreq.97                   0x00002695   Thumb Code   148  lto-llvm-295afc.o(.text.CLK_GetPLLClockFreq.97)
+    [Anonymous Symbol]                       0x00002694   Section        0  lto-llvm-295afc.o(.text.CLK_GetPLLClockFreq.97)
+    __arm_cp.65_0                            0x00002728   Number         4  lto-llvm-295afc.o(.text.CLK_GetPLLClockFreq.97)
+    __arm_cp.65_1                            0x0000272c   Number         4  lto-llvm-295afc.o(.text.CLK_GetPLLClockFreq.97)
+    __arm_cp.65_2                            0x00002730   Number         4  lto-llvm-295afc.o(.text.CLK_GetPLLClockFreq.97)
+    __arm_cp.65_3                            0x00002734   Number         4  lto-llvm-295afc.o(.text.CLK_GetPLLClockFreq.97)
+    __arm_cp.65_4                            0x00002738   Number         4  lto-llvm-295afc.o(.text.CLK_GetPLLClockFreq.97)
+    CLK_SetCoreClock                         0x0000273d   Thumb Code   164  lto-llvm-295afc.o(.text.CLK_SetCoreClock)
+    [Anonymous Symbol]                       0x0000273c   Section        0  lto-llvm-295afc.o(.text.CLK_SetCoreClock)
+    __arm_cp.75_0                            0x000027e0   Number         4  lto-llvm-295afc.o(.text.CLK_SetCoreClock)
+    __arm_cp.75_2                            0x000027e4   Number         4  lto-llvm-295afc.o(.text.CLK_SetCoreClock)
+    __arm_cp.75_3                            0x000027e8   Number         4  lto-llvm-295afc.o(.text.CLK_SetCoreClock)
+    __arm_cp.75_4                            0x000027ec   Number         4  lto-llvm-295afc.o(.text.CLK_SetCoreClock)
+    CLK_SetHCLK                              0x000027f1   Thumb Code   208  lto-llvm-295afc.o(.text.CLK_SetHCLK)
+    [Anonymous Symbol]                       0x000027f0   Section        0  lto-llvm-295afc.o(.text.CLK_SetHCLK)
+    __arm_cp.78_1                            0x000028c0   Number         4  lto-llvm-295afc.o(.text.CLK_SetHCLK)
+    __arm_cp.78_3                            0x000028c4   Number         4  lto-llvm-295afc.o(.text.CLK_SetHCLK)
+    __arm_cp.78_6                            0x000028c8   Number         4  lto-llvm-295afc.o(.text.CLK_SetHCLK)
+    __arm_cp.78_7                            0x000028cc   Number         4  lto-llvm-295afc.o(.text.CLK_SetHCLK)
+    __arm_cp.78_8                            0x000028d0   Number         4  lto-llvm-295afc.o(.text.CLK_SetHCLK)
+    CLK_SetModuleClock                       0x000028d5   Thumb Code   148  lto-llvm-295afc.o(.text.CLK_SetModuleClock)
+    [Anonymous Symbol]                       0x000028d4   Section        0  lto-llvm-295afc.o(.text.CLK_SetModuleClock)
+    __arm_cp.79_0                            0x00002968   Number         4  lto-llvm-295afc.o(.text.CLK_SetModuleClock)
+    __arm_cp.79_1                            0x0000296c   Number         4  lto-llvm-295afc.o(.text.CLK_SetModuleClock)
+    CLK_WaitClockReady                       0x00002971   Thumb Code    60  lto-llvm-295afc.o(.text.CLK_WaitClockReady)
+    [Anonymous Symbol]                       0x00002970   Section        0  lto-llvm-295afc.o(.text.CLK_WaitClockReady)
+    __arm_cp.76_1                            0x000029ac   Number         4  lto-llvm-295afc.o(.text.CLK_WaitClockReady)
+    FMC_ISP_Program                          0x000029b1   Thumb Code    92  lto-llvm-295afc.o(.text.FMC_ISP_Program)
+    [Anonymous Symbol]                       0x000029b0   Section        0  lto-llvm-295afc.o(.text.FMC_ISP_Program)
+    FMC_Open                                 0x00002a0d   Thumb Code    12  lto-llvm-295afc.o(.text.FMC_Open)
+    [Anonymous Symbol]                       0x00002a0c   Section        0  lto-llvm-295afc.o(.text.FMC_Open)
+    __arm_cp.104_0                           0x00002a18   Number         4  lto-llvm-295afc.o(.text.FMC_Open)
+    FMC_Read                                 0x00002a1d   Thumb Code    80  lto-llvm-295afc.o(.text.FMC_Read)
+    [Anonymous Symbol]                       0x00002a1c   Section        0  lto-llvm-295afc.o(.text.FMC_Read)
+    __arm_cp.105_0                           0x00002a6c   Number         4  lto-llvm-295afc.o(.text.FMC_Read)
+    __arm_cp.105_5                           0x00002a70   Number         4  lto-llvm-295afc.o(.text.FMC_Read)
+    FMC_SetVectorPageAddr                    0x00002a75   Thumb Code    76  lto-llvm-295afc.o(.text.FMC_SetVectorPageAddr)
+    [Anonymous Symbol]                       0x00002a74   Section        0  lto-llvm-295afc.o(.text.FMC_SetVectorPageAddr)
+    __arm_cp.30_0                            0x00002ac0   Number         4  lto-llvm-295afc.o(.text.FMC_SetVectorPageAddr)
+    __arm_cp.30_1                            0x00002ac4   Number         4  lto-llvm-295afc.o(.text.FMC_SetVectorPageAddr)
+    __arm_cp.30_2                            0x00002ac8   Number         4  lto-llvm-295afc.o(.text.FMC_SetVectorPageAddr)
+    __arm_cp.30_3                            0x00002acc   Number         4  lto-llvm-295afc.o(.text.FMC_SetVectorPageAddr)
+    GPIO_Init                                0x00002ad1   Thumb Code    52  lto-llvm-295afc.o(.text.GPIO_Init)
+    [Anonymous Symbol]                       0x00002ad0   Section        0  lto-llvm-295afc.o(.text.GPIO_Init)
+    __arm_cp.38_0                            0x00002b04   Number         4  lto-llvm-295afc.o(.text.GPIO_Init)
+    __arm_cp.38_1                            0x00002b08   Number         4  lto-llvm-295afc.o(.text.GPIO_Init)
+    __arm_cp.38_2                            0x00002b0c   Number         4  lto-llvm-295afc.o(.text.GPIO_Init)
+    __arm_cp.38_3                            0x00002b10   Number         4  lto-llvm-295afc.o(.text.GPIO_Init)
+    __arm_cp.38_4                            0x00002b14   Number         4  lto-llvm-295afc.o(.text.GPIO_Init)
+    GPIO_SetMode                             0x00002b19   Thumb Code    76  lto-llvm-295afc.o(.text.GPIO_SetMode)
+    [Anonymous Symbol]                       0x00002b18   Section        0  lto-llvm-295afc.o(.text.GPIO_SetMode)
+    Get_CANFD_DataBitRate                    0x00002b65   Thumb Code   128  lto-llvm-295afc.o(.text.Get_CANFD_DataBitRate)
+    [Anonymous Symbol]                       0x00002b64   Section        0  lto-llvm-295afc.o(.text.Get_CANFD_DataBitRate)
+    Get_CANFD_NominalBitRate                 0x00002be5   Thumb Code   116  lto-llvm-295afc.o(.text.Get_CANFD_NominalBitRate)
+    [Anonymous Symbol]                       0x00002be4   Section        0  lto-llvm-295afc.o(.text.Get_CANFD_NominalBitRate)
+    __arm_cp.63_0                            0x00002c58   Number         4  lto-llvm-295afc.o(.text.Get_CANFD_NominalBitRate)
+    PWM_AdjustSelected                       0x00002c5d   Thumb Code   208  lto-llvm-295afc.o(.text.PWM_AdjustSelected)
+    [Anonymous Symbol]                       0x00002c5c   Section        0  lto-llvm-295afc.o(.text.PWM_AdjustSelected)
+    PWM_ApplyChannel                         0x00002d2d   Thumb Code    48  lto-llvm-295afc.o(.text.PWM_ApplyChannel)
+    [Anonymous Symbol]                       0x00002d2c   Section        0  lto-llvm-295afc.o(.text.PWM_ApplyChannel)
+    PWM_ConfigOutputChannel                  0x00002d5d   Thumb Code   336  lto-llvm-295afc.o(.text.PWM_ConfigOutputChannel)
+    [Anonymous Symbol]                       0x00002d5c   Section        0  lto-llvm-295afc.o(.text.PWM_ConfigOutputChannel)
+    __arm_cp.136_1                           0x00002eac   Number         4  lto-llvm-295afc.o(.text.PWM_ConfigOutputChannel)
+    __arm_cp.136_2                           0x00002eb0   Number         4  lto-llvm-295afc.o(.text.PWM_ConfigOutputChannel)
+    __arm_cp.136_3                           0x00002eb4   Number         4  lto-llvm-295afc.o(.text.PWM_ConfigOutputChannel)
+    __arm_cp.136_4                           0x00002eb8   Number         4  lto-llvm-295afc.o(.text.PWM_ConfigOutputChannel)
+    __arm_cp.136_5                           0x00002ebc   Number         4  lto-llvm-295afc.o(.text.PWM_ConfigOutputChannel)
+    PWM_EnableOutput                         0x00002ec1   Thumb Code    24  lto-llvm-295afc.o(.text.PWM_EnableOutput)
+    [Anonymous Symbol]                       0x00002ec0   Section        0  lto-llvm-295afc.o(.text.PWM_EnableOutput)
+    PWM_InitChannels                         0x00002ed9   Thumb Code    80  lto-llvm-295afc.o(.text.PWM_InitChannels)
+    [Anonymous Symbol]                       0x00002ed8   Section        0  lto-llvm-295afc.o(.text.PWM_InitChannels)
+    PWM_PrintStatus                          0x00002f29   Thumb Code   104  lto-llvm-295afc.o(.text.PWM_PrintStatus)
+    [Anonymous Symbol]                       0x00002f28   Section        0  lto-llvm-295afc.o(.text.PWM_PrintStatus)
+    __arm_cp.35_1                            0x00002f90   Number         4  lto-llvm-295afc.o(.text.PWM_PrintStatus)
+    __arm_cp.35_2                            0x00002f94   Number         4  lto-llvm-295afc.o(.text.PWM_PrintStatus)
+    __arm_cp.35_3                            0x00002f98   Number         4  lto-llvm-295afc.o(.text.PWM_PrintStatus)
+    __arm_cp.35_4                            0x00002f9c   Number         4  lto-llvm-295afc.o(.text.PWM_PrintStatus)
+    __arm_cp.35_5                            0x00002fa0   Number         4  lto-llvm-295afc.o(.text.PWM_PrintStatus)
+    __arm_cp.35_6                            0x00002fa4   Number         4  lto-llvm-295afc.o(.text.PWM_PrintStatus)
+    __arm_cp.35_7                            0x00002fa8   Number         4  lto-llvm-295afc.o(.text.PWM_PrintStatus)
+    PWM_SelectControl                        0x00002fad   Thumb Code    36  lto-llvm-295afc.o(.text.PWM_SelectControl)
+    [Anonymous Symbol]                       0x00002fac   Section        0  lto-llvm-295afc.o(.text.PWM_SelectControl)
+    __arm_cp.32_0                            0x00002fd0   Number         4  lto-llvm-295afc.o(.text.PWM_SelectControl)
+    PWM_Start                                0x00002fd5   Thumb Code    68  lto-llvm-295afc.o(.text.PWM_Start)
+    [Anonymous Symbol]                       0x00002fd4   Section        0  lto-llvm-295afc.o(.text.PWM_Start)
+    __arm_cp.138_0                           0x00003018   Number         4  lto-llvm-295afc.o(.text.PWM_Start)
+    [Anonymous Symbol]                       0x0000301c   Section        0  lto-llvm-295afc.o(.text.ProcessHardFault)
+    __arm_cp.88_0                            0x00003058   Number         4  lto-llvm-295afc.o(.text.ProcessHardFault)
+    [Anonymous Symbol]                       0x0000305c   Section        0  lto-llvm-295afc.o(.text.SH_Return)
+    SYS_ClearResetSrc                        0x0000306d   Thumb Code    16  lto-llvm-295afc.o(.text.SYS_ClearResetSrc)
+    [Anonymous Symbol]                       0x0000306c   Section        0  lto-llvm-295afc.o(.text.SYS_ClearResetSrc)
+    SYS_GetResetSrc                          0x0000307d   Thumb Code     8  lto-llvm-295afc.o(.text.SYS_GetResetSrc)
+    [Anonymous Symbol]                       0x0000307c   Section        0  lto-llvm-295afc.o(.text.SYS_GetResetSrc)
+    __arm_cp.84_0                            0x00003084   Number         4  lto-llvm-295afc.o(.text.SYS_GetResetSrc)
+    SYS_Init                                 0x00003089   Thumb Code   224  lto-llvm-295afc.o(.text.SYS_Init)
+    [Anonymous Symbol]                       0x00003088   Section        0  lto-llvm-295afc.o(.text.SYS_Init)
+    __arm_cp.39_0                            0x00003168   Number         4  lto-llvm-295afc.o(.text.SYS_Init)
+    __arm_cp.39_1                            0x0000316c   Number         4  lto-llvm-295afc.o(.text.SYS_Init)
+    __arm_cp.39_2                            0x00003170   Number         4  lto-llvm-295afc.o(.text.SYS_Init)
+    __arm_cp.39_3                            0x00003174   Number         4  lto-llvm-295afc.o(.text.SYS_Init)
+    __arm_cp.39_4                            0x00003178   Number         4  lto-llvm-295afc.o(.text.SYS_Init)
+    __arm_cp.39_5                            0x0000317c   Number         4  lto-llvm-295afc.o(.text.SYS_Init)
+    __arm_cp.39_6                            0x00003180   Number         4  lto-llvm-295afc.o(.text.SYS_Init)
+    __arm_cp.39_7                            0x00003184   Number         4  lto-llvm-295afc.o(.text.SYS_Init)
+    __arm_cp.39_8                            0x00003188   Number         4  lto-llvm-295afc.o(.text.SYS_Init)
+    __arm_cp.39_9                            0x0000318c   Number         4  lto-llvm-295afc.o(.text.SYS_Init)
+    SYS_IsRegLocked                          0x00003191   Thumb Code    16  lto-llvm-295afc.o(.text.SYS_IsRegLocked)
+    [Anonymous Symbol]                       0x00003190   Section        0  lto-llvm-295afc.o(.text.SYS_IsRegLocked)
+    SYS_LockReg                              0x000031a1   Thumb Code     8  lto-llvm-295afc.o(.text.SYS_LockReg)
+    [Anonymous Symbol]                       0x000031a0   Section        0  lto-llvm-295afc.o(.text.SYS_LockReg)
+    SYS_LockReg.176                          0x000031a9   Thumb Code     8  lto-llvm-295afc.o(.text.SYS_LockReg.176)
+    [Anonymous Symbol]                       0x000031a8   Section        0  lto-llvm-295afc.o(.text.SYS_LockReg.176)
+    SYS_ResetChip                            0x000031b1   Thumb Code    12  lto-llvm-295afc.o(.text.SYS_ResetChip)
+    [Anonymous Symbol]                       0x000031b0   Section        0  lto-llvm-295afc.o(.text.SYS_ResetChip)
+    SYS_ResetModule                          0x000031bd   Thumb Code    52  lto-llvm-295afc.o(.text.SYS_ResetModule)
+    [Anonymous Symbol]                       0x000031bc   Section        0  lto-llvm-295afc.o(.text.SYS_ResetModule)
+    __arm_cp.87_0                            0x000031f0   Number         4  lto-llvm-295afc.o(.text.SYS_ResetModule)
+    __arm_cp.87_1                            0x000031f4   Number         4  lto-llvm-295afc.o(.text.SYS_ResetModule)
+    SYS_UnlockReg                            0x000031f9   Thumb Code    52  lto-llvm-295afc.o(.text.SYS_UnlockReg)
+    [Anonymous Symbol]                       0x000031f8   Section        0  lto-llvm-295afc.o(.text.SYS_UnlockReg)
+    SYS_UnlockReg.175                        0x0000322d   Thumb Code    52  lto-llvm-295afc.o(.text.SYS_UnlockReg.175)
+    [Anonymous Symbol]                       0x0000322c   Section        0  lto-llvm-295afc.o(.text.SYS_UnlockReg.175)
+    __arm_cp.111_0                           0x00003260   Number         4  lto-llvm-295afc.o(.text.SYS_UnlockReg.175)
+    __arm_cp.111_1                           0x00003264   Number         4  lto-llvm-295afc.o(.text.SYS_UnlockReg.175)
+    SendChar                                 0x00003269   Thumb Code    16  lto-llvm-295afc.o(.text.SendChar)
+    [Anonymous Symbol]                       0x00003268   Section        0  lto-llvm-295afc.o(.text.SendChar)
+    SendChar_ToUART                          0x00003279   Thumb Code    64  lto-llvm-295afc.o(.text.SendChar_ToUART)
+    [Anonymous Symbol]                       0x00003278   Section        0  lto-llvm-295afc.o(.text.SendChar_ToUART)
+    __arm_cp.90_0                            0x000032b8   Number         4  lto-llvm-295afc.o(.text.SendChar_ToUART)
+    __arm_cp.90_1                            0x000032bc   Number         4  lto-llvm-295afc.o(.text.SendChar_ToUART)
+    SysTick_Config                           0x000032c1   Thumb Code    56  lto-llvm-295afc.o(.text.SysTick_Config)
+    [Anonymous Symbol]                       0x000032c0   Section        0  lto-llvm-295afc.o(.text.SysTick_Config)
+    __arm_cp.7_0                             0x000032f8   Number         4  lto-llvm-295afc.o(.text.SysTick_Config)
+    __arm_cp.7_1                             0x000032fc   Number         4  lto-llvm-295afc.o(.text.SysTick_Config)
+    __arm_cp.7_2                             0x00003300   Number         4  lto-llvm-295afc.o(.text.SysTick_Config)
+    [Anonymous Symbol]                       0x00003304   Section        0  lto-llvm-295afc.o(.text.SysTick_Handler)
+    SysTick_enable                           0x0000330d   Thumb Code    48  lto-llvm-295afc.o(.text.SysTick_enable)
+    [Anonymous Symbol]                       0x0000330c   Section        0  lto-llvm-295afc.o(.text.SysTick_enable)
+    __arm_cp.6_1                             0x0000333c   Number         4  lto-llvm-295afc.o(.text.SysTick_enable)
+    SystemCoreClockUpdate                    0x00003341   Thumb Code    80  lto-llvm-295afc.o(.text.SystemCoreClockUpdate)
+    [Anonymous Symbol]                       0x00003340   Section        0  lto-llvm-295afc.o(.text.SystemCoreClockUpdate)
+    __arm_cp.0_0                             0x00003390   Number         4  lto-llvm-295afc.o(.text.SystemCoreClockUpdate)
+    __arm_cp.0_1                             0x00003394   Number         4  lto-llvm-295afc.o(.text.SystemCoreClockUpdate)
+    __arm_cp.0_2                             0x00003398   Number         4  lto-llvm-295afc.o(.text.SystemCoreClockUpdate)
+    __arm_cp.0_3                             0x0000339c   Number         4  lto-llvm-295afc.o(.text.SystemCoreClockUpdate)
+    __arm_cp.0_4                             0x000033a0   Number         4  lto-llvm-295afc.o(.text.SystemCoreClockUpdate)
+    [Anonymous Symbol]                       0x000033a4   Section        0  lto-llvm-295afc.o(.text.SystemInit)
+    TIMER1_Init                              0x000033a7   Thumb Code    22  lto-llvm-295afc.o(.text.TIMER1_Init)
+    [Anonymous Symbol]                       0x000033a6   Section        0  lto-llvm-295afc.o(.text.TIMER1_Init)
+    TIMER_ClearIntFlag                       0x000033bd   Thumb Code    16  lto-llvm-295afc.o(.text.TIMER_ClearIntFlag)
+    [Anonymous Symbol]                       0x000033bc   Section        0  lto-llvm-295afc.o(.text.TIMER_ClearIntFlag)
+    TIMER_DisableInt                         0x000033cd   Thumb Code    24  lto-llvm-295afc.o(.text.TIMER_DisableInt)
+    [Anonymous Symbol]                       0x000033cc   Section        0  lto-llvm-295afc.o(.text.TIMER_DisableInt)
+    TIMER_EnableInt                          0x000033e5   Thumb Code    24  lto-llvm-295afc.o(.text.TIMER_EnableInt)
+    [Anonymous Symbol]                       0x000033e4   Section        0  lto-llvm-295afc.o(.text.TIMER_EnableInt)
+    TIMER_GetIntFlag                         0x000033fd   Thumb Code    20  lto-llvm-295afc.o(.text.TIMER_GetIntFlag)
+    [Anonymous Symbol]                       0x000033fc   Section        0  lto-llvm-295afc.o(.text.TIMER_GetIntFlag)
+    TIMER_GetModuleClock                     0x00003411   Thumb Code   180  lto-llvm-295afc.o(.text.TIMER_GetModuleClock)
+    [Anonymous Symbol]                       0x00003410   Section        0  lto-llvm-295afc.o(.text.TIMER_GetModuleClock)
+    __arm_cp.103_0                           0x000034c4   Number         4  lto-llvm-295afc.o(.text.TIMER_GetModuleClock)
+    __arm_cp.103_1                           0x000034c8   Number         4  lto-llvm-295afc.o(.text.TIMER_GetModuleClock)
+    __arm_cp.103_3                           0x000034cc   Number         4  lto-llvm-295afc.o(.text.TIMER_GetModuleClock)
+    __arm_cp.103_4                           0x000034d0   Number         4  lto-llvm-295afc.o(.text.TIMER_GetModuleClock)
+    TIMER_Open                               0x000034d5   Thumb Code   156  lto-llvm-295afc.o(.text.TIMER_Open)
+    [Anonymous Symbol]                       0x000034d4   Section        0  lto-llvm-295afc.o(.text.TIMER_Open)
+    __arm_cp.102_1                           0x00003570   Number         4  lto-llvm-295afc.o(.text.TIMER_Open)
+    __arm_cp.102_2                           0x00003574   Number         4  lto-llvm-295afc.o(.text.TIMER_Open)
+    __arm_cp.102_3                           0x00003578   Number         4  lto-llvm-295afc.o(.text.TIMER_Open)
+    TIMER_Start                              0x0000357d   Thumb Code    24  lto-llvm-295afc.o(.text.TIMER_Start)
+    [Anonymous Symbol]                       0x0000357c   Section        0  lto-llvm-295afc.o(.text.TIMER_Start)
+    TIMER_Stop                               0x00003595   Thumb Code    24  lto-llvm-295afc.o(.text.TIMER_Stop)
+    [Anonymous Symbol]                       0x00003594   Section        0  lto-llvm-295afc.o(.text.TIMER_Stop)
+    __arm_cp.26_0                            0x000035ac   Number         4  lto-llvm-295afc.o(.text.TIMER_Stop)
+    [Anonymous Symbol]                       0x000035b0   Section        0  lto-llvm-295afc.o(.text.TMR1_IRQHandler)
+    Task_1000ms_Callback                     0x000035cd   Thumb Code    28  lto-llvm-295afc.o(.text.Task_1000ms_Callback)
+    [Anonymous Symbol]                       0x000035cc   Section        0  lto-llvm-295afc.o(.text.Task_1000ms_Callback)
+    __arm_cp.10_0                            0x000035e8   Number         4  lto-llvm-295afc.o(.text.Task_1000ms_Callback)
+    __arm_cp.10_1                            0x000035ec   Number         4  lto-llvm-295afc.o(.text.Task_1000ms_Callback)
+    Task_100ms_Callback                      0x000035f1   Thumb Code     8  lto-llvm-295afc.o(.text.Task_100ms_Callback)
+    [Anonymous Symbol]                       0x000035f0   Section        0  lto-llvm-295afc.o(.text.Task_100ms_Callback)
+    Task_10ms_Callback                       0x000035f9   Thumb Code     8  lto-llvm-295afc.o(.text.Task_10ms_Callback)
+    [Anonymous Symbol]                       0x000035f8   Section        0  lto-llvm-295afc.o(.text.Task_10ms_Callback)
+    TimerService_CreateTask                  0x00003601   Thumb Code   120  lto-llvm-295afc.o(.text.TimerService_CreateTask)
+    [Anonymous Symbol]                       0x00003600   Section        0  lto-llvm-295afc.o(.text.TimerService_CreateTask)
+    __arm_cp.13_0                            0x00003678   Number         4  lto-llvm-295afc.o(.text.TimerService_CreateTask)
+    __arm_cp.13_1                            0x0000367c   Number         4  lto-llvm-295afc.o(.text.TimerService_CreateTask)
+    __arm_cp.13_2                            0x00003680   Number         4  lto-llvm-295afc.o(.text.TimerService_CreateTask)
+    __arm_cp.13_3                            0x00003684   Number         4  lto-llvm-295afc.o(.text.TimerService_CreateTask)
+    __arm_cp.13_4                            0x00003688   Number         4  lto-llvm-295afc.o(.text.TimerService_CreateTask)
+    __arm_cp.13_5                            0x0000368c   Number         4  lto-llvm-295afc.o(.text.TimerService_CreateTask)
+    __arm_cp.13_6                            0x00003690   Number         4  lto-llvm-295afc.o(.text.TimerService_CreateTask)
+    __arm_cp.13_7                            0x00003694   Number         4  lto-llvm-295afc.o(.text.TimerService_CreateTask)
+    __arm_cp.13_8                            0x00003698   Number         4  lto-llvm-295afc.o(.text.TimerService_CreateTask)
+    TimerService_CreateTimer                 0x0000369d   Thumb Code    28  lto-llvm-295afc.o(.text.TimerService_CreateTimer)
+    [Anonymous Symbol]                       0x0000369c   Section        0  lto-llvm-295afc.o(.text.TimerService_CreateTimer)
+    TimerService_CreateTimerQueue            0x000036b9   Thumb Code   116  lto-llvm-295afc.o(.text.TimerService_CreateTimerQueue)
+    [Anonymous Symbol]                       0x000036b8   Section        0  lto-llvm-295afc.o(.text.TimerService_CreateTimerQueue)
+    TimerService_DequeueEvent                0x0000372d   Thumb Code   112  lto-llvm-295afc.o(.text.TimerService_DequeueEvent)
+    [Anonymous Symbol]                       0x0000372c   Section        0  lto-llvm-295afc.o(.text.TimerService_DequeueEvent)
+    TimerService_Dispatch                    0x0000379d   Thumb Code    12  lto-llvm-295afc.o(.text.TimerService_Dispatch)
+    [Anonymous Symbol]                       0x0000379c   Section        0  lto-llvm-295afc.o(.text.TimerService_Dispatch)
+    TimerService_DispatchFlag                0x000037a9   Thumb Code   100  lto-llvm-295afc.o(.text.TimerService_DispatchFlag)
+    [Anonymous Symbol]                       0x000037a8   Section        0  lto-llvm-295afc.o(.text.TimerService_DispatchFlag)
+    TimerService_DispatchQueue               0x0000380d   Thumb Code    76  lto-llvm-295afc.o(.text.TimerService_DispatchQueue)
+    [Anonymous Symbol]                       0x0000380c   Section        0  lto-llvm-295afc.o(.text.TimerService_DispatchQueue)
+    TimerService_EnqueueEventFromISR         0x00003859   Thumb Code    76  lto-llvm-295afc.o(.text.TimerService_EnqueueEventFromISR)
+    [Anonymous Symbol]                       0x00003858   Section        0  lto-llvm-295afc.o(.text.TimerService_EnqueueEventFromISR)
+    TimerService_Init                        0x000038a5   Thumb Code    88  lto-llvm-295afc.o(.text.TimerService_Init)
+    [Anonymous Symbol]                       0x000038a4   Section        0  lto-llvm-295afc.o(.text.TimerService_Init)
+    __arm_cp.55_0                            0x000038fc   Number         4  lto-llvm-295afc.o(.text.TimerService_Init)
+    TimerService_StartTimer                  0x00003901   Thumb Code    56  lto-llvm-295afc.o(.text.TimerService_StartTimer)
+    [Anonymous Symbol]                       0x00003900   Section        0  lto-llvm-295afc.o(.text.TimerService_StartTimer)
+    TimerService_TakePending                 0x00003939   Thumb Code    50  lto-llvm-295afc.o(.text.TimerService_TakePending)
+    [Anonymous Symbol]                       0x00003938   Section        0  lto-llvm-295afc.o(.text.TimerService_TakePending)
+    TimerService_Tick1ms                     0x0000396d   Thumb Code   140  lto-llvm-295afc.o(.text.TimerService_Tick1ms)
+    [Anonymous Symbol]                       0x0000396c   Section        0  lto-llvm-295afc.o(.text.TimerService_Tick1ms)
+    __arm_cp.43_0                            0x000039f8   Number         4  lto-llvm-295afc.o(.text.TimerService_Tick1ms)
+    __arm_cp.43_1                            0x000039fc   Number         4  lto-llvm-295afc.o(.text.TimerService_Tick1ms)
+    [Anonymous Symbol]                       0x00003a00   Section        0  lto-llvm-295afc.o(.text.UART0_IRQHandler)
+    __arm_cp.36_0                            0x00003a40   Number         4  lto-llvm-295afc.o(.text.UART0_IRQHandler)
+    __arm_cp.36_1                            0x00003a44   Number         4  lto-llvm-295afc.o(.text.UART0_IRQHandler)
+    UART0_Init                               0x00003a49   Thumb Code    96  lto-llvm-295afc.o(.text.UART0_Init)
+    [Anonymous Symbol]                       0x00003a48   Section        0  lto-llvm-295afc.o(.text.UART0_Init)
+    __arm_cp.37_0                            0x00003aa8   Number         4  lto-llvm-295afc.o(.text.UART0_Init)
+    __arm_cp.37_1                            0x00003aac   Number         4  lto-llvm-295afc.o(.text.UART0_Init)
+    __arm_cp.37_2                            0x00003ab0   Number         4  lto-llvm-295afc.o(.text.UART0_Init)
+    __arm_cp.37_3                            0x00003ab4   Number         4  lto-llvm-295afc.o(.text.UART0_Init)
+    __arm_cp.37_4                            0x00003ab8   Number         4  lto-llvm-295afc.o(.text.UART0_Init)
+    __arm_cp.37_5                            0x00003abc   Number         4  lto-llvm-295afc.o(.text.UART0_Init)
+    __arm_cp.37_6                            0x00003ac0   Number         4  lto-llvm-295afc.o(.text.UART0_Init)
+    UART_ClearIntFlag                        0x00003ac5   Thumb Code   156  lto-llvm-295afc.o(.text.UART_ClearIntFlag)
+    [Anonymous Symbol]                       0x00003ac4   Section        0  lto-llvm-295afc.o(.text.UART_ClearIntFlag)
+    __arm_cp.96_1                            0x00003b60   Number         4  lto-llvm-295afc.o(.text.UART_ClearIntFlag)
+    __arm_cp.96_2                            0x00003b64   Number         4  lto-llvm-295afc.o(.text.UART_ClearIntFlag)
+    UART_DisableInt                          0x00003b69   Thumb Code    24  lto-llvm-295afc.o(.text.UART_DisableInt)
+    [Anonymous Symbol]                       0x00003b68   Section        0  lto-llvm-295afc.o(.text.UART_DisableInt)
+    UART_EnableInt                           0x00003b81   Thumb Code    24  lto-llvm-295afc.o(.text.UART_EnableInt)
+    [Anonymous Symbol]                       0x00003b80   Section        0  lto-llvm-295afc.o(.text.UART_EnableInt)
+    UART_Open                                0x00003b99   Thumb Code   268  lto-llvm-295afc.o(.text.UART_Open)
+    [Anonymous Symbol]                       0x00003b98   Section        0  lto-llvm-295afc.o(.text.UART_Open)
+    __arm_cp.99_1                            0x00003ca4   Number         4  lto-llvm-295afc.o(.text.UART_Open)
+    __arm_cp.99_2                            0x00003ca8   Number         4  lto-llvm-295afc.o(.text.UART_Open)
+    __arm_cp.99_3                            0x00003cac   Number         4  lto-llvm-295afc.o(.text.UART_Open)
+    __arm_cp.99_4                            0x00003cb0   Number         4  lto-llvm-295afc.o(.text.UART_Open)
+    __arm_cp.99_5                            0x00003cb4   Number         4  lto-llvm-295afc.o(.text.UART_Open)
+    __arm_cp.99_6                            0x00003cb8   Number         4  lto-llvm-295afc.o(.text.UART_Open)
+    UARTx_Process                            0x00003cbd   Thumb Code   488  lto-llvm-295afc.o(.text.UARTx_Process)
+    [Anonymous Symbol]                       0x00003cbc   Section        0  lto-llvm-295afc.o(.text.UARTx_Process)
+    __arm_cp.31_0                            0x00003ea4   Number         4  lto-llvm-295afc.o(.text.UARTx_Process)
+    __arm_cp.31_1                            0x00003ea8   Number         4  lto-llvm-295afc.o(.text.UARTx_Process)
+    __arm_cp.31_2                            0x00003eac   Number         4  lto-llvm-295afc.o(.text.UARTx_Process)
+    __arm_cp.31_3                            0x00003eb0   Number         4  lto-llvm-295afc.o(.text.UARTx_Process)
+    __NVIC_DisableIRQ                        0x00003eb5   Thumb Code    56  lto-llvm-295afc.o(.text.__NVIC_DisableIRQ)
+    [Anonymous Symbol]                       0x00003eb4   Section        0  lto-llvm-295afc.o(.text.__NVIC_DisableIRQ)
+    __arm_cp.27_0                            0x00003eec   Number         4  lto-llvm-295afc.o(.text.__NVIC_DisableIRQ)
+    __NVIC_EnableIRQ                         0x00003ef1   Thumb Code    48  lto-llvm-295afc.o(.text.__NVIC_EnableIRQ)
+    [Anonymous Symbol]                       0x00003ef0   Section        0  lto-llvm-295afc.o(.text.__NVIC_EnableIRQ)
+    __NVIC_EnableIRQ.112                     0x00003f21   Thumb Code    48  lto-llvm-295afc.o(.text.__NVIC_EnableIRQ.112)
+    [Anonymous Symbol]                       0x00003f20   Section        0  lto-llvm-295afc.o(.text.__NVIC_EnableIRQ.112)
+    __arm_cp.68_0                            0x00003f50   Number         4  lto-llvm-295afc.o(.text.__NVIC_EnableIRQ.112)
+    __NVIC_SetPriority                       0x00003f55   Thumb Code   128  lto-llvm-295afc.o(.text.__NVIC_SetPriority)
+    [Anonymous Symbol]                       0x00003f54   Section        0  lto-llvm-295afc.o(.text.__NVIC_SetPriority)
+    __arm_cp.8_0                             0x00003fd4   Number         4  lto-llvm-295afc.o(.text.__NVIC_SetPriority)
+    __arm_cp.8_1                             0x00003fd8   Number         4  lto-llvm-295afc.o(.text.__NVIC_SetPriority)
+    check_reset_source                       0x00003fdd   Thumb Code   492  lto-llvm-295afc.o(.text.check_reset_source)
+    [Anonymous Symbol]                       0x00003fdc   Section        0  lto-llvm-295afc.o(.text.check_reset_source)
+    __arm_cp.14_0                            0x000041c8   Number         4  lto-llvm-295afc.o(.text.check_reset_source)
+    __arm_cp.14_1                            0x000041cc   Number         4  lto-llvm-295afc.o(.text.check_reset_source)
+    __arm_cp.14_2                            0x000041d0   Number         4  lto-llvm-295afc.o(.text.check_reset_source)
+    __arm_cp.14_3                            0x000041d4   Number         4  lto-llvm-295afc.o(.text.check_reset_source)
+    __arm_cp.14_4                            0x000041d8   Number         4  lto-llvm-295afc.o(.text.check_reset_source)
+    __arm_cp.14_5                            0x000041dc   Number         4  lto-llvm-295afc.o(.text.check_reset_source)
+    __arm_cp.14_6                            0x000041e0   Number         4  lto-llvm-295afc.o(.text.check_reset_source)
+    __arm_cp.14_7                            0x000041e4   Number         4  lto-llvm-295afc.o(.text.check_reset_source)
+    __arm_cp.14_8                            0x000041e8   Number         4  lto-llvm-295afc.o(.text.check_reset_source)
+    __arm_cp.14_9                            0x000041ec   Number         4  lto-llvm-295afc.o(.text.check_reset_source)
+    __arm_cp.14_10                           0x000041f0   Number         4  lto-llvm-295afc.o(.text.check_reset_source)
+    __arm_cp.14_11                           0x000041f4   Number         4  lto-llvm-295afc.o(.text.check_reset_source)
+    __arm_cp.14_12                           0x000041f8   Number         4  lto-llvm-295afc.o(.text.check_reset_source)
+    __arm_cp.14_13                           0x000041fc   Number         4  lto-llvm-295afc.o(.text.check_reset_source)
+    __arm_cp.14_14                           0x00004200   Number         4  lto-llvm-295afc.o(.text.check_reset_source)
+    __arm_cp.14_15                           0x00004204   Number         4  lto-llvm-295afc.o(.text.check_reset_source)
+    __arm_cp.14_16                           0x00004208   Number         4  lto-llvm-295afc.o(.text.check_reset_source)
+    __arm_cp.14_17                           0x0000420c   Number         4  lto-llvm-295afc.o(.text.check_reset_source)
+    __arm_cp.14_18                           0x00004210   Number         4  lto-llvm-295afc.o(.text.check_reset_source)
+    __arm_cp.14_19                           0x00004214   Number         4  lto-llvm-295afc.o(.text.check_reset_source)
+    __arm_cp.14_20                           0x00004218   Number         4  lto-llvm-295afc.o(.text.check_reset_source)
+    [Anonymous Symbol]                       0x0000421c   Section        0  lto-llvm-295afc.o(.text.fputc)
+    loop                                     0x00004231   Thumb Code   136  lto-llvm-295afc.o(.text.loop)
+    [Anonymous Symbol]                       0x00004230   Section        0  lto-llvm-295afc.o(.text.loop)
+    __arm_cp.22_0                            0x000042b8   Number         4  lto-llvm-295afc.o(.text.loop)
+    __arm_cp.22_1                            0x000042bc   Number         4  lto-llvm-295afc.o(.text.loop)
+    __arm_cp.22_2                            0x000042c0   Number         4  lto-llvm-295afc.o(.text.loop)
+    [Anonymous Symbol]                       0x000042c4   Section        0  lto-llvm-295afc.o(.text.main)
+    __arm_cp.41_0                            0x00004328   Number         4  lto-llvm-295afc.o(.text.main)
+    __arm_cp.41_1                            0x0000432c   Number         4  lto-llvm-295afc.o(.text.main)
+    __arm_cp.41_2                            0x00004330   Number         4  lto-llvm-295afc.o(.text.main)
+    __arm_cp.41_3                            0x00004334   Number         4  lto-llvm-295afc.o(.text.main)
+    __arm_cp.41_4                            0x00004338   Number         4  lto-llvm-295afc.o(.text.main)
+    __arm_cp.41_5                            0x0000433c   Number         4  lto-llvm-295afc.o(.text.main)
+    __arm_cp.41_6                            0x00004340   Number         4  lto-llvm-295afc.o(.text.main)
+    set_systick                              0x00004345   Thumb Code    16  lto-llvm-295afc.o(.text.set_systick)
+    [Anonymous Symbol]                       0x00004344   Section        0  lto-llvm-295afc.o(.text.set_systick)
+    systick_counter                          0x00004355   Thumb Code    12  lto-llvm-295afc.o(.text.systick_counter)
+    [Anonymous Symbol]                       0x00004354   Section        0  lto-llvm-295afc.o(.text.systick_counter)
+    __arm_cp.4_0                             0x00004360   Number         4  lto-llvm-295afc.o(.text.systick_counter)
+    tick_counter                             0x00004365   Thumb Code    12  lto-llvm-295afc.o(.text.tick_counter)
+    [Anonymous Symbol]                       0x00004364   Section        0  lto-llvm-295afc.o(.text.tick_counter)
+    __arm_cp.9_0                             0x00004370   Number         4  lto-llvm-295afc.o(.text.tick_counter)
+    i.__0printf                              0x00004374   Section        0  printfa.o(i.__0printf)
+    i.__ARM_clz                              0x00004394   Section        0  depilogue.o(i.__ARM_clz)
+    i.__scatterload_copy                     0x000043c2   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x000043d0   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x000043d2   Section       14  handlers.o(i.__scatterload_zeroinit)
+    _fp_digits                               0x000043e1   Thumb Code   344  printfa.o(i._fp_digits)
+    i._fp_digits                             0x000043e0   Section        0  printfa.o(i._fp_digits)
+    _printf_core                             0x00004555   Thumb Code  1754  printfa.o(i._printf_core)
+    i._printf_core                           0x00004554   Section        0  printfa.o(i._printf_core)
+    _printf_post_padding                     0x00004c41   Thumb Code    32  printfa.o(i._printf_post_padding)
+    i._printf_post_padding                   0x00004c40   Section        0  printfa.o(i._printf_post_padding)
+    _printf_pre_padding                      0x00004c61   Thumb Code    44  printfa.o(i._printf_pre_padding)
+    i._printf_pre_padding                    0x00004c60   Section        0  printfa.o(i._printf_pre_padding)
+    gau32ClkSrcTbl                           0x00004c8c   Data          32  lto-llvm-295afc.o(.rodata.cst32)
+    [Anonymous Symbol]                       0x00004c8c   Section        0  lto-llvm-295afc.o(.rodata.cst32)
+    g_au8PwmChannel                          0x00004ccc   Data           3  lto-llvm-295afc.o(.rodata.g_au8PwmChannel)
+    [Anonymous Symbol]                       0x00004ccc   Section        0  lto-llvm-295afc.o(.rodata.g_au8PwmChannel)
+    [Anonymous Symbol]                       0x00004ccf   Section        0  lto-llvm-295afc.o(.rodata.str1.1)
+    .data                                    0x20000000   Section        4  stdout.o(.data)
+    PllClock                                 0x20000004   Data           4  lto-llvm-295afc.o(.data.PllClock)
+    [Anonymous Symbol]                       0x20000004   Section        0  lto-llvm-295afc.o(.data.PllClock)
+    SystemCoreClock                          0x20000008   Data           4  lto-llvm-295afc.o(.data.SystemCoreClock)
+    [Anonymous Symbol]                       0x20000008   Section        0  lto-llvm-295afc.o(.data.SystemCoreClock)
+    g_au16PwmFreq                            0x2000000c   Data           6  lto-llvm-295afc.o(.data.g_au16PwmFreq)
+    [Anonymous Symbol]                       0x2000000c   Section        0  lto-llvm-295afc.o(.data.g_au16PwmFreq)
+    g_au8PwmDuty                             0x20000012   Data           3  lto-llvm-295afc.o(.data.g_au8PwmDuty)
+    [Anonymous Symbol]                       0x20000012   Section        0  lto-llvm-295afc.o(.data.g_au8PwmDuty)
+    g_timer_id_task1                         0x20000018   Data           4  lto-llvm-295afc.o(.data.g_timer_id_task1)
+    [Anonymous Symbol]                       0x20000018   Section        0  lto-llvm-295afc.o(.data.g_timer_id_task1)
+    g_timer_id_task2                         0x2000001c   Data           4  lto-llvm-295afc.o(.data.g_timer_id_task2)
+    [Anonymous Symbol]                       0x2000001c   Section        0  lto-llvm-295afc.o(.data.g_timer_id_task2)
+    g_timer_id_task3                         0x20000020   Data           4  lto-llvm-295afc.o(.data.g_timer_id_task3)
+    [Anonymous Symbol]                       0x20000020   Section        0  lto-llvm-295afc.o(.data.g_timer_id_task3)
+    Stack_Mem                                0x20000028   Number         0  startup_m2a23.o(.bss.STACK)
+    counter_systick                          0x20000428   Data           4  lto-llvm-295afc.o(.bss.counter_systick)
+    [Anonymous Symbol]                       0x20000428   Section        0  lto-llvm-295afc.o(.bss.counter_systick)
+    counter_tick                             0x2000042c   Data           4  lto-llvm-295afc.o(.bss.counter_tick)
+    [Anonymous Symbol]                       0x2000042c   Section        0  lto-llvm-295afc.o(.bss.counter_tick)
+    flag_PROJ_CTL                            0x20000430   Data           4  lto-llvm-295afc.o(.bss.flag_PROJ_CTL)
+    [Anonymous Symbol]                       0x20000430   Section        0  lto-llvm-295afc.o(.bss.flag_PROJ_CTL)
+    g_TimerEventQueue                        0x20000434   Data          68  lto-llvm-295afc.o(.bss.g_TimerEventQueue)
+    [Anonymous Symbol]                       0x20000434   Section        0  lto-llvm-295afc.o(.bss.g_TimerEventQueue)
+    g_TimerService_List                      0x20000478   Data         256  lto-llvm-295afc.o(.bss.g_TimerService_List)
+    [Anonymous Symbol]                       0x20000478   Section        0  lto-llvm-295afc.o(.bss.g_TimerService_List)
+    g_sRxMsgFrame                            0x20000578   Data          96  lto-llvm-295afc.o(.bss.g_sRxMsgFrame)
+    [Anonymous Symbol]                       0x20000578   Section        0  lto-llvm-295afc.o(.bss.g_sRxMsgFrame)
+    g_sTxMsgFrame                            0x200005d8   Data          96  lto-llvm-295afc.o(.bss.g_sTxMsgFrame)
+    [Anonymous Symbol]                       0x200005d8   Section        0  lto-llvm-295afc.o(.bss.g_sTxMsgFrame)
+    g_u32CanIrqStatus                        0x20000638   Data           4  lto-llvm-295afc.o(.bss.g_u32CanIrqStatus)
+    [Anonymous Symbol]                       0x20000638   Section        0  lto-llvm-295afc.o(.bss.g_u32CanIrqStatus)
+    g_u8CanFdModeOpened                      0x2000063c   Data           1  lto-llvm-295afc.o(.bss.g_u8CanFdModeOpened)
+    [Anonymous Symbol]                       0x2000063c   Section        0  lto-llvm-295afc.o(.bss.g_u8CanFdModeOpened)
+    g_u8PwmCtrlSel                           0x2000063d   Data           1  lto-llvm-295afc.o(.bss.g_u8PwmCtrlSel)
+    [Anonymous Symbol]                       0x2000063d   Section        0  lto-llvm-295afc.o(.bss.g_u8PwmCtrlSel)
+    num_cnt                                  0x2000063e   Data           1  lto-llvm-295afc.o(.bss.num_cnt)
+    [Anonymous Symbol]                       0x2000063e   Section        0  lto-llvm-295afc.o(.bss.num_cnt)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv3M$S$8M$PE$A:L22$X:L11$S22$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OTIME$ROPI$IEEEF$EBA8$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __Vectors                                0x00000000   Number         0  startup_m2a23.o(RESET)
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    __decompress                              - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _microlib_exit                            - Undefined Weak Reference
+    function                                  - Undefined Weak Reference
+    __Vectors_End                            0x00000128   Number         0  startup_m2a23.o(RESET)
+    __Vectors_Size                           0x00000128   Number         0  startup_m2a23.o ABSOLUTE
+    __main                                   0x00000129   Thumb Code     0  entry.o(.ARM.Collect$$$$00000000)
+    _main_stk                                0x00000129   Thumb Code     0  entry2.o(.ARM.Collect$$$$00000001)
+    _main_scatterload                        0x0000012d   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    __main_after_scatterload                 0x00000131   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    _main_clock                              0x00000131   Thumb Code     0  entry7b.o(.ARM.Collect$$$$00000008)
+    _main_cpp_init                           0x00000131   Thumb Code     0  entry8b.o(.ARM.Collect$$$$0000000A)
+    _main_init                               0x00000131   Thumb Code     0  entry9a.o(.ARM.Collect$$$$0000000B)
+    __rt_final_cpp                           0x00000139   Thumb Code     0  entry10a.o(.ARM.Collect$$$$0000000D)
+    __rt_final_exit                          0x00000139   Thumb Code     0  entry11a.o(.ARM.Collect$$$$0000000F)
+    Reset_Handler                            0x0000013d   Thumb Code     0  startup_m2a23.o(.text)
+    NMI_Handler                              0x00000145   Thumb Code     0  startup_m2a23.o(.text)
+    HardFault_Handler                        0x00000147   Thumb Code     0  startup_m2a23.o(.text)
+    SVC_Handler                              0x00000156   Number         0  startup_m2a23.o(.text)
+    PendSV_Handler                           0x00000158   Number         0  startup_m2a23.o(.text)
+    ACMP01_IRQHandler                        0x0000015c   Number         0  startup_m2a23.o(.text)
+    ADC0_IRQHandler                          0x0000015c   Number         0  startup_m2a23.o(.text)
+    BOD_IRQHandler                           0x0000015c   Number         0  startup_m2a23.o(.text)
+    BPWM0_IRQHandler                         0x0000015c   Number         0  startup_m2a23.o(.text)
+    BRAKE0_IRQHandler                        0x0000015c   Number         0  startup_m2a23.o(.text)
+    CANFD01_IRQHandler                       0x0000015c   Number         0  startup_m2a23.o(.text)
+    CANFD10_IRQHandler                       0x0000015c   Number         0  startup_m2a23.o(.text)
+    CANFD11_IRQHandler                       0x0000015c   Number         0  startup_m2a23.o(.text)
+    CANFD20_IRQHandler                       0x0000015c   Number         0  startup_m2a23.o(.text)
+    CANFD21_IRQHandler                       0x0000015c   Number         0  startup_m2a23.o(.text)
+    CKFAIL_IRQHandler                        0x0000015c   Number         0  startup_m2a23.o(.text)
+    DEFAULT_IRQHandler                       0x0000015c   Number         0  startup_m2a23.o(.text)
+    EINT0_IRQHandler                         0x0000015c   Number         0  startup_m2a23.o(.text)
+    EINT1_IRQHandler                         0x0000015c   Number         0  startup_m2a23.o(.text)
+    EINT2_IRQHandler                         0x0000015c   Number         0  startup_m2a23.o(.text)
+    EINT3_IRQHandler                         0x0000015c   Number         0  startup_m2a23.o(.text)
+    EINT4_IRQHandler                         0x0000015c   Number         0  startup_m2a23.o(.text)
+    EINT5_IRQHandler                         0x0000015c   Number         0  startup_m2a23.o(.text)
+    GPA_IRQHandler                           0x0000015c   Number         0  startup_m2a23.o(.text)
+    GPB_IRQHandler                           0x0000015c   Number         0  startup_m2a23.o(.text)
+    GPC_IRQHandler                           0x0000015c   Number         0  startup_m2a23.o(.text)
+    GPD_IRQHandler                           0x0000015c   Number         0  startup_m2a23.o(.text)
+    GPF_IRQHandler                           0x0000015c   Number         0  startup_m2a23.o(.text)
+    I2C0_IRQHandler                          0x0000015c   Number         0  startup_m2a23.o(.text)
+    IRC_IRQHandler                           0x0000015c   Number         0  startup_m2a23.o(.text)
+    ISP_IRQHandler                           0x0000015c   Number         0  startup_m2a23.o(.text)
+    LLSI0_IRQHandler                         0x0000015c   Number         0  startup_m2a23.o(.text)
+    LLSI1_IRQHandler                         0x0000015c   Number         0  startup_m2a23.o(.text)
+    PDMA0_IRQHandler                         0x0000015c   Number         0  startup_m2a23.o(.text)
+    PWM0P0_IRQHandler                        0x0000015c   Number         0  startup_m2a23.o(.text)
+    PWM0P1_IRQHandler                        0x0000015c   Number         0  startup_m2a23.o(.text)
+    PWM0P2_IRQHandler                        0x0000015c   Number         0  startup_m2a23.o(.text)
+    PWRWU_IRQHandler                         0x0000015c   Number         0  startup_m2a23.o(.text)
+    RAMPE_IRQHandler                         0x0000015c   Number         0  startup_m2a23.o(.text)
+    SPI0_IRQHandler                          0x0000015c   Number         0  startup_m2a23.o(.text)
+    TMR0_IRQHandler                          0x0000015c   Number         0  startup_m2a23.o(.text)
+    TMR2_IRQHandler                          0x0000015c   Number         0  startup_m2a23.o(.text)
+    TMR3_IRQHandler                          0x0000015c   Number         0  startup_m2a23.o(.text)
+    UART1_IRQHandler                         0x0000015c   Number         0  startup_m2a23.o(.text)
+    USCI0_IRQHandler                         0x0000015c   Number         0  startup_m2a23.o(.text)
+    USCI1_IRQHandler                         0x0000015c   Number         0  startup_m2a23.o(.text)
+    WDT_IRQHandler                           0x0000015c   Number         0  startup_m2a23.o(.text)
+    WWDT_IRQHandler                          0x0000015c   Number         0  startup_m2a23.o(.text)
+    SH_DoCommand                             0x00000161   Thumb Code     0  startup_m2a23.o(.text)
+    __PC                                     0x0000016d   Thumb Code     0  startup_m2a23.o(.text)
+    __aeabi_uldivmod                         0x00000181   Thumb Code    96  uldiv.o(.text)
+    __I$use$fp                               0x000001e1   Thumb Code     0  iusefp.o(.text)
+    __aeabi_dadd                             0x000001e1   Thumb Code   328  dadd.o(.text)
+    __aeabi_dsub                             0x00000329   Thumb Code    12  dadd.o(.text)
+    __aeabi_drsub                            0x00000335   Thumb Code    12  dadd.o(.text)
+    __aeabi_dmul                             0x00000345   Thumb Code   202  dmul.o(.text)
+    __aeabi_ddiv                             0x00000415   Thumb Code   234  ddiv.o(.text)
+    __aeabi_d2ulz                            0x00000505   Thumb Code    54  dfixul.o(.text)
+    __aeabi_cdrcmple                         0x00000545   Thumb Code    38  cdrcmple.o(.text)
+    __scatterload                            0x0000056d   Thumb Code    38  init.o(.text)
+    __scatterload_rt2                        0x0000056d   Thumb Code     0  init.o(.text)
+    __aeabi_uidiv$div0                       0x0000059d   Thumb Code     0  uidiv_div0.o(.text)
+    __aeabi_uidivmod                         0x0000059d   Thumb Code    62  uidiv_div0.o(.text)
+    __aeabi_llsl                             0x000005db   Thumb Code    32  llshl.o(.text)
+    _ll_shift_l                              0x000005db   Thumb Code     0  llshl.o(.text)
+    __aeabi_llsr                             0x000005fb   Thumb Code    34  llushr.o(.text)
+    _ll_ushift_r                             0x000005fb   Thumb Code     0  llushr.o(.text)
+    __aeabi_lasr                             0x0000061d   Thumb Code    38  llsshr.o(.text)
+    _ll_sshift_r                             0x0000061d   Thumb Code     0  llsshr.o(.text)
+    _double_round                            0x00000643   Thumb Code    26  depilogue.o(.text)
+    _double_epilogue                         0x0000065d   Thumb Code   164  depilogue.o(.text)
+    __aeabi_memset                           0x00000701   Thumb Code    14  memseta.o(.text)
+    __aeabi_memset4                          0x00000701   Thumb Code     0  memseta.o(.text)
+    __aeabi_memset8                          0x00000701   Thumb Code     0  memseta.o(.text)
+    __aeabi_memclr                           0x0000070f   Thumb Code     4  memseta.o(.text)
+    __aeabi_memclr4                          0x0000070f   Thumb Code     0  memseta.o(.text)
+    __aeabi_memclr8                          0x0000070f   Thumb Code     0  memseta.o(.text)
+    _memset$wrapper                          0x00000713   Thumb Code    18  memseta.o(.text)
+    __aeabi_fmul                             0x00000725   Thumb Code   122  fmul.o(.text)
+    __aeabi_ui2f                             0x0000079f   Thumb Code    14  ffltui.o(.text)
+    __aeabi_f2iz                             0x000007ad   Thumb Code    50  ffixi.o(.text)
+    _float_round                             0x000007df   Thumb Code    16  fepilogue.o(.text)
+    _float_epilogue                          0x000007ef   Thumb Code   114  fepilogue.o(.text)
+    CANFD00_IRQHandler                       0x000009a1   Thumb Code    40  lto-llvm-295afc.o(.text.CANFD00_IRQHandler)
+    ProcessHardFault                         0x0000301d   Thumb Code    60  lto-llvm-295afc.o(.text.ProcessHardFault)
+    SH_Return                                0x0000305d   Thumb Code    14  lto-llvm-295afc.o(.text.SH_Return)
+    SysTick_Handler                          0x00003305   Thumb Code     8  lto-llvm-295afc.o(.text.SysTick_Handler)
+    SystemInit                               0x000033a5   Thumb Code     2  lto-llvm-295afc.o(.text.SystemInit)
+    TMR1_IRQHandler                          0x000035b1   Thumb Code    28  lto-llvm-295afc.o(.text.TMR1_IRQHandler)
+    UART0_IRQHandler                         0x00003a01   Thumb Code    64  lto-llvm-295afc.o(.text.UART0_IRQHandler)
+    fputc                                    0x0000421d   Thumb Code    20  lto-llvm-295afc.o(.text.fputc)
+    main                                     0x000042c5   Thumb Code   100  lto-llvm-295afc.o(.text.main)
+    __0printf                                0x00004375   Thumb Code    24  printfa.o(i.__0printf)
+    __1printf                                0x00004375   Thumb Code     0  printfa.o(i.__0printf)
+    __2printf                                0x00004375   Thumb Code     0  printfa.o(i.__0printf)
+    __c89printf                              0x00004375   Thumb Code     0  printfa.o(i.__0printf)
+    printf                                   0x00004375   Thumb Code     0  printfa.o(i.__0printf)
+    __ARM_clz                                0x00004395   Thumb Code    46  depilogue.o(i.__ARM_clz)
+    __scatterload_copy                       0x000043c3   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x000043d1   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x000043d3   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    Region$$Table$$Base                      0x00005550   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00005570   Number         0  anon$$obj.o(Region$$Table)
+    __stdout                                 0x20000000   Data           4  stdout.o(.data)
+    __initial_sp                             0x20000428   Number         0  startup_m2a23.o(.bss.STACK)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x0000013d
+
+  Load Region LR_1 (Base: 0x00000000, Size: 0x00005594, Max: 0xffffffff, ABSOLUTE)
+
+    Execution Region ER_RO (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x00005570, Max: 0xffffffff, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x00000000   0x00000128   Code   RO            4    RESET               startup_m2a23.o
+    0x00000128   0x00000128   0x00000000   Code   RO           23  * .ARM.Collect$$$$00000000  mc_p.l(entry.o)
+    0x00000128   0x00000128   0x00000004   Code   RO           59    .ARM.Collect$$$$00000001  mc_p.l(entry2.o)
+    0x0000012c   0x0000012c   0x00000004   Code   RO           62    .ARM.Collect$$$$00000004  mc_p.l(entry5.o)
+    0x00000130   0x00000130   0x00000000   Code   RO           64    .ARM.Collect$$$$00000008  mc_p.l(entry7b.o)
+    0x00000130   0x00000130   0x00000000   Code   RO           66    .ARM.Collect$$$$0000000A  mc_p.l(entry8b.o)
+    0x00000130   0x00000130   0x00000008   Code   RO           67    .ARM.Collect$$$$0000000B  mc_p.l(entry9a.o)
+    0x00000138   0x00000138   0x00000000   Code   RO           69    .ARM.Collect$$$$0000000D  mc_p.l(entry10a.o)
+    0x00000138   0x00000138   0x00000000   Code   RO           71    .ARM.Collect$$$$0000000F  mc_p.l(entry11a.o)
+    0x00000138   0x00000138   0x00000004   Code   RO           60    .ARM.Collect$$$$00002712  mc_p.l(entry2.o)
+    0x0000013c   0x0000013c   0x00000044   Code   RO            1  * .text               startup_m2a23.o
+    0x00000180   0x00000180   0x00000060   Code   RO           78    .text               mc_p.l(uldiv.o)
+    0x000001e0   0x000001e0   0x00000000   Code   RO           80    .text               mc_p.l(iusefp.o)
+    0x000001e0   0x000001e0   0x00000164   Code   RO           81    .text               mf_p.l(dadd.o)
+    0x00000344   0x00000344   0x000000d0   Code   RO           83    .text               mf_p.l(dmul.o)
+    0x00000414   0x00000414   0x000000f0   Code   RO           85    .text               mf_p.l(ddiv.o)
+    0x00000504   0x00000504   0x00000040   Code   RO           87    .text               mf_p.l(dfixul.o)
+    0x00000544   0x00000544   0x00000028   Code   RO           89    .text               mf_p.l(cdrcmple.o)
+    0x0000056c   0x0000056c   0x00000030   Code   RO           91    .text               mc_p.l(init.o)
+    0x0000059c   0x0000059c   0x0000003e   Code   RO           95    .text               mc_p.l(uidiv_div0.o)
+    0x000005da   0x000005da   0x00000020   Code   RO          101    .text               mc_p.l(llshl.o)
+    0x000005fa   0x000005fa   0x00000022   Code   RO          103    .text               mc_p.l(llushr.o)
+    0x0000061c   0x0000061c   0x00000026   Code   RO          105    .text               mc_p.l(llsshr.o)
+    0x00000642   0x00000642   0x000000be   Code   RO          107    .text               mf_p.l(depilogue.o)
+    0x00000700   0x00000700   0x00000024   Code   RO          425    .text               mc_p.l(memseta.o)
+    0x00000724   0x00000724   0x0000007a   Code   RO          427    .text               mf_p.l(fmul.o)
+    0x0000079e   0x0000079e   0x0000000e   Code   RO          429    .text               mf_p.l(ffltui.o)
+    0x000007ac   0x000007ac   0x00000032   Code   RO          431    .text               mf_p.l(ffixi.o)
+    0x000007de   0x000007de   0x00000082   Code   RO          433    .text               mf_p.l(fepilogue.o)
+    0x00000860   0x00000860   0x00000088   Code   RO          159    .text.APP_InvalidateChecksumAndReset  lto-llvm-295afc.o
+    0x000008e8   0x000008e8   0x000000b8   Code   RO          161    .text.APP_StandbyWaitCanWake  lto-llvm-295afc.o
+    0x000009a0   0x000009a0   0x0000002c   Code   RO          225    .text.CANFD00_IRQHandler  lto-llvm-295afc.o
+    0x000009cc   0x000009cc   0x000000da   Code   RO          327    .text.CANFD_CalculateRamAddress  lto-llvm-295afc.o
+    0x00000aa6   0x00000aa6   0x00000002   PAD
+    0x00000aa8   0x00000aa8   0x00000184   Code   RO          339    .text.CANFD_CalculateTimingValues  lto-llvm-295afc.o
+    0x00000c2c   0x00000c2c   0x00000018   Code   RO          379    .text.CANFD_ClearStatusFlag  lto-llvm-295afc.o
+    0x00000c44   0x00000c44   0x00000044   Code   RO          343    .text.CANFD_ConfigSIDFC  lto-llvm-295afc.o
+    0x00000c88   0x00000c88   0x00000048   Code   RO          345    .text.CANFD_ConfigXIDFC  lto-llvm-295afc.o
+    0x00000cd0   0x00000cd0   0x000000fc   Code   RO          369    .text.CANFD_CopyDBufToMsgBuf  lto-llvm-295afc.o
+    0x00000dcc   0x00000dcc   0x00000014   Code   RO          375    .text.CANFD_CopyRxFifoToMsgBuf  lto-llvm-295afc.o
+    0x00000de0   0x00000de0   0x00000092   Code   RO          371    .text.CANFD_DecodeDLC  lto-llvm-295afc.o
+    0x00000e72   0x00000e72   0x00000002   PAD
+    0x00000e74   0x00000e74   0x00000068   Code   RO          361    .text.CANFD_EnableInt  lto-llvm-295afc.o
+    0x00000edc   0x00000edc   0x00000092   Code   RO          367    .text.CANFD_EncodeDLC  lto-llvm-295afc.o
+    0x00000f6e   0x00000f6e   0x00000002   PAD
+    0x00000f70   0x00000f70   0x00000034   Code   RO          381    .text.CANFD_GetBusErrCount  lto-llvm-295afc.o
+    0x00000fa4   0x00000fa4   0x00000090   Code   RO          325    .text.CANFD_GetDefaultConfig  lto-llvm-295afc.o
+    0x00001034   0x00001034   0x00000104   Code   RO          357    .text.CANFD_GetSegments  lto-llvm-295afc.o
+    0x00001138   0x00001138   0x000000b8   Code   RO          333    .text.CANFD_GetSourceClock  lto-llvm-295afc.o
+    0x000011f0   0x000011f0   0x0000001c   Code   RO          377    .text.CANFD_GetStatusFlag  lto-llvm-295afc.o
+    0x0000120c   0x0000120c   0x00000078   Code   RO          349    .text.CANFD_InitRxDBuf  lto-llvm-295afc.o
+    0x00001284   0x00001284   0x00000154   Code   RO          351    .text.CANFD_InitRxFifo  lto-llvm-295afc.o
+    0x000013d8   0x000013d8   0x0000007c   Code   RO          347    .text.CANFD_InitTxDBuf  lto-llvm-295afc.o
+    0x00001454   0x00001454   0x00000030   Code   RO          353    .text.CANFD_InitTxEvntFifo  lto-llvm-295afc.o
+    0x00001484   0x00001484   0x0000020c   Code   RO          331    .text.CANFD_Open    lto-llvm-295afc.o
+    0x00001690   0x00001690   0x00000060   Code   RO          329    .text.CANFD_Open_TDC  lto-llvm-295afc.o
+    0x000016f0   0x000016f0   0x000000c8   Code   RO          373    .text.CANFD_ReadRxFifoMsg  lto-llvm-295afc.o
+    0x000017b8   0x000017b8   0x00000080   Code   RO          383    .text.CANFD_RunToNormal  lto-llvm-295afc.o
+    0x00001838   0x00001838   0x0000003c   Code   RO          355    .text.CANFD_SetGFC  lto-llvm-295afc.o
+    0x00001874   0x00001874   0x000000f0   Code   RO          341    .text.CANFD_SetTimingConfig  lto-llvm-295afc.o
+    0x00001964   0x00001964   0x00000148   Code   RO          365    .text.CANFD_TransmitDMsg  lto-llvm-295afc.o
+    0x00001aac   0x00001aac   0x00000060   Code   RO          363    .text.CANFD_TransmitTxMsg  lto-llvm-295afc.o
+    0x00001b0c   0x00001b0c   0x0000005c   Code   RO          237    .text.CAN_DumpBusStatus  lto-llvm-295afc.o
+    0x00001b68   0x00001b68   0x000000ec   Code   RO          241    .text.CAN_GetModuleClock  lto-llvm-295afc.o
+    0x00001c54   0x00001c54   0x0000013c   Code   RO          247    .text.CAN_Init      lto-llvm-295afc.o
+    0x00001d90   0x00001d90   0x000000b0   Code   RO          233    .text.CAN_PrintRxMessage  lto-llvm-295afc.o
+    0x00001e40   0x00001e40   0x0000000c   Code   RO          229    .text.CAN_RxFifo0FillLevel  lto-llvm-295afc.o
+    0x00001e4c   0x00001e4c   0x0000000c   Code   RO          231    .text.CAN_RxFifo1FillLevel  lto-llvm-295afc.o
+    0x00001e58   0x00001e58   0x00000128   Code   RO          227    .text.CAN_Rx_process  lto-llvm-295afc.o
+    0x00001f80   0x00001f80   0x00000140   Code   RO          235    .text.CAN_SendMessage  lto-llvm-295afc.o
+    0x000020c0   0x000020c0   0x00000034   Code   RO          275    .text.CLK_EnableModuleClock  lto-llvm-295afc.o
+    0x000020f4   0x000020f4   0x00000208   Code   RO          267    .text.CLK_EnablePLL  lto-llvm-295afc.o
+    0x000022fc   0x000022fc   0x00000014   Code   RO          273    .text.CLK_EnableXtalRC  lto-llvm-295afc.o
+    0x00002310   0x00002310   0x0000000c   Code   RO          261    .text.CLK_GetCPUFreq  lto-llvm-295afc.o
+    0x0000231c   0x0000231c   0x0000000c   Code   RO          255    .text.CLK_GetHCLKFreq  lto-llvm-295afc.o
+    0x00002328   0x00002328   0x00000020   Code   RO          251    .text.CLK_GetHXTFreq  lto-llvm-295afc.o
+    0x00002348   0x00002348   0x00000028   Code   RO          253    .text.CLK_GetLXTFreq  lto-llvm-295afc.o
+    0x00002370   0x00002370   0x00000058   Code   RO          277    .text.CLK_GetModuleClockSource  lto-llvm-295afc.o
+    0x000023c8   0x000023c8   0x00000030   Code   RO          257    .text.CLK_GetPCLK0Freq  lto-llvm-295afc.o
+    0x000023f8   0x000023f8   0x00000038   Code   RO          259    .text.CLK_GetPCLK1Freq  lto-llvm-295afc.o
+    0x00002430   0x00002430   0x000000a0   Code   RO          115    .text.CLK_GetPLLClockFreq  lto-llvm-295afc.o
+    0x000024d0   0x000024d0   0x00000094   Code   RO          313    .text.CLK_GetPLLClockFreq.159  lto-llvm-295afc.o
+    0x00002564   0x00002564   0x00000098   Code   RO          359    .text.CLK_GetPLLClockFreq.179  lto-llvm-295afc.o
+    0x000025fc   0x000025fc   0x00000098   Code   RO          387    .text.CLK_GetPLLClockFreq.197  lto-llvm-295afc.o
+    0x00002694   0x00002694   0x000000a8   Code   RO          243    .text.CLK_GetPLLClockFreq.97  lto-llvm-295afc.o
+    0x0000273c   0x0000273c   0x000000b4   Code   RO          263    .text.CLK_SetCoreClock  lto-llvm-295afc.o
+    0x000027f0   0x000027f0   0x000000e4   Code   RO          269    .text.CLK_SetHCLK   lto-llvm-295afc.o
+    0x000028d4   0x000028d4   0x0000009c   Code   RO          271    .text.CLK_SetModuleClock  lto-llvm-295afc.o
+    0x00002970   0x00002970   0x00000040   Code   RO          265    .text.CLK_WaitClockReady  lto-llvm-295afc.o
+    0x000029b0   0x000029b0   0x0000005c   Code   RO          171    .text.FMC_ISP_Program  lto-llvm-295afc.o
+    0x00002a0c   0x00002a0c   0x00000010   Code   RO          321    .text.FMC_Open      lto-llvm-295afc.o
+    0x00002a1c   0x00002a1c   0x00000058   Code   RO          323    .text.FMC_Read      lto-llvm-295afc.o
+    0x00002a74   0x00002a74   0x0000005c   Code   RO          173    .text.FMC_SetVectorPageAddr  lto-llvm-295afc.o
+    0x00002ad0   0x00002ad0   0x00000048   Code   RO          189    .text.GPIO_Init     lto-llvm-295afc.o
+    0x00002b18   0x00002b18   0x0000004c   Code   RO          315    .text.GPIO_SetMode  lto-llvm-295afc.o
+    0x00002b64   0x00002b64   0x00000080   Code   RO          245    .text.Get_CANFD_DataBitRate  lto-llvm-295afc.o
+    0x00002be4   0x00002be4   0x00000078   Code   RO          239    .text.Get_CANFD_NominalBitRate  lto-llvm-295afc.o
+    0x00002c5c   0x00002c5c   0x000000d0   Code   RO          179    .text.PWM_AdjustSelected  lto-llvm-295afc.o
+    0x00002d2c   0x00002d2c   0x00000030   Code   RO          181    .text.PWM_ApplyChannel  lto-llvm-295afc.o
+    0x00002d5c   0x00002d5c   0x00000164   Code   RO          385    .text.PWM_ConfigOutputChannel  lto-llvm-295afc.o
+    0x00002ec0   0x00002ec0   0x00000018   Code   RO          391    .text.PWM_EnableOutput  lto-llvm-295afc.o
+    0x00002ed8   0x00002ed8   0x00000050   Code   RO          197    .text.PWM_InitChannels  lto-llvm-295afc.o
+    0x00002f28   0x00002f28   0x00000084   Code   RO          183    .text.PWM_PrintStatus  lto-llvm-295afc.o
+    0x00002fac   0x00002fac   0x00000028   Code   RO          177    .text.PWM_SelectControl  lto-llvm-295afc.o
+    0x00002fd4   0x00002fd4   0x00000048   Code   RO          389    .text.PWM_Start     lto-llvm-295afc.o
+    0x0000301c   0x0000301c   0x00000040   Code   RO          289    .text.ProcessHardFault  lto-llvm-295afc.o
+    0x0000305c   0x0000305c   0x0000000e   Code   RO          291    .text.SH_Return     lto-llvm-295afc.o
+    0x0000306a   0x0000306a   0x00000002   PAD
+    0x0000306c   0x0000306c   0x00000010   Code   RO          279    .text.SYS_ClearResetSrc  lto-llvm-295afc.o
+    0x0000307c   0x0000307c   0x0000000c   Code   RO          281    .text.SYS_GetResetSrc  lto-llvm-295afc.o
+    0x00003088   0x00003088   0x00000108   Code   RO          191    .text.SYS_Init      lto-llvm-295afc.o
+    0x00003190   0x00003190   0x00000010   Code   RO          283    .text.SYS_IsRegLocked  lto-llvm-295afc.o
+    0x000031a0   0x000031a0   0x00000008   Code   RO          193    .text.SYS_LockReg   lto-llvm-295afc.o
+    0x000031a8   0x000031a8   0x00000008   Code   RO          337    .text.SYS_LockReg.176  lto-llvm-295afc.o
+    0x000031b0   0x000031b0   0x0000000c   Code   RO          285    .text.SYS_ResetChip  lto-llvm-295afc.o
+    0x000031bc   0x000031bc   0x0000003c   Code   RO          287    .text.SYS_ResetModule  lto-llvm-295afc.o
+    0x000031f8   0x000031f8   0x00000034   Code   RO          169    .text.SYS_UnlockReg  lto-llvm-295afc.o
+    0x0000322c   0x0000322c   0x0000003c   Code   RO          335    .text.SYS_UnlockReg.175  lto-llvm-295afc.o
+    0x00003268   0x00003268   0x00000010   Code   RO          295    .text.SendChar      lto-llvm-295afc.o
+    0x00003278   0x00003278   0x00000048   Code   RO          293    .text.SendChar_ToUART  lto-llvm-295afc.o
+    0x000032c0   0x000032c0   0x00000044   Code   RO          127    .text.SysTick_Config  lto-llvm-295afc.o
+    0x00003304   0x00003304   0x00000008   Code   RO          123    .text.SysTick_Handler  lto-llvm-295afc.o
+    0x0000330c   0x0000330c   0x00000034   Code   RO          125    .text.SysTick_enable  lto-llvm-295afc.o
+    0x00003340   0x00003340   0x00000064   Code   RO          113    .text.SystemCoreClockUpdate  lto-llvm-295afc.o
+    0x000033a4   0x000033a4   0x00000002   Code   RO          117    .text.SystemInit    lto-llvm-295afc.o
+    0x000033a6   0x000033a6   0x00000016   Code   RO          149    .text.TIMER1_Init   lto-llvm-295afc.o
+    0x000033bc   0x000033bc   0x00000010   Code   RO          147    .text.TIMER_ClearIntFlag  lto-llvm-295afc.o
+    0x000033cc   0x000033cc   0x00000018   Code   RO          163    .text.TIMER_DisableInt  lto-llvm-295afc.o
+    0x000033e4   0x000033e4   0x00000018   Code   RO          151    .text.TIMER_EnableInt  lto-llvm-295afc.o
+    0x000033fc   0x000033fc   0x00000014   Code   RO          145    .text.TIMER_GetIntFlag  lto-llvm-295afc.o
+    0x00003410   0x00003410   0x000000c4   Code   RO          319    .text.TIMER_GetModuleClock  lto-llvm-295afc.o
+    0x000034d4   0x000034d4   0x000000a8   Code   RO          317    .text.TIMER_Open    lto-llvm-295afc.o
+    0x0000357c   0x0000357c   0x00000018   Code   RO          155    .text.TIMER_Start   lto-llvm-295afc.o
+    0x00003594   0x00003594   0x0000001c   Code   RO          165    .text.TIMER_Stop    lto-llvm-295afc.o
+    0x000035b0   0x000035b0   0x0000001c   Code   RO          143    .text.TMR1_IRQHandler  lto-llvm-295afc.o
+    0x000035cc   0x000035cc   0x00000024   Code   RO          133    .text.Task_1000ms_Callback  lto-llvm-295afc.o
+    0x000035f0   0x000035f0   0x00000008   Code   RO          135    .text.Task_100ms_Callback  lto-llvm-295afc.o
+    0x000035f8   0x000035f8   0x00000008   Code   RO          137    .text.Task_10ms_Callback  lto-llvm-295afc.o
+    0x00003600   0x00003600   0x0000009c   Code   RO          139    .text.TimerService_CreateTask  lto-llvm-295afc.o
+    0x0000369c   0x0000369c   0x0000001c   Code   RO          221    .text.TimerService_CreateTimer  lto-llvm-295afc.o
+    0x000036b8   0x000036b8   0x00000074   Code   RO          219    .text.TimerService_CreateTimerQueue  lto-llvm-295afc.o
+    0x0000372c   0x0000372c   0x00000070   Code   RO          203    .text.TimerService_DequeueEvent  lto-llvm-295afc.o
+    0x0000379c   0x0000379c   0x0000000c   Code   RO          215    .text.TimerService_Dispatch  lto-llvm-295afc.o
+    0x000037a8   0x000037a8   0x00000064   Code   RO          211    .text.TimerService_DispatchFlag  lto-llvm-295afc.o
+    0x0000380c   0x0000380c   0x0000004c   Code   RO          209    .text.TimerService_DispatchQueue  lto-llvm-295afc.o
+    0x00003858   0x00003858   0x0000004c   Code   RO          201    .text.TimerService_EnqueueEventFromISR  lto-llvm-295afc.o
+    0x000038a4   0x000038a4   0x0000005c   Code   RO          223    .text.TimerService_Init  lto-llvm-295afc.o
+    0x00003900   0x00003900   0x00000038   Code   RO          217    .text.TimerService_StartTimer  lto-llvm-295afc.o
+    0x00003938   0x00003938   0x00000032   Code   RO          213    .text.TimerService_TakePending  lto-llvm-295afc.o
+    0x0000396a   0x0000396a   0x00000002   PAD
+    0x0000396c   0x0000396c   0x00000094   Code   RO          199    .text.TimerService_Tick1ms  lto-llvm-295afc.o
+    0x00003a00   0x00003a00   0x00000048   Code   RO          185    .text.UART0_IRQHandler  lto-llvm-295afc.o
+    0x00003a48   0x00003a48   0x0000007c   Code   RO          187    .text.UART0_Init    lto-llvm-295afc.o
+    0x00003ac4   0x00003ac4   0x000000a4   Code   RO          305    .text.UART_ClearIntFlag  lto-llvm-295afc.o
+    0x00003b68   0x00003b68   0x00000018   Code   RO          307    .text.UART_DisableInt  lto-llvm-295afc.o
+    0x00003b80   0x00003b80   0x00000018   Code   RO          309    .text.UART_EnableInt  lto-llvm-295afc.o
+    0x00003b98   0x00003b98   0x00000124   Code   RO          311    .text.UART_Open     lto-llvm-295afc.o
+    0x00003cbc   0x00003cbc   0x000001f8   Code   RO          175    .text.UARTx_Process  lto-llvm-295afc.o
+    0x00003eb4   0x00003eb4   0x0000003c   Code   RO          167    .text.__NVIC_DisableIRQ  lto-llvm-295afc.o
+    0x00003ef0   0x00003ef0   0x00000030   Code   RO          153    .text.__NVIC_EnableIRQ  lto-llvm-295afc.o
+    0x00003f20   0x00003f20   0x00000034   Code   RO          249    .text.__NVIC_EnableIRQ.112  lto-llvm-295afc.o
+    0x00003f54   0x00003f54   0x00000088   Code   RO          129    .text.__NVIC_SetPriority  lto-llvm-295afc.o
+    0x00003fdc   0x00003fdc   0x00000240   Code   RO          141    .text.check_reset_source  lto-llvm-295afc.o
+    0x0000421c   0x0000421c   0x00000014   Code   RO          299    .text.fputc         lto-llvm-295afc.o
+    0x00004230   0x00004230   0x00000094   Code   RO          157    .text.loop          lto-llvm-295afc.o
+    0x000042c4   0x000042c4   0x00000080   Code   RO          195    .text.main          lto-llvm-295afc.o
+    0x00004344   0x00004344   0x00000010   Code   RO          119    .text.set_systick   lto-llvm-295afc.o
+    0x00004354   0x00004354   0x00000010   Code   RO          121    .text.systick_counter  lto-llvm-295afc.o
+    0x00004364   0x00004364   0x00000010   Code   RO          131    .text.tick_counter  lto-llvm-295afc.o
+    0x00004374   0x00004374   0x00000020   Code   RO           32    i.__0printf         mc_p.l(printfa.o)
+    0x00004394   0x00004394   0x0000002e   Code   RO          110    i.__ARM_clz         mf_p.l(depilogue.o)
+    0x000043c2   0x000043c2   0x0000000e   Code   RO          437    i.__scatterload_copy  mc_p.l(handlers.o)
+    0x000043d0   0x000043d0   0x00000002   Code   RO          438    i.__scatterload_null  mc_p.l(handlers.o)
+    0x000043d2   0x000043d2   0x0000000e   Code   RO          439    i.__scatterload_zeroinit  mc_p.l(handlers.o)
+    0x000043e0   0x000043e0   0x00000174   Code   RO           39    i._fp_digits        mc_p.l(printfa.o)
+    0x00004554   0x00004554   0x000006ec   Code   RO           40    i._printf_core      mc_p.l(printfa.o)
+    0x00004c40   0x00004c40   0x00000020   Code   RO           41    i._printf_post_padding  mc_p.l(printfa.o)
+    0x00004c60   0x00004c60   0x0000002c   Code   RO           42    i._printf_pre_padding  mc_p.l(printfa.o)
+    0x00004c8c   0x00004c8c   0x00000040   Data   RO          394    .rodata.cst32       lto-llvm-295afc.o
+    0x00004ccc   0x00004ccc   0x00000003   Data   RO          403    .rodata.g_au8PwmChannel  lto-llvm-295afc.o
+    0x00004ccf   0x00004ccf   0x0000087e   Data   RO          397    .rodata.str1.1      lto-llvm-295afc.o
+    0x0000554d   0x0000554d   0x00000003   PAD
+    0x00005550   0x00005550   0x00000020   Data   RO          436    Region$$Table       anon$$obj.o
+
+
+    Execution Region ER_RW (Exec base: 0x20000000, Load base: 0x00005570, Size: 0x00000024, Max: 0xffffffff, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x00005570   0x00000004   Data   RW           73    .data               mc_p.l(stdout.o)
+    0x20000004   0x00005574   0x00000004   Data   RW          393    .data.PllClock      lto-llvm-295afc.o
+    0x20000008   0x00005578   0x00000004   Data   RW          417    .data.SystemCoreClock  lto-llvm-295afc.o
+    0x2000000c   0x0000557c   0x00000006   Data   RW          404    .data.g_au16PwmFreq  lto-llvm-295afc.o
+    0x20000012   0x00005582   0x00000003   Data   RW          405    .data.g_au8PwmDuty  lto-llvm-295afc.o
+    0x20000015   0x00005585   0x00000003   PAD
+    0x20000018   0x00005588   0x00000004   Data   RW          398    .data.g_timer_id_task1  lto-llvm-295afc.o
+    0x2000001c   0x0000558c   0x00000004   Data   RW          399    .data.g_timer_id_task2  lto-llvm-295afc.o
+    0x20000020   0x00005590   0x00000004   Data   RW          400    .data.g_timer_id_task3  lto-llvm-295afc.o
+
+
+    Execution Region ER_ZI (Exec base: 0x20000028, Load base: 0x00005594, Size: 0x00000618, Max: 0xffffffff, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000028        -       0x00000400   Zero   RW            2    .bss.STACK          startup_m2a23.o
+    0x20000428        -       0x00000004   Zero   RW          395    .bss.counter_systick  lto-llvm-295afc.o
+    0x2000042c        -       0x00000004   Zero   RW          396    .bss.counter_tick   lto-llvm-295afc.o
+    0x20000430        -       0x00000004   Zero   RW          401    .bss.flag_PROJ_CTL  lto-llvm-295afc.o
+    0x20000434        -       0x00000044   Zero   RW          408    .bss.g_TimerEventQueue  lto-llvm-295afc.o
+    0x20000478        -       0x00000100   Zero   RW          407    .bss.g_TimerService_List  lto-llvm-295afc.o
+    0x20000578        -       0x00000060   Zero   RW          411    .bss.g_sRxMsgFrame  lto-llvm-295afc.o
+    0x200005d8        -       0x00000060   Zero   RW          413    .bss.g_sTxMsgFrame  lto-llvm-295afc.o
+    0x20000638        -       0x00000004   Zero   RW          409    .bss.g_u32CanIrqStatus  lto-llvm-295afc.o
+    0x2000063c        -       0x00000001   Zero   RW          412    .bss.g_u8CanFdModeOpened  lto-llvm-295afc.o
+    0x2000063d        -       0x00000001   Zero   RW          402    .bss.g_u8PwmCtrlSel  lto-llvm-295afc.o
+    0x2000063e        -       0x00000001   Zero   RW          410    .bss.num_cnt        lto-llvm-295afc.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+     15114       1060       2241         29        535      62056   lto-llvm-295afc.o
+       364         16          0          0       1024       2108   startup_m2a23.o
+
+    ----------------------------------------------------------------------
+     15488       1076       2276         32       1560      64164   Object Totals
+         0          0         32          0          0          0   (incl. Generated)
+        10          0          3          3          1          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         0          0          0          0          0          0   entry.o
+         0          0          0          0          0          0   entry10a.o
+         0          0          0          0          0          0   entry11a.o
+         8          4          0          0          0          0   entry2.o
+         4          0          0          0          0          0   entry5.o
+         0          0          0          0          0          0   entry7b.o
+         0          0          0          0          0          0   entry8b.o
+         8          4          0          0          0          0   entry9a.o
+        30          0          0          0          0          0   handlers.o
+        48         10          0          0          0         68   init.o
+         0          0          0          0          0          0   iusefp.o
+        32          0          0          0          0         68   llshl.o
+        38          0          0          0          0         68   llsshr.o
+        34          0          0          0          0         68   llushr.o
+        36          0          0          0          0        100   memseta.o
+      2252         98          0          0          0        412   printfa.o
+         0          0          0          4          0          0   stdout.o
+        62          0          0          0          0         72   uidiv_div0.o
+        96          0          0          0          0         84   uldiv.o
+        40          2          0          0          0         68   cdrcmple.o
+       356          4          0          0          0        140   dadd.o
+       240          6          0          0          0         84   ddiv.o
+       236          0          0          0          0        216   depilogue.o
+        64         10          0          0          0         68   dfixul.o
+       208          6          0          0          0         88   dmul.o
+       130          0          0          0          0        144   fepilogue.o
+        50          0          0          0          0         60   ffixi.o
+        14          0          0          0          0         68   ffltui.o
+       122          0          0          0          0         72   fmul.o
+
+    ----------------------------------------------------------------------
+      4108        144          0          4          0       1948   Library Totals
+         0          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+      2648        116          0          4          0        940   mc_p.l
+      1460         28          0          0          0       1008   mf_p.l
+
+    ----------------------------------------------------------------------
+      4108        144          0          4          0       1948   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+     19596       1220       2276         36       1560      65384   Grand Totals
+     19596       1220       2276         36       1560      65384   ELF Image Totals
+     19596       1220       2276         36          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                21872 (  21.36kB)
+    Total RW  Size (RW Data + ZI Data)              1596 (   1.56kB)
+    Total ROM Size (Code + RO Data + RW Data)      21908 (  21.39kB)
+
+==============================================================================
+
