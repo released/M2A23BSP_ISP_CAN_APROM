@@ -16,7 +16,7 @@
         <TargetCommonOption>
           <Device>M2A23LD5AC</Device>
           <Vendor>Nuvoton</Vendor>
-          <PackID>Nuvoton.NuMicroM23_DFP.1.0.1</PackID>
+          <PackID>Nuvoton.NuMicroM23_DFP.1.0.6</PackID>
           <PackURL>https://github.com/OpenNuvoton/cmsis-packs/raw/master/Nuvoton_DFP/</PackURL>
           <Cpu>IRAM(0x20000000,0x6000) IROM(0x00000000,0x10000) CPUTYPE("Cortex-M23") CLOCK(12000000)</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -138,8 +138,8 @@
           </Flash1>
           <bUseTDR>1</bUseTDR>
           <Flash2>BIN\UL2V8M.DLL</Flash2>
-          <Flash3></Flash3>
-          <Flash4></Flash4>
+          <Flash3>"" ()</Flash3>
+          <Flash4>.\ProgramTargetImageWithCRC.ini</Flash4>
           <pFcarmOut></pFcarmOut>
           <pFcarmGrp></pFcarmGrp>
           <pFcArmRoot></pFcArmRoot>

@@ -1,298 +1,0 @@
-Dependencies for Project 'Template', Target 'Template': (DO NOT MODIFY !)
-CompilerVersion: 6220000::V6.22::ARMCLANG
-F (..\..\..\..\Library\Device\Nuvoton\m2a23\Source\ARM\startup_m2a23.S)(0x675A77D6)(--target=arm-arm-none-eabi -mcpu=cortex-m23 -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c-gdwarf-4 -D__MICROLIB -MMD-IC:/Users/averyc/AppData/Local/Arm/Packs/Nuvoton/NuMicroM23_DFP/1.0.1/Device/M2A23/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION=541-o ./obj/startup_m2a23.o)
-F (..\..\..\..\Library\Device\Nuvoton\m2a23\Source\system_m2a23.c)(0x675A77D6)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m23 -c-fno-rtti -flto -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -I ../../../../Library/CMSIS/Include -I ../../../../Library/Device/Nuvoton/m2a23/Include -I ../../../../Library/StdDriver/inc -I ../../ISP_CAN -I ../..-IC:/Users/averyc/AppData/Local/Arm/Packs/Nuvoton/NuMicroM23_DFP/1.0.1/Device/M2A23/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="541"-o ./obj/system_m2a23.o -MMD)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\NuMicro.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\m2a23.h)(0x68917B93)
-I (..\..\..\..\Library\CMSIS\Include\core_cm23.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\system_m2a23.h)(0x69F36B19)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\fmc_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\i2c_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\acmp_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\clk_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\gpio_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\sys_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\uart_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\llsi_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\spi_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\adc_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\pwm_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\bpwm_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\dac_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\pdma_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\timer_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\wdt_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\wwdt_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\crc_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\uuart_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\uspi_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\ui2c_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\canfd_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\sys.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\clk.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\adc.h)(0x68917B93)
-I (..\..\..\..\Library\StdDriver\inc\fmc.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\gpio.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\i2c.h)(0x68917B93)
-I (..\..\..\..\Library\StdDriver\inc\pwm.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\bpwm.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\spi.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\timer.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\wdt.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\wwdt.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\uart.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\crc.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\pdma.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\llsi.h)(0x68917B93)
-I (..\..\..\..\Library\StdDriver\inc\dac.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\acmp.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\usci_uart.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\usci_spi.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\usci_i2c.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\canfd.h)(0x675A77D6)
-F (..\main.c)(0x69FB18A2)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m23 -c-fno-rtti -flto -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -I ../../../../Library/CMSIS/Include -I ../../../../Library/Device/Nuvoton/m2a23/Include -I ../../../../Library/StdDriver/inc -I ../../ISP_CAN -I ../..-IC:/Users/averyc/AppData/Local/Arm/Packs/Nuvoton/NuMicroM23_DFP/1.0.1/Device/M2A23/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="541"-o ./obj/main.o -MMD)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\NuMicro.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\m2a23.h)(0x68917B93)
-I (..\..\..\..\Library\CMSIS\Include\core_cm23.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\system_m2a23.h)(0x69F36B19)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\fmc_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\i2c_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\acmp_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\clk_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\gpio_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\sys_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\uart_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\llsi_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\spi_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\adc_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\pwm_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\bpwm_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\dac_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\pdma_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\timer_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\wdt_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\wwdt_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\crc_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\uuart_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\uspi_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\ui2c_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\canfd_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\sys.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\clk.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\adc.h)(0x68917B93)
-I (..\..\..\..\Library\StdDriver\inc\fmc.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\gpio.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\i2c.h)(0x68917B93)
-I (..\..\..\..\Library\StdDriver\inc\pwm.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\bpwm.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\spi.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\timer.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\wdt.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\wwdt.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\uart.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\crc.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\pdma.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\llsi.h)(0x68917B93)
-I (..\..\..\..\Library\StdDriver\inc\dac.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\acmp.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\usci_uart.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\usci_spi.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\usci_i2c.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\canfd.h)(0x675A77D6)
-I (..\..\memory_map.h)(0x69F75F28)
-F (..\..\..\..\Library\StdDriver\src\clk.c)(0x675A77D6)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m23 -c-fno-rtti -flto -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -I ../../../../Library/CMSIS/Include -I ../../../../Library/Device/Nuvoton/m2a23/Include -I ../../../../Library/StdDriver/inc -I ../../ISP_CAN -I ../..-IC:/Users/averyc/AppData/Local/Arm/Packs/Nuvoton/NuMicroM23_DFP/1.0.1/Device/M2A23/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="541"-o ./obj/clk.o -MMD)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\NuMicro.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\m2a23.h)(0x68917B93)
-I (..\..\..\..\Library\CMSIS\Include\core_cm23.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\system_m2a23.h)(0x69F36B19)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\fmc_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\i2c_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\acmp_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\clk_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\gpio_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\sys_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\uart_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\llsi_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\spi_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\adc_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\pwm_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\bpwm_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\dac_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\pdma_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\timer_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\wdt_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\wwdt_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\crc_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\uuart_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\uspi_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\ui2c_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\canfd_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\sys.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\clk.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\adc.h)(0x68917B93)
-I (..\..\..\..\Library\StdDriver\inc\fmc.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\gpio.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\i2c.h)(0x68917B93)
-I (..\..\..\..\Library\StdDriver\inc\pwm.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\bpwm.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\spi.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\timer.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\wdt.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\wwdt.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\uart.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\crc.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\pdma.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\llsi.h)(0x68917B93)
-I (..\..\..\..\Library\StdDriver\inc\dac.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\acmp.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\usci_uart.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\usci_spi.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\usci_i2c.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\canfd.h)(0x675A77D6)
-F (..\..\..\..\Library\StdDriver\src\sys.c)(0x675A77D6)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m23 -c-fno-rtti -flto -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -I ../../../../Library/CMSIS/Include -I ../../../../Library/Device/Nuvoton/m2a23/Include -I ../../../../Library/StdDriver/inc -I ../../ISP_CAN -I ../..-IC:/Users/averyc/AppData/Local/Arm/Packs/Nuvoton/NuMicroM23_DFP/1.0.1/Device/M2A23/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="541"-o ./obj/sys.o -MMD)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\NuMicro.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\m2a23.h)(0x68917B93)
-I (..\..\..\..\Library\CMSIS\Include\core_cm23.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\system_m2a23.h)(0x69F36B19)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\fmc_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\i2c_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\acmp_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\clk_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\gpio_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\sys_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\uart_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\llsi_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\spi_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\adc_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\pwm_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\bpwm_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\dac_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\pdma_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\timer_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\wdt_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\wwdt_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\crc_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\uuart_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\uspi_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\ui2c_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\canfd_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\sys.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\clk.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\adc.h)(0x68917B93)
-I (..\..\..\..\Library\StdDriver\inc\fmc.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\gpio.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\i2c.h)(0x68917B93)
-I (..\..\..\..\Library\StdDriver\inc\pwm.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\bpwm.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\spi.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\timer.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\wdt.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\wwdt.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\uart.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\crc.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\pdma.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\llsi.h)(0x68917B93)
-I (..\..\..\..\Library\StdDriver\inc\dac.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\acmp.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\usci_uart.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\usci_spi.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\usci_i2c.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\canfd.h)(0x675A77D6)
-F (..\..\..\..\Library\StdDriver\src\fmc.c)(0x675A77D6)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m23 -c-fno-rtti -flto -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -I ../../../../Library/CMSIS/Include -I ../../../../Library/Device/Nuvoton/m2a23/Include -I ../../../../Library/StdDriver/inc -I ../../ISP_CAN -I ../..-IC:/Users/averyc/AppData/Local/Arm/Packs/Nuvoton/NuMicroM23_DFP/1.0.1/Device/M2A23/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="541"-o ./obj/fmc.o -MMD)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\NuMicro.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\m2a23.h)(0x68917B93)
-I (..\..\..\..\Library\CMSIS\Include\core_cm23.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\system_m2a23.h)(0x69F36B19)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\fmc_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\i2c_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\acmp_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\clk_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\gpio_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\sys_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\uart_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\llsi_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\spi_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\adc_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\pwm_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\bpwm_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\dac_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\pdma_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\timer_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\wdt_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\wwdt_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\crc_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\uuart_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\uspi_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\ui2c_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\canfd_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\sys.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\clk.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\adc.h)(0x68917B93)
-I (..\..\..\..\Library\StdDriver\inc\fmc.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\gpio.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\i2c.h)(0x68917B93)
-I (..\..\..\..\Library\StdDriver\inc\pwm.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\bpwm.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\spi.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\timer.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\wdt.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\wwdt.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\uart.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\crc.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\pdma.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\llsi.h)(0x68917B93)
-I (..\..\..\..\Library\StdDriver\inc\dac.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\acmp.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\usci_uart.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\usci_spi.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\usci_i2c.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\canfd.h)(0x675A77D6)
-F (..\..\..\..\Library\StdDriver\src\canfd.c)(0x68917B93)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m23 -c-fno-rtti -flto -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Oz -ffunction-sections -I ../../../../Library/CMSIS/Include -I ../../../../Library/Device/Nuvoton/m2a23/Include -I ../../../../Library/StdDriver/inc -I ../../ISP_CAN -I ../..-IC:/Users/averyc/AppData/Local/Arm/Packs/Nuvoton/NuMicroM23_DFP/1.0.1/Device/M2A23/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="541"-o ./obj/canfd.o -MMD)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\NuMicro.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\m2a23.h)(0x68917B93)
-I (..\..\..\..\Library\CMSIS\Include\core_cm23.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\system_m2a23.h)(0x69F36B19)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\fmc_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\i2c_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\acmp_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\clk_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\gpio_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\sys_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\uart_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\llsi_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\spi_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\adc_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\pwm_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\bpwm_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\dac_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\pdma_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\timer_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\wdt_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\wwdt_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\crc_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\uuart_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\uspi_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\ui2c_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\Device\Nuvoton\m2a23\Include\canfd_reg.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\sys.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\clk.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\adc.h)(0x68917B93)
-I (..\..\..\..\Library\StdDriver\inc\fmc.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\gpio.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\i2c.h)(0x68917B93)
-I (..\..\..\..\Library\StdDriver\inc\pwm.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\bpwm.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\spi.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\timer.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\wdt.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\wwdt.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\uart.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\crc.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\pdma.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\llsi.h)(0x68917B93)
-I (..\..\..\..\Library\StdDriver\inc\dac.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\acmp.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\usci_uart.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\usci_spi.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\usci_i2c.h)(0x675A77D6)
-I (..\..\..\..\Library\StdDriver\inc\canfd.h)(0x675A77D6)
